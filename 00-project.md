@@ -1,9 +1,3 @@
----
-id: 00-project
-aliases: 
-tags:
----
-
 # Project Code Standards
 ## Module Header
 Each Module should have a header that contains:
