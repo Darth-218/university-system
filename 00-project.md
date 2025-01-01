@@ -46,97 +46,137 @@ class Course {
 	+course_prerequisites: Stack~Course~
 	+course_waitlist: Queue~Student~
 }
+class Node~T~ {
+	+value: T
+	+next: Node<T>
+}
+class DoubleNode~T~ {
+	+value: T
+	+next: Node<T>
+	+previous: Node<T>
+}
 class SinglyLinkedList~T~ {
 	-head: Node~T~
 	-tail: Node~T~
-	+isEmpty(): bool
-	+appendValue(T: value): bool
-	+insertValue(T: value, int: position): bool
-	+pushValue(T: value): bool
-	+removeHead(): bool
-	+removeNode(): bool
-	+removeTail(): bool
-	+deleteNode(): bool
+	+isEmpty() bool
+	+append(T: value) bool
+	+insert(T: value, int: position) bool
+	+push(T: value) bool
+	+removeHead() bool
+	+removeNode() bool
+	+removeTail() bool
+	+deleteNode(T: value) bool
+	+display() void
 }
 class Stack~T~ {
 	-stack_top: Node~T~
-	+isEmpty(): bool
-	+push(T: object): bool
-	+pop(): bool
-	+peek(): T
+	+isEmpty() bool
+	+push(T: object) bool
+	+pop() bool
+	+peek() T
 }
 class DoublyLinkedList~T~ {
 	-head: Node~T~
 	-tail: Node~T~
-	+isEmpty(): bool
-	+appendValue(T: value): bool
-	+insertValue(T: value, int: position): bool
-	+pushValue(T: value): bool
-	+removeHead(): bool
-	+removeNode(): bool
-	+removeTail(): bool
-	+deleteNode(): bool
+	+isEmpty() bool
+	+append(T: value) bool
+	+insert(T: value, int: position) bool
+	+push(T: value) bool
+	+removeHead() bool
+	+removeNode() bool
+	+removeTail() bool
+	+deleteNode() bool
+	+display() void
 }
 class Queue~T~ {
 	-front: Node~T~
 	-rear: Node~T~
-	+isEmpty(): bool
-	+enqueue(T: value): bool
-	+dequeue(): bool
-	+peek(): T
+	+isEmpty() bool
+	+enqueue(T: value) bool
+	+dequeue() bool
+	+peek() T
 }
 class BinaryTree~T~ {
-	pending
+	-root: DoubleNode~T~
+	+insert(T: value) bool
+	+delete(T: value) bool
+	+display() void
 }
 class HashTable {
 	pending
 }
+
+Student <--> Course
+Stack --* SinglyLinkedList
+SinglyLinkedList --* Node
+Queue --* DoublyLinkedList
+DoublyLinkedList --* DoubleNode
+BinaryTree --* DoubleNode
 ```
-# Functionalities
+# Modules
 ## Singly Linked List
-**To-Do**:
-- [ ] Inserting Nodes
-	- [ ] At the start
-	- [ ] At the end
-	- [ ] At a specific position
-- [ ] Deleting Nodes
+### To-Do
+- [ ] `isEmpty()` to check if the list is empty.
+- [ ] Inserting
+	- [ ] `push()` to insert at the start.
+	- [ ] `append()` to insert at the end.
+	- [ ] `insert(T value, int position)` to insert at a specific position.
+- [ ] Deleting
+	- [ ] `removeHead()` to remove the list's head.
+	- [ ] `removeTail()` to remove the list's tail.
+	- [ ] `deleteNode(T value)` to remove a specific value.
+- [ ] `display()` to display the values in the list.
 
 The Singly Linked will be used to store students and should:
 1. Add students with their ID, Name, Email, Phone Number, Address, and Password.
 2. Remove students by their ID.
 3. Display student details.
 ## Stack
-**To-Do**:
-- [ ] Push
-- [ ] Pop
-- [ ] Peek
+### To-Do
+- [ ] `isEmpty()` to check if the stack is empty.
+- [ ] `push()` to add elements to the top of the stack.
+- [ ] `pop()` to remove the top element in the stack.
+- [ ] `peek()` to return the top element in the stack.
 
 The Stack will be used to store course prerequisites and should:
 1. Check if a student is able to register a course by checking if their prerequisites stack is empty.
 2. If the student is not able to register a course, the prerequisites left should be displayed.
+The Stack is implemented using the Singly Linked List.
 ## Doubly Linked List
-**To-Do**:
-- [ ] Inserting Nodes
-	- [ ] At the start
-	- [ ] At the end
-	- [ ] At a specific position
-- [ ] Deleting Nodes
+### To-Do
+- [ ] `isEmpty()` to check if the list is empty.
+- [ ] Inserting
+	- [ ] `push()` to insert at the start.
+	- [ ] `append()` to insert at the end.
+	- [ ] `insert(T value, int position)` to insert at a specific position.
+- [ ] Deleting
+	- [ ] `removeHead()` to remove the list's head.
+	- [ ] `removeTail()` to remove the list's tail.
+	- [ ] `deleteNode(T value)` to remove a specific value.
+- [ ] `display()` to display the values in the list.
 
 The Doubly Linked List will be used to store each student's course enrollment history and should:
 1. Add new completed courses.
 2. Display the enrollment history of a specific student.
 ## Queue
-**To-Do**:
-- [ ] Enqueue
-- [ ] Dequeue
-- [ ] Peek
+### To-Do
+- [ ] `enqueue(T value)` to add elements to the end of the Queue.
+- [ ] `dequeue()` to remove the first element in the Queue.
+- [ ] `peek()` to return the first element in the Queue.
 
 The Queue will manage each course's wait-list and should:
 1. Add a student to the wait-list when a course is full.
 2. Enroll the first student on the wait-list when a spot is free.
+The Queue is implemented using a Doubly Linked List.
 ## Binary Tree
+### To-Do
+- [ ] `insert(T value)` to add elements to their appropriate location in the tree.
+- [ ] `delete(T value)` to remove elements from the tree.
+- [ ] `display()` to print all values in the tree.
+
+The Binary Tree will be used to store courses
 ## Hash Table
-**To-Do**:
+### To-Do
 - [ ] Insert
 - [ ] Delete
 - [ ] Get
