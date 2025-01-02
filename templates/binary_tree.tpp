@@ -1,5 +1,4 @@
-#ifndef BINARY_TREE_TPP
-#define BINARY_TREE_TPP
+#pragma once
 
 #include "../include/binary_tree.h"
 
@@ -14,22 +13,22 @@ template <typename T> bool BinaryTree<T>::isEmpty() {
 template <typename T> bool BinaryTree<T>::insert(T value) {
 
   Node<T> *current = root;
-  Node<T> *newnode = new Node<T>(value);
+  Node<T> *new_node = new Node<T>(value);
 
   if (isEmpty()) {
-    root = newnode;
+    root = new_node;
     return true;
   }
 
   while (current != NULL) {
 
     if (current->value < value && !current->right) {
-      current->right = newnode;
+      current->right = new_node;
       return true;
     }
 
     else if (current->value > value && !current->left) {
-      current->left = newnode;
+      current->left = new_node;
       return true;
     }
 
@@ -38,28 +37,63 @@ template <typename T> bool BinaryTree<T>::insert(T value) {
   return false;
 }
 
+// TODO: The case of two children
+
 template <typename T> bool BinaryTree<T>::deleteNode(T value) {
-  return true;
+
+  if (isEmpty()) {
+    return false;
+  }
+
+  Node<T> *current = this->root;
+
+  while (current != NULL && current->value != value) {
+
+    if (current->value < value) {
+      current = current->right;
+      continue;
+    }
+
+    if (current->value > value) {
+      current = current->left;
+    }
+  }
+
+  if (current->left == current->right == NULL) {
+    delete current;
+    return true;
+  }
+
+  if (current->left ^ current->right) {
+    Node<T> *existing_node =
+        (current->left == NULL) ? current->right : current->left;
+    current->value = existing_node->value;
+    delete existing_node;
+    return true;
+  }
+
+  if ((current->left && current->right) != NULL) {
+  }
+
+  return false;
 }
 
-template <typename T> void BinaryTree<T>::display() {
+template <typename T> void BinaryTree<T>::displayTree() {
 
   if (isEmpty()) {
     return;
   }
 
-  return traverse(root);
+  return displayNode(root);
 }
 
-template <typename T> void BinaryTree<T>::traverse(Node<T> *root) {
+template <typename T> void BinaryTree<T>::displayNode(Node<T> *root) {
 
   if (root == NULL) {
     return;
   }
 
-  traverse(root->left);
+  displayNode(root->left);
   std::cout << root->value << " ";
-  traverse(root->right);
+  displayNode(root->right);
 }
-
-#endif
