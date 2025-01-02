@@ -1,5 +1,4 @@
-#ifndef BINARY_TREE_H
-#define BINARY_TREE_H
+#pragma once
 
 #include "node.h"
 #include <iostream>
@@ -17,11 +16,9 @@ public:
 
   bool deleteNode(T value);
 
-  void display();
+  void displayTree();
 
-  void traverse(Node<T> *root);
+  void displayNode(Node<T> *root);
 };
 
 #include "../templates/binary_tree.tpp"
-
-#endif
