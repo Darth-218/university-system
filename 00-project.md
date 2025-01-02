@@ -98,8 +98,10 @@ class Queue~T~ {
 }
 class BinaryTree~T~ {
 	-root: DoubleNode~T~
+	+isEmpty() bool
 	+insert(T: value) bool
-	+delete(T: value) bool
+	+deleteNode(T: value) bool
+	+traverse(Node~T~: root) void
 	+display() void
 }
 class HashTable {
@@ -170,8 +172,10 @@ The Queue will manage each course's wait-list and should:
 The Queue is implemented using a Doubly Linked List.
 ## Binary Tree
 ### To-Do
+- [ ] `isEmpty()` to check if the tree is empty.
 - [ ] `insert(T value)` to add elements to their appropriate location in the tree.
-- [ ] `delete(T value)` to remove elements from the tree.
+- [ ] `deleteNode(T value)` to remove elements from the tree.
+- [ ] `traverse(Node<T> root)` to traverse the tree.
 - [ ] `display()` to print all values in the tree.
 
 The Binary Tree will be used to store courses
