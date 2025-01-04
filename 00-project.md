@@ -12,6 +12,7 @@ Each Module should have a header that contains:
 3. Constants: Capital letters only (i.e. `CONSTANT`)
 4. Functions: Camel case (i.e. `functionName`)
 5. Classes: Pascal case (i.e. `ClassName`)
+
 *Avoid including digits as much as possible.*
 ## Code Format
 1. Indentation size: 2 space.
@@ -172,13 +173,15 @@ The Queue will manage each course's wait-list and should:
 The Queue is implemented using a Doubly Linked List.
 ## Binary Tree
 ### To-Do
-- [ ] `isEmpty()` to check if the tree is empty.
-- [ ] `insert(T value)` to add elements to their appropriate location in the tree.
-- [ ] `deleteNode(T value)` to remove elements from the tree.
-- [ ] `traverse(Node<T> root)` to traverse the tree.
-- [ ] `display()` to print all values in the tree.
+- [x] `isEmpty()` to check if the tree is empty.
+- [x] `insert(T value)` to add elements to their appropriate location in the tree.
+- [/] `deleteNode(T value)` to remove elements from the tree.
+- [x] `traverse(Node<T> root)` to traverse the tree.
+- [x] `display()` to print all values in the tree.
 
-The Binary Tree will be used to store courses
+The Binary Tree will be used to store courses and should:
+1. Add courses.
+2. Drop courses.
 ## Hash Table
 ### To-Do
 - [ ] Insert
