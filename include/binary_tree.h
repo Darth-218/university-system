@@ -1,6 +1,6 @@
 #pragma once
 
-#include "node.h"
+#include "tree_node.h"
 #include <iostream>
 
 template <typename T> class BinaryTree {
