@@ -4,10 +4,15 @@ int main() {
 
   BinaryTree<int> tree;
 
-  for (int i = 1; i != 5; tree.insert(i), i++)
-    ;
+  tree.insert(5);
+  tree.insert(6);
+  tree.insert(3);
+  tree.insert(2);
+  tree.insert(4);
+  tree.insert(7);
 
+  tree.displayTree();
+  tree.deleteNode(5);
   tree.deleteNode(3);
-
-  tree.display();
+  tree.displayTree();
 }

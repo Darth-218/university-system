@@ -59,20 +59,34 @@ template <typename T> bool BinaryTree<T>::deleteNode(T value) {
     }
   }
 
-  if (current->left == current->right == NULL) {
-    delete current;
+  if (current->left == NULL && current->right == NULL) {
+    current->value = 9;
     return true;
   }
 
-  if (current->left ^ current->right) {
-    Node<T> *existing_node =
-        (current->left == NULL) ? current->right : current->left;
-    current->value = existing_node->value;
-    delete existing_node;
+  if (current->left == NULL ^ current->right == NULL) {
+    Node<T> *existing_node;
+    if (current->left == NULL) {
+      current->value = current->right->value;
+      current->right = NULL;
+      return true;
+    }
+    current->value = current->left->value;
+    current->left = NULL;
     return true;
   }
 
-  if ((current->left && current->right) != NULL) {
+  if ((current->left && current->right)) {
+    Node<T> *successor = current->right;
+    Node<T> *previous = successor;
+    while (successor->left != NULL) {
+      previous = successor;
+      successor = successor->left;
+    }
+    T new_value = successor->value;
+    deleteNode(successor->value);
+    current->value = new_value;
+    return true;
   }
 
   return false;
@@ -84,7 +98,9 @@ template <typename T> void BinaryTree<T>::displayTree() {
     return;
   }
 
-  return displayNode(root);
+  displayNode(root);
+  std::cout << "\n";
+  return;
 }
 
 template <typename T> void BinaryTree<T>::displayNode(Node<T> *root) {
