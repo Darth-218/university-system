@@ -175,7 +175,7 @@ The Queue is implemented using a Doubly Linked List.
 ### To-Do
 - [x] `isEmpty()` to check if the tree is empty.
 - [x] `insert(T value)` to add elements to their appropriate location in the tree.
-- [/] `deleteNode(T value)` to remove elements from the tree.
+- [x] `deleteNode(T value)` to remove elements from the tree.
 - [x] `traverse(Node<T> root)` to traverse the tree.
 - [x] `display()` to print all values in the tree.
 
@@ -186,7 +186,6 @@ The Binary Tree will be used to store courses and should:
 ### To-Do
 - [ ] Insert
 - [ ] Delete
-- [ ] Get
-- [ ] Update
+- [ ] Search
 
 The Hash Table will be used for efficient lookup.
