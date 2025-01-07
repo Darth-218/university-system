@@ -94,12 +94,7 @@ template <typename T> bool BinaryTree<T>::deleteNode(T value) {
 
 template <typename T> void BinaryTree<T>::displayTree() {
 
-  if (isEmpty()) {
-    return;
-  }
-
   displayNode(root);
-  std::cout << "\n";
   return;
 }
 
@@ -112,4 +107,10 @@ template <typename T> void BinaryTree<T>::displayNode(Node<T> *root) {
   displayNode(root->left);
   std::cout << root->value << " ";
   displayNode(root->right);
+}
+
+template <typename T>
+std::ostream &operator<<(std::ostream &os, BinaryTree<T> &tree) {
+  tree.displayTree();
+  return os;
 }

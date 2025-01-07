@@ -11,8 +11,5 @@ int main() {
   tree.insert(4);
   tree.insert(7);
 
-  tree.displayTree();
-  tree.deleteNode(5);
-  tree.deleteNode(3);
-  tree.displayTree();
+  std::cout << tree << std::endl;
 }
