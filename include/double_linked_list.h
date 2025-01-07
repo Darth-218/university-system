@@ -27,3 +27,5 @@ public:
 
   void display();
 };
+
+#include "../templates/double_linked_list.tpp"

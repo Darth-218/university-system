@@ -1,7 +1,6 @@
 #pragma once
 
 #include "../include/double_linked_list.h"
-#include <iostream>
 
 using namespace std;
 
