@@ -1,33 +1,29 @@
 #pragma once
 
-#include <iostream>
 #include "node_DLL.h"
+#include <iostream>
 using namespace std;
 
-template <typename T>
-class DoubleLinkedList
-{
+template <typename T> class DoubleLinkedList {
 private:
-    Node<T> *head, *tail;
+  Node<T> *head, *tail;
 
 public:
-    DoubleLinkedList();
+  DoubleLinkedList();
 
-    bool isEmpty();
+  bool isEmpty();
 
-    bool append(T value);
+  bool append(T value);
 
-    bool insert(T value, int position);
+  bool insert(T value, int position);
 
-    bool push(T value);
+  bool push(T value);
 
-    bool removeHead();
+  bool removeHead();
 
-    bool removeNode();
+  bool removeTail();
 
-    bool removeTail();
+  bool deleteNode(T value);
 
-    bool deleteNode();
-
-    void display();
+  void display();
 };
