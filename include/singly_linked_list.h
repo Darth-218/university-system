@@ -1,4 +1,4 @@
-
+#pragma once
 #include "single_node.h"
 #include <iostream>
 using namespace std;
@@ -6,7 +6,7 @@ using namespace std;
 
 template <typename T> class SingleLinkedList {
 private:
-  Node<T> *head, *tail;
+  Node<T> *head, *temp;
 
 public:
   SingleLinkedList();
@@ -18,6 +18,8 @@ public:
   bool insert(T value, int position);
 
   bool push(T value);
+  
+  bool removeNode()
 
   bool removeHead();
 

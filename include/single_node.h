@@ -1,12 +1,11 @@
 
 #include <iostream>
 using namespace std;
-template <typename T> class SingleNode {
+template <typename T> class Node {
 public:
     T value;
-    SingleNode* prev;
-    SingleNode* next;
-    SingleNode(T value) {
+    Node* next;
+    Node(T value) {
         this->value = value;
         next = NULL;
     }
