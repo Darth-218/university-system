@@ -102,11 +102,15 @@ class BinaryTree~T~ {
 	+isEmpty() bool
 	+insert(T: value) bool
 	+deleteNode(T: value) bool
-	+traverse(Node~T~: root) void
-	+display() void
+	+displayTree() void
+	+displayNode(Node~T~: root) void
 }
-class HashTable {
-	pending
+class HashTable~K, V~ {
+	-hash_array: SinglyLinkedList[]
+	+hash(K: key) int
+	+insert(K: key, V: value) bool
+	+get(K: key) V
+	+remove(K: key) bool
 }
 
 Student <--> Course
@@ -115,6 +119,7 @@ SinglyLinkedList --* Node
 Queue --* DoublyLinkedList
 DoublyLinkedList --* DoubleNode
 BinaryTree --* DoubleNode
+HashTable --* SinglyLinkedList
 ```
 # Modules
 ## Singly Linked List
@@ -184,8 +189,9 @@ The Binary Tree will be used to store courses and should:
 2. Drop courses.
 ## Hash Table
 ### To-Do
-- [ ] Insert
-- [ ] Delete
-- [ ] Search
+- [ ] `hash(K key)` to compute the pair index.
+- [ ] `insert(K key, V value)` to insert a pair to the table.
+- [ ] `get(K key)` to retrieve the value at a key index.
+- [ ] `remove(K key)` to remove the key-value pair.
 
 The Hash Table will be used for efficient lookup.
