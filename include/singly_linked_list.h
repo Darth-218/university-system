@@ -4,12 +4,13 @@
 using namespace std;
 
 
-template <typename T> class SingleLinkedList {
+template <typename T> class SinglyLinkedList {
 private:
-  Node<T> *head, *temp;
+  Node<T> *head, *tail;
+  int length;
 
 public:
-  SingleLinkedList();
+  SinglyLinkedList();
 
   bool isEmpty();
 
@@ -19,11 +20,14 @@ public:
 
   bool push(T value);
   
-  bool removeNode()
+  bool removeNode(T node);
 
   bool removeHead();
 
-  bool deleteNode(T value);
+  bool deleteNode(T position);
 
   void display();
+
+  int getLength();
+
 };
