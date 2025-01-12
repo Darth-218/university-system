@@ -1,19 +1,19 @@
 #pragma once
 
-#include "../include/double_linked_list.h"
+#include "../include/doubly_linked_list.h"
 
 using namespace std;
 
-template <typename T> DoubleLinkedList<T>::DoubleLinkedList() {
+template <typename T> DoublyLinkedList<T>::DoublyLinkedList() {
   head = NULL;
   tail = NULL;
 }
 
-template <typename T> bool DoubleLinkedList<T>::isEmpty() {
+template <typename T> bool DoublyLinkedList<T>::isEmpty() {
   return head == NULL;
 }
 
-template <typename T> bool DoubleLinkedList<T>::push(T value) {
+template <typename T> bool DoublyLinkedList<T>::push(T value) {
 
   Node<T> *newNode = new Node<T>(value);
   // case 1: List is empty.
@@ -30,7 +30,7 @@ template <typename T> bool DoubleLinkedList<T>::push(T value) {
   return true;
 }
 
-template <typename T> bool DoubleLinkedList<T>::append(T value) {
+template <typename T> bool DoublyLinkedList<T>::append(T value) {
 
   Node<T> *newNode = new Node<T>(value);
   // case 1: List is empty.
@@ -47,7 +47,10 @@ template <typename T> bool DoubleLinkedList<T>::append(T value) {
   return true;
 }
 
-template <typename T> bool DoubleLinkedList<T>::insert(T value, int position) {
+// FIX: Split case 2 into both cases.
+// FIX: Refactor, Case one and `append` under case zero to improve best case
+// runtime
+template <typename T> bool DoublyLinkedList<T>::insert(T value, int position) {
   Node<T> *newNode = new Node<T>(value);
   Node<T> *tmp = head;
   int current_position = 0;
@@ -81,7 +84,7 @@ template <typename T> bool DoubleLinkedList<T>::insert(T value, int position) {
   }
 }
 
-template <typename T> bool DoubleLinkedList<T>::removeHead() {
+template <typename T> bool DoublyLinkedList<T>::removeHead() {
   // case 0: list is empty
   if (head == NULL) {
     return false;
@@ -93,8 +96,9 @@ template <typename T> bool DoubleLinkedList<T>::removeHead() {
   return true;
 }
 
-template <typename T> bool DoubleLinkedList<T>::removeTail() {
+template <typename T> bool DoublyLinkedList<T>::removeTail() {
   // case 0: list is empty
+  // FIX: Use the function?
   if (head == NULL) {
     return false;
   }
@@ -105,7 +109,9 @@ template <typename T> bool DoubleLinkedList<T>::removeTail() {
   return true;
 }
 
-template <typename T> bool DoubleLinkedList<T>::deleteNode(T value) {
+// FIX: Check if the list is empty first.
+// FIX: Actually delete the nodes.
+template <typename T> bool DoublyLinkedList<T>::deleteNode(T value) {
   Node<T> *tmp = head;
   while (tmp != NULL) {
     if (tmp->value == value) {
@@ -116,6 +122,7 @@ template <typename T> bool DoubleLinkedList<T>::deleteNode(T value) {
       }
 
       // case 2: node is at tail
+      // TEST:
       if (tmp == tail) {
         removeTail();
         return true;
@@ -131,7 +138,8 @@ template <typename T> bool DoubleLinkedList<T>::deleteNode(T value) {
   return false;
 }
 
-template <typename T> void DoubleLinkedList<T>::display() {
+// TODO: Overload the "<<" operator to use this function automatically.
+template <typename T> void DoublyLinkedList<T>::display() {
   if (head == NULL) {
     cout << "The list is empty." << endl;
     return;

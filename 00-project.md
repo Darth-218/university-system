@@ -59,7 +59,9 @@ class DoubleNode~T~ {
 class SinglyLinkedList~T~ {
 	-head: Node~T~
 	-tail: Node~T~
+	-length: int
 	+isEmpty() bool
+	+getLength() int
 	+append(T: value) bool
 	+insert(T: value, int: position) bool
 	+push(T: value) bool
@@ -71,7 +73,9 @@ class SinglyLinkedList~T~ {
 }
 class Stack~T~ {
 	-stack_top: Node~T~
+	-size: int
 	+isEmpty() bool
+	+getSize() int
 	+push(T: object) bool
 	+pop() bool
 	+peek() T
@@ -79,7 +83,9 @@ class Stack~T~ {
 class DoublyLinkedList~T~ {
 	-head: Node~T~
 	-tail: Node~T~
+	-length: int
 	+isEmpty() bool
+	+getLength() int
 	+append(T: value) bool
 	+insert(T: value, int: position) bool
 	+push(T: value) bool
@@ -92,20 +98,25 @@ class DoublyLinkedList~T~ {
 class Queue~T~ {
 	-front: Node~T~
 	-rear: Node~T~
+	-size: int
 	+isEmpty() bool
+	+getSize() int
 	+enqueue(T: value) bool
 	+dequeue() bool
 	+peek() T
 }
 class BinaryTree~T~ {
 	-root: DoubleNode~T~
+	-size: int
 	+isEmpty() bool
+	+getSize() int
 	+insert(T: value) bool
 	+deleteNode(T: value) bool
 	+displayTree() void
 	+displayNode(Node~T~: root) void
 }
 class HashTable~K, V~ {
+	-table_size: int
 	-hash_array: SinglyLinkedList[]
 	+hash(K: key) int
 	+insert(K: key, V: value) bool

@@ -1,17 +1,19 @@
 #pragma once
 
-#include "node_DLL.h"
-#include <iostream>
+#include "double_node.h"
 using namespace std;
 
-template <typename T> class DoubleLinkedList {
+template <typename T> class DoublyLinkedList {
 private:
   Node<T> *head, *tail;
+  // FIX: Add a length attribute.
 
 public:
-  DoubleLinkedList();
+  DoublyLinkedList();
 
   bool isEmpty();
+
+  // FIX: Add the function `getLength()`.
 
   bool append(T value);
 
@@ -23,9 +25,11 @@ public:
 
   bool removeTail();
 
+  // FIX: Add the function `removeNode()`.
+
   bool deleteNode(T value);
 
   void display();
 };
 
-#include "../templates/double_linked_list.tpp"
+#include "../templates/doubly_linked_list.tpp"
