@@ -24,7 +24,7 @@ public:
 
   bool removeHead();
 
-  // FIX: Add the `removeTail()` function.
+  bool removetail();
 
   bool deleteNode(T position);
 

@@ -2,6 +2,7 @@
 #include "../include/singly_linked_list.h"
 using namespace std;
 
+
 template <typename T> SinglyLinkedList<T>::SinglyLinkedList() {
   head = NULL;
 }
@@ -70,6 +71,7 @@ template <typename T> bool SinglyLinkedList<T>::push(T value) {
   // FIX: tail should be also NULL.
   if (isEmpty()) {
     head = newNode;
+    tail = newNode;
   }
   // List is not empty.
   else {
@@ -81,7 +83,7 @@ template <typename T> bool SinglyLinkedList<T>::push(T value) {
 
 template <typename T> bool SinglyLinkedList<T>::removeHead() {
   Node<T> *current = head;
-  if (head == NULL) {
+  if (isEmpty()) {
     return false;
   }
   head = head->next;
@@ -89,6 +91,19 @@ template <typename T> bool SinglyLinkedList<T>::removeHead() {
   return true;
 }
 
+template<typename T> bool SinglyLinkedList<T>::removetail(){
+  if (isEmpty()) {
+    return false;
+  }
+  Node<T> *prev = NULL;
+  while (head->next != Null) {
+    prev = head;
+    head = head->next;
+  }
+  tail = prev;
+  tail->next = NULL;
+  return true;
+}
 // TEST:
 template <typename T> bool SinglyLinkedList<T>::removeNode(T node) {
   Node<T> *currentNode = node;
