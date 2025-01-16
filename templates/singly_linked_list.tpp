@@ -119,7 +119,7 @@ template <typename T> bool SinglyLinkedList<T>::removeNode(T node) {
   return true;
 }
 
-// TEST:
+// FIX:
 template <typename T> bool SinglyLinkedList<T>::deleteNode(int position) {
   Node<T> *currentposition = position;
   if (position < 0) {
