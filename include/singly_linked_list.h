@@ -28,7 +28,7 @@ public:
 
   bool removetail();
 
-  bool deleteNode(T position);
+  bool deleteNode(int position);
 
   void display();
 
