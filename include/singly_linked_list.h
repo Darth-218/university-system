@@ -12,6 +12,8 @@ private:
 public:
   SinglyLinkedList();
 
+  Node<T> *getHead();
+
   bool isEmpty();
 
   bool append(T value);
@@ -32,3 +34,5 @@ public:
 
   int getLength();
 };
+
+#include "../templates/singly_linked_list.tpp"

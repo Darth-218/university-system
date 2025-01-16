@@ -1,13 +1,18 @@
+#pragma once
 
 #include "../include/singly_linked_list.h"
 using namespace std;
 
-
 template <typename T> SinglyLinkedList<T>::SinglyLinkedList() {
   head = NULL;
+  tail = NULL;
 }
 template <typename T> int SinglyLinkedList<T>::getLength() {
   return length;
+}
+
+template <typename T> Node<T> *SinglyLinkedList<T>::getHead() {
+  return head;
 }
 
 template <typename T> bool SinglyLinkedList<T>::isEmpty() {
@@ -68,7 +73,6 @@ template <typename T> bool SinglyLinkedList<T>::push(T value) {
 
   Node<T> *newNode = new Node<T>(value);
   // List is empty.
-  // FIX: tail should be also NULL.
   if (isEmpty()) {
     head = newNode;
     tail = newNode;
@@ -91,12 +95,12 @@ template <typename T> bool SinglyLinkedList<T>::removeHead() {
   return true;
 }
 
-template<typename T> bool SinglyLinkedList<T>::removetail(){
+template <typename T> bool SinglyLinkedList<T>::removetail() {
   if (isEmpty()) {
     return false;
   }
   Node<T> *prev = NULL;
-  while (head->next != Null) {
+  while (head->next != NULL) {
     prev = head;
     head = head->next;
   }
@@ -132,7 +136,7 @@ template <typename T> bool SinglyLinkedList<T>::deleteNode(T position) {
 // TODO: Overload the "<<" operator to use this function.
 template <typename T> void SinglyLinkedList<T>::display() {
   if (head == NULL) {
-    cout << "List is empty."
+    cout << "List is empty.";
   }
   Node<T> *current = head;
   while (current != NULL) {
