@@ -1,16 +1,18 @@
 #pragma once
 
-#include "tree_node.h"
-#include <iostream>
+#include "binary_tree_node.h"
 
 template <typename T> class BinaryTree {
 private:
   Node<T> *root;
+  int size;
 
 public:
   BinaryTree();
 
   bool isEmpty();
+
+  int getSize();
 
   bool insert(T value);
 
