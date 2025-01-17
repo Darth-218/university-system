@@ -6,14 +6,14 @@ using namespace std;
 template <typename T> class DoublyLinkedList {
 private:
   Node<T> *head, *tail;
-  // FIX: Add a length attribute.
+  int length;
 
 public:
   DoublyLinkedList();
 
   bool isEmpty();
 
-  // FIX: Add the function `getLength()`.
+  int getLength();
 
   bool append(T value);
 
