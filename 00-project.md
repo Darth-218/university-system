@@ -163,25 +163,26 @@ The Stack will be used to store course prerequisites and should:
 The Stack is implemented using the Singly Linked List.
 ## Doubly Linked List
 ### To-Do
-- [ ] `isEmpty()` to check if the list is empty.
+- [x] `isEmpty()` to check if the list is empty.
 - [ ] Inserting
-	- [ ] `push()` to insert at the start.
-	- [ ] `append()` to insert at the end.
-	- [ ] `insert(T value, int position)` to insert at a specific position.
+	- [x] `push()` to insert at the start.
+	- [x] `append()` to insert at the end.
+	- [x] `insert(T value, int position)` to insert at a specific position.
 - [ ] Deleting
-	- [ ] `removeHead()` to remove the list's head.
-	- [ ] `removeTail()` to remove the list's tail.
-	- [ ] `deleteNode(T value)` to remove a specific value.
-- [ ] `display()` to display the values in the list.
+	- [x] `removeHead()` to remove the list's head.
+	- [x] `removeTail()` to remove the list's tail.
+	- [x] `removeNode()` to remove a specific node
+	- [x] `deleteNode(T value)` to remove a specific value.
+- [x] `display()` to display the values in the list.
 
 The Doubly Linked List will be used to store each student's course enrollment history and should:
 1. Add new completed courses.
 2. Display the enrollment history of a specific student.
 ## Queue
 ### To-Do
-- [ ] `enqueue(T value)` to add elements to the end of the Queue.
-- [ ] `dequeue()` to remove the first element in the Queue.
-- [ ] `peek()` to return the first element in the Queue.
+- [x] `enqueue(T value)` to add elements to the end of the Queue.
+- [x] `dequeue()` to remove the first element in the Queue.
+- [x] `peek()` to return the first element in the Queue.
 
 The Queue will manage each course's wait-list and should:
 1. Add a student to the wait-list when a course is full.
@@ -200,9 +201,9 @@ The Binary Tree will be used to store courses and should:
 2. Drop courses.
 ## Hash Table
 ### To-Do
-- [ ] `hash(K key)` to compute the pair index.
-- [ ] `insert(K key, V value)` to insert a pair to the table.
-- [ ] `get(K key)` to retrieve the value at a key index.
-- [ ] `remove(K key)` to remove the key-value pair.
+- [/] `hash(K key)` to compute the pair index.
+- [x] `insert(K key, V value)` to insert a pair to the table.
+- [x] `get(K key)` to retrieve the value at a key index.
+- [/] `remove(K key)` to remove the key-value pair.
 
 The Hash Table will be used for efficient lookup.
