@@ -22,11 +22,11 @@ public:
 
   bool push(T value);
 
-  bool removeNode(T node);
+  bool removeNode(Node<T> *node);
 
   bool removeHead();
 
-  bool removetail();
+  bool removeTail();
 
   bool deleteNode(int position);
 

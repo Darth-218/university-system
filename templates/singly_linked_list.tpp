@@ -6,6 +6,7 @@ using namespace std;
 template <typename T> SinglyLinkedList<T>::SinglyLinkedList() {
   head = NULL;
   tail = NULL;
+  length = 0;
 }
 template <typename T> int SinglyLinkedList<T>::getLength() {
   return length;
@@ -25,21 +26,37 @@ template <typename T> bool SinglyLinkedList<T>::append(T value) {
   if (isEmpty()) {
     head = new_node;
     tail = new_node;
+    length++;
     return true;
   }
   // List is not empty
   else {
     tail->next = new_node;
     tail = new_node;
+    length++;
     return true;
   }
   return false;
 }
 
-template <typename T> bool SinglyLinkedList<T>::insert(T value, int position) {
+template <typename T> bool SinglyLinkedList<T>::push(T value) {
   Node<T> *newNode = new Node<T>(value);
-  Node<T> *current = head;
-  int current_position = 0;
+  // List is empty.
+  if (isEmpty()) {
+    head = newNode;
+    tail = newNode;
+    length++;
+  }
+  // List is not empty.
+  else {
+    newNode->next = head;
+    head = newNode;
+    length++;
+  }
+  return true;
+}
+
+template <typename T> bool SinglyLinkedList<T>::insert(T value, int position) {
 
   // position does not exist
   if (position < 0) {
@@ -56,92 +73,89 @@ template <typename T> bool SinglyLinkedList<T>::insert(T value, int position) {
     return true;
   }
 
-  // current != NULL --> didnt reach the end
-  // current < position - 1 --> didnt reach the intended position
   Node<T> *prev;
-  while (current != NULL && current_position < position - 1) {
-    current = current->next;
+  Node<T> *current = head;
+  Node<T> *newNode = new Node<T>(value);
+  int current_position = 0;
+  while (current != NULL && current_position < position) {
     prev = current;
+    current = current->next;
     current_position++;
   }
-  newNode->next = current;
   prev->next = newNode;
-  return true;
-}
-
-template <typename T> bool SinglyLinkedList<T>::push(T value) {
-
-  Node<T> *newNode = new Node<T>(value);
-  // List is empty.
-  if (isEmpty()) {
-    head = newNode;
-    tail = newNode;
-  }
-  // List is not empty.
-  else {
-    newNode->next = head;
-    head = newNode;
-  }
+  newNode->next = current;
+  length++;
   return true;
 }
 
 template <typename T> bool SinglyLinkedList<T>::removeHead() {
-  Node<T> *current = head;
   if (isEmpty()) {
     return false;
   }
   head = head->next;
-  current = NULL;
+  length--;
   return true;
 }
 
-template <typename T> bool SinglyLinkedList<T>::removetail() {
+template <typename T> bool SinglyLinkedList<T>::removeTail() {
+  Node<T> *current = head;
   if (isEmpty()) {
     return false;
   }
-  Node<T> *prev = NULL;
-  while (head->next != NULL) {
-    prev = head;
-    head = head->next;
+  Node<T> *prev;
+  while (current->next != NULL) {
+    prev = current;
+    current = current->next;
   }
   tail = prev;
   tail->next = NULL;
-  return true;
-}
-// TEST:
-template <typename T> bool SinglyLinkedList<T>::removeNode(T node) {
-  Node<T> *currentNode = node;
-  if (node == head || node == tail) {
-    return false;
-  }
-  currentNode = currentNode->next;
-  node = NULL;
+  length--;
   return true;
 }
 
-// FIX:
+template <typename T> bool SinglyLinkedList<T>::removeNode(Node<T> *node) {
+  Node<T> *target = node->next;
+  node->next = target->next;
+  delete target;
+  length--;
+  return true;
+}
+
 template <typename T> bool SinglyLinkedList<T>::deleteNode(int position) {
-  Node<T> *currentposition = position;
   if (position < 0) {
     return false;
   }
   if (position > length) {
     return false;
   }
-  currentposition = currentposition->next;
-  deleteNode(position);
-  return true;
+  if(position == 0) {
+    return removeHead();
+  }
+  if(position + 1 == length){
+    return removeTail();
+  }
+  else {
+    Node<T> *current = head;
+    int current_position = 0;
+    while (current_position < position - 1) {
+      current_position = current_position+1;
+      current=current->next;
+    }
+    return removeNode(current);
+  }
 }
 
 // TODO: Overload the "<<" operator to use this function.
 template <typename T> void SinglyLinkedList<T>::display() {
   if (head == NULL) {
-    cout << "List is empty.";
+    return;
   }
   Node<T> *current = head;
   while (current != NULL) {
-    cout << "The list is: ";
-    cout << current->value << endl;
+    cout << current->value << " ";
     current = current->next;
   }
+  cout << endl;
 }
+
+
