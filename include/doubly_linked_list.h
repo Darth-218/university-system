@@ -25,9 +25,9 @@ public:
 
   bool removeTail();
 
-  // FIX: Add the function `removeNode()`.
+  bool removeNode(Node<T> *node);
 
-  bool deleteNode(T value);
+  bool deleteNode(int index);
 
   void display();
 };
