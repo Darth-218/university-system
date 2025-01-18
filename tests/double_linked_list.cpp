@@ -13,23 +13,21 @@ int main() {
 
   dll.append(9);
 
-  dll.display();
+  dll.insert(25, 6);
+  cout << dll << endl;
 
-  dll.insert(25, 2);
-  dll.display();
+  dll.deleteNode(0);
+  cout << dll << endl;
 
-  dll.deleteNode(25);
-  dll.display();
+  dll.deleteNode(6);
+  cout << dll << endl;
 
-  dll.removeHead();
-  dll.display();
+  dll.deleteNode(5);
+  cout << dll << endl;
 
-  dll.removeHead();
-  dll.display();
+  dll.deleteNode(3);
+  cout << dll << endl;
 
   dll.removeTail();
-  dll.display();
-
-  dll.deleteNode(4);
-  dll.display();
+  cout << dll << endl;
 }

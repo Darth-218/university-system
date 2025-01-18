@@ -37,7 +37,6 @@ template <typename T> bool DoublyLinkedList<T>::push(T value) {
 }
 
 template <typename T> bool DoublyLinkedList<T>::append(T value) {
-
   Node<T> *newNode = new Node<T>(value);
   // case 1: List is empty.
   if (isEmpty()) {
@@ -54,16 +53,13 @@ template <typename T> bool DoublyLinkedList<T>::append(T value) {
   return true;
 }
 
-// FIX: Split case 2 into both cases. (D)
-// FIX: Refactor, Case one and `append` under case zero to improve best case (D)
-// runtime
 template <typename T> bool DoublyLinkedList<T>::insert(T value, int position) {
   Node<T> *newNode = new Node<T>(value);
   Node<T> *tmp = head;
   int current_position = 0;
 
   // case 0: position doesn't exist
-  if (position < 0) {
+  if (position < 0 || position > length) {
     return false;
   }
   if (position == 0) {
@@ -95,12 +91,6 @@ template <typename T> bool DoublyLinkedList<T>::insert(T value, int position) {
 }
 
 template <typename T> bool DoublyLinkedList<T>::removeHead() {
-  // case 0: list is empty
-  if (head == NULL) {
-    return false;
-  }
-
-  // case 1: list is not empty
   head = head->next;
   head->prev = NULL;
   length--;
@@ -108,52 +98,49 @@ template <typename T> bool DoublyLinkedList<T>::removeHead() {
 }
 
 template <typename T> bool DoublyLinkedList<T>::removeTail() {
-  // case 0: list is empty
-  // FIX: Use the function? (D)
-  if (head == NULL) {
-    return false;
-  }
-
-  // case 1: list is not empty
   tail = tail->prev;
   tail->next = NULL;
   length--;
   return true;
 }
 
-// FIX: Check if the list is empty first.(D)
-// FIX: Actually delete the nodes. (D)
-template <typename T> bool DoublyLinkedList<T>::deleteNode(T value) {
-  Node<T> *tmp = head;
+template <typename T> bool DoublyLinkedList<T>::removeNode(Node<T> *node) {
+  node->next->prev = node->prev;
+  node->prev->next = node->next;
+  delete node;
+  length--;
+  return true;
+}
+
+template <typename T> bool DoublyLinkedList<T>::deleteNode(int index) {
+  int current_position = 0;
 
   // check if list is empty first
-  if (head == NULL) {
+  if (isEmpty()) {
     return false;
   }
+  if (index > length - 1 && index >= 0) {
+    return false;
+  }
+  // case 1: node is at head
+  if (index == 0) {
+    return removeHead();
+  }
 
-  while (tmp != NULL) {
-    if (tmp->value == value) {
-      // case 1: node is at head
-      if (tmp == head) {
-        removeHead();
-        return true;
-      }
+  // case 2: node is at tail
+  // TEST: (D)
+  if (index == length - 1) {
+    return removeTail();
+  }
 
-      // case 2: node is at tail
-      // TEST: (D)
-      if (tmp == tail) {
-        removeTail();
-        return true;
-      }
-
-      // case 3: node is in the middle
-      tmp->next->prev = tmp->prev;
-      tmp->prev->next = tmp->next;
-      delete tmp;
-      length--;
-      return true;
+  // case 3: node is in the middle
+  else {
+    Node<T> *tmp = head;
+    while (current_position < index) {
+      tmp = tmp->next;
+      current_position++;
     }
-    tmp = tmp->next;
+    return removeNode(tmp);
   }
   return false;
 }
@@ -161,15 +148,17 @@ template <typename T> bool DoublyLinkedList<T>::deleteNode(T value) {
 // TODO: Overload the "<<" operator to use this function automatically.
 template <typename T> void DoublyLinkedList<T>::display() {
   if (head == NULL) {
-    cout << "The list is empty." << endl;
     return;
   }
-
   Node<T> *tmp = head;
-  cout << "List: ";
   while (tmp != NULL) {
     cout << tmp->value << " ";
     tmp = tmp->next;
   }
-  cout << endl;
+}
+
+template <typename T>
+std::ostream &operator<<(std::ostream &os, DoublyLinkedList<T> &list) {
+  list.display();
+  return os;
 }

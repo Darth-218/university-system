@@ -43,7 +43,6 @@ template <typename T> bool Queue<T>::dequeue() {
   }
 
   // case 2: Queue is not empty (delete first node)
-  Node<T> *tmp = front;
   front = front->next;
 
   // Check if the queue becomes empty after dequeue(error if it happens)
@@ -58,7 +57,7 @@ template <typename T> bool Queue<T>::dequeue() {
 
 template <typename T> void Queue<T>::peek() {
   if (isEmpty()) {
-    cout << "Queue is empty!" << endl;
+    return;
   }
   cout << front->value << endl;
 }
