@@ -72,11 +72,9 @@ bool checkValidity(slls *commands, int argc) {
 }
 
 bool runCommand(slls *commands) {
-  if (!checkValidity(commands, 1))
-    return false;
   string command = strip(commands->getHead()->value);
   commands->removeHead();
-  string arg = strip(commands->getHead()->value);
+  string arg = (commands->getLength()) ? strip(commands->getHead()->value) : "";
   if (command == "add")
     return add(arg);
   if (command == "remove")
@@ -124,11 +122,11 @@ bool add(string arg) {
     return true;
   }
   if (arg == "course") {
-    cout << "Course Name: ", getline(cin, input);
-    inputs.insert(1, input);
-
     cout << "Course ID: ", getline(cin, input);
     inputs.insert(0, input);
+
+    cout << "Course Name: ", getline(cin, input);
+    inputs.insert(1, input);
 
     cout << "Course Credits: ", getline(cin, input);
     inputs.insert(2, input);
@@ -211,9 +209,11 @@ bool enroll() {
   if (course.isEligible(student)) {
     course.seats++;
     student.addCourse(course);
+    cout << "\nStudent Enrolled!\n\n";
     return true;
   }
 
+  cout << "\nStudent Not Eligible to be Enrolled!\n\n";
   return false;
 }
 
