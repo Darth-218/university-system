@@ -33,7 +33,7 @@ void Student::viewCourses() {
 }
 
 void Student::displayDetails() {
-  cout << endl << this;
+  cout << endl << this << endl;
 }
 
 std::ostream &operator<<(std::ostream &os, Student &student) {
@@ -44,4 +44,8 @@ std::ostream &operator<<(std::ostream &os, Student &student) {
   cout << "Address: " << student.address << ", ";
   cout << "Phone: " << student.phone << endl;
   return os;
+}
+
+bool operator!=(const Student &lhs, const Student &rhs) {
+  return lhs.id != rhs.id;
 }
