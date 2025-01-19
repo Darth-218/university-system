@@ -11,6 +11,9 @@ UniSystem::UniSystem() {
 
 bool UniSystem::addStudent(int id, string name, string email, string password,
                            string address, int phone) {
+  if (students_table->get(id) != Student()) {
+    deleteStudent(id);
+  }
   Student new_student = Student(id, name, email, password, address, phone);
   students->append(new_student);
   students_table->insert(new_student.id, new_student);
@@ -32,18 +35,27 @@ bool UniSystem::deleteStudent(int id) {
 }
 
 void UniSystem::listStudents() {
+  if (students->isEmpty()) {
+    return;
+  }
   cout << endl << " ";
   students->display();
 }
 
 void UniSystem::listCourses() {
+  if (courses->isEmpty()) {
+    return;
+  }
   cout << endl << " ";
   courses->displayTree();
 }
 
 bool UniSystem::addCourse(int id, string name, int credits, string instructor,
-                          int seats) {
-  Course new_course = Course(id, credits, name, instructor, seats);
+                          int max_seats) {
+  if (courses_table->get(id) != Course()) {
+    dropCourse(id);
+  }
+  Course new_course = Course(id, credits, name, instructor, max_seats);
   courses->insert(new_course);
   courses_table->insert(new_course.id, new_course);
   return true;
@@ -61,6 +73,7 @@ bool UniSystem::searchStudent(int id) {
 }
 
 bool UniSystem::searchCourse(int id) {
+  /* cout << courses_table->get(id) << endl; */
   courses_table->get(id).displayDetails();
   return true;
 }
