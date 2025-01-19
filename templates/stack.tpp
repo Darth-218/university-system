@@ -37,7 +37,7 @@ template <typename T> bool Stack<T>::pop() {
 
 template <typename T> T Stack<T>::peek() {
   if (isEmpty()) {
-    return false;
+    return T();
   }
-  return stack_top->object;
+  return stack_top->value;
 }
