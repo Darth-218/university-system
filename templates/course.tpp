@@ -27,27 +27,34 @@ Course::Course() {
 
 bool Course::isEligible(Student student) {
   if (seats >= max_seats) {
+    addToWaitlist(student);
     return false;
   }
+  if (prerequisites->isEmpty()) {
+    return true;
+  }
+  Stack<Course> *preq = prerequisites;
   DNode<Course> *head = student.course_history->getHead();
   DNode<Course> *current = head;
   while (current != NULL) {
-    Course top = prerequisites->peek();
+    Course top = preq->peek();
     if (current->value.id == top.id) {
-      prerequisites->pop();
+      preq->pop();
       current = head;
     }
     current = current->next;
   }
-  return false;
+  return preq->isEmpty();
 }
 
 bool Course::addToWaitlist(Student student) {
+  waitlist->enqueue(student);
+  cout << "\nAdded Student to Waitlist\n";
   return false;
 }
 
 void Course::displayDetails() {
-  cout << endl << this;
+  cout << endl << this << endl;
 }
 
 bool operator<(const Course &lhs, const Course &rhs) {
@@ -71,6 +78,7 @@ std::ostream &operator<<(std::ostream &os, Course &course) {
   cout << "Name: " << course.name << ", ";
   cout << "Credits: " << course.credits << ", ";
   cout << "Instructor: " << course.instructor << ", ";
-  cout << "Max seats: " << course.seats << endl;
+  cout << "Max seats: " << course.max_seats << ", ";
+  cout << "Taken seats: " << course.seats << endl;
   return os;
 }
