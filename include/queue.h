@@ -1,11 +1,11 @@
 #pragma once
 
+#include "includes.h"
 #include "single_node.h"
-using namespace std;
 
 template <typename T> class Queue {
 private:
-  Node<T> *rear, *front;
+  SNode<T> *rear, *front;
   int size;
 
 public:

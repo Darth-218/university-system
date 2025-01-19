@@ -9,9 +9,10 @@ int main() {
   std::cout << ht.get(5) << std::endl;
   std::cout << ht.get(25) << std::endl;
 
-  /* std::cout << ht.remove(5) << std::endl; */
+  std::cout << ht.remove(5) << std::endl;
 
-  /* std::cout << ht.get(25) << std::endl; */
+  std::cout << ht.get(25) << std::endl;
+  std::cout << ht.get(5) << std::endl;
 
   return 0;
 }

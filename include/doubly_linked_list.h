@@ -1,11 +1,10 @@
 #pragma once
 
 #include "double_node.h"
-using namespace std;
 
 template <typename T> class DoublyLinkedList {
 private:
-  Node<T> *head, *tail;
+  DNode<T> *head, *tail;
   int length;
 
 public:
@@ -14,6 +13,8 @@ public:
   bool isEmpty();
 
   int getLength();
+
+  DNode<T> *getHead();
 
   bool append(T value);
 
@@ -25,7 +26,7 @@ public:
 
   bool removeTail();
 
-  bool removeNode(Node<T> *node);
+  bool removeNode(DNode<T> *node);
 
   bool deleteNode(int index);
 

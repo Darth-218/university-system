@@ -2,8 +2,6 @@
 
 #include "../include/queue.h"
 
-using namespace std;
-
 template <typename T> Queue<T>::Queue() {
   front = NULL;
   rear = NULL;
@@ -19,7 +17,7 @@ template <typename T> int Queue<T>::getSize() {
 }
 
 template <typename T> bool Queue<T>::enqueue(T value) {
-  Node<T> *newNode = new Node<T>(value);
+  SNode<T> *newNode = new SNode<T>(value);
   // case 1: Queue is empty
   if (isEmpty()) {
     front = newNode;
@@ -42,7 +40,10 @@ template <typename T> bool Queue<T>::dequeue() {
     return false;
   }
 
+  SNode<T> *tmp;
+
   // case 2: Queue is not empty (delete first node)
+  tmp = front;
   front = front->next;
 
   // Check if the queue becomes empty after dequeue(error if it happens)

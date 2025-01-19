@@ -1,13 +1,15 @@
-#include "single_node.h"
-using namespace std;
+#pragma once
 
-template <typename T> class stack {
+#include "includes.h"
+#include "single_node.h"
+
+template <typename T> class Stack {
 private:
-  Node<T> *stack_top;
+  SNode<T> *stack_top;
   int size;
 
 public:
-  stack();
+  Stack();
 
   bool isEmpty();
 
@@ -18,5 +20,6 @@ public:
   bool pop();
 
   T peek();
-
 };
+
+#include "../templates/stack.tpp"

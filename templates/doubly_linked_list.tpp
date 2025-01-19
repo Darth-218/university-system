@@ -18,9 +18,13 @@ template <typename T> int DoublyLinkedList<T>::getLength() {
   return length;
 }
 
+template <typename T> DNode<T> *DoublyLinkedList<T>::getHead() {
+  return head;
+}
+
 template <typename T> bool DoublyLinkedList<T>::push(T value) {
 
-  Node<T> *newNode = new Node<T>(value);
+  DNode<T> *newNode = new DNode<T>(value);
   // case 1: List is empty.
   if (isEmpty()) {
     head = newNode;
@@ -37,7 +41,7 @@ template <typename T> bool DoublyLinkedList<T>::push(T value) {
 }
 
 template <typename T> bool DoublyLinkedList<T>::append(T value) {
-  Node<T> *newNode = new Node<T>(value);
+  DNode<T> *newNode = new DNode<T>(value);
   // case 1: List is empty.
   if (isEmpty()) {
     head = newNode;
@@ -54,8 +58,8 @@ template <typename T> bool DoublyLinkedList<T>::append(T value) {
 }
 
 template <typename T> bool DoublyLinkedList<T>::insert(T value, int position) {
-  Node<T> *newNode = new Node<T>(value);
-  Node<T> *tmp = head;
+  DNode<T> *newNode = new DNode<T>(value);
+  DNode<T> *tmp = head;
   int current_position = 0;
 
   // case 0: position doesn't exist
@@ -104,7 +108,7 @@ template <typename T> bool DoublyLinkedList<T>::removeTail() {
   return true;
 }
 
-template <typename T> bool DoublyLinkedList<T>::removeNode(Node<T> *node) {
+template <typename T> bool DoublyLinkedList<T>::removeNode(DNode<T> *node) {
   node->next->prev = node->prev;
   node->prev->next = node->next;
   delete node;
@@ -128,14 +132,13 @@ template <typename T> bool DoublyLinkedList<T>::deleteNode(int index) {
   }
 
   // case 2: node is at tail
-  // TEST: (D)
   if (index == length - 1) {
     return removeTail();
   }
 
   // case 3: node is in the middle
   else {
-    Node<T> *tmp = head;
+    DNode<T> *tmp = head;
     while (current_position < index) {
       tmp = tmp->next;
       current_position++;
@@ -145,12 +148,11 @@ template <typename T> bool DoublyLinkedList<T>::deleteNode(int index) {
   return false;
 }
 
-// TODO: Overload the "<<" operator to use this function automatically.
 template <typename T> void DoublyLinkedList<T>::display() {
   if (head == NULL) {
     return;
   }
-  Node<T> *tmp = head;
+  DNode<T> *tmp = head;
   while (tmp != NULL) {
     cout << tmp->value << " ";
     tmp = tmp->next;

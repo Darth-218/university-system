@@ -16,8 +16,8 @@ template <typename T> int BinaryTree<T>::getSize() {
 }
 
 template <typename T> bool BinaryTree<T>::insert(T value) {
-  Node<T> *current = this->root;
-  Node<T> *new_node = new Node<T>(value);
+  TNode<T> *current = this->root;
+  TNode<T> *new_node = new TNode<T>(value);
   if (isEmpty()) {
     this->root = new_node;
     this->root->is_root = true;
@@ -42,8 +42,8 @@ template <typename T> bool BinaryTree<T>::deleteNode(T value) {
   if (isEmpty()) {
     return false;
   }
-  Node<T> *current = this->root;
-  Node<T> *previous;
+  TNode<T> *current = this->root;
+  TNode<T> *previous;
   T new_value;
   while (current != NULL && current->value != value) {
     previous = current;
@@ -62,7 +62,7 @@ template <typename T> bool BinaryTree<T>::deleteNode(T value) {
     return true, this->size--;
   }
   if (current->left == NULL ^ current->right == NULL) {
-    Node<T> *existing_node;
+    TNode<T> *existing_node;
     if (current->left == NULL) {
       new_value = current->right->value;
     } else {
@@ -73,8 +73,8 @@ template <typename T> bool BinaryTree<T>::deleteNode(T value) {
     return true, this->size--;
   }
   if ((current->left && current->right)) {
-    Node<T> *successor = current->left;
-    Node<T> *previous;
+    TNode<T> *successor = current->left;
+    TNode<T> *previous;
     while (successor->right != NULL) {
       previous = successor;
       successor = successor->right;
@@ -92,7 +92,7 @@ template <typename T> void BinaryTree<T>::displayTree() {
   return;
 }
 
-template <typename T> void BinaryTree<T>::displayNode(Node<T> *root) {
+template <typename T> void BinaryTree<T>::displayNode(TNode<T> *root) {
   if (root == NULL) {
     return;
   }

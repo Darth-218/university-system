@@ -6,13 +6,13 @@ using namespace std;
 
 template <typename T> class SinglyLinkedList {
 private:
-  Node<T> *head, *tail;
+  SNode<T> *head, *tail;
   int length;
 
 public:
   SinglyLinkedList();
 
-  Node<T> *getHead();
+  SNode<T> *getHead();
 
   bool isEmpty();
 
@@ -22,7 +22,7 @@ public:
 
   bool push(T value);
 
-  bool removeNode(Node<T> *node);
+  bool removeNode(SNode<T> *node);
 
   bool removeHead();
 

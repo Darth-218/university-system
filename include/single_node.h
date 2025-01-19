@@ -1,11 +1,12 @@
-#include <iostream>
+#pragma once
 
-using namespace std;
-template <typename T> class Node {
+#include "includes.h"
+
+template <typename T> class SNode {
 public:
   T value;
-  Node *next;
-  Node(T value) {
+  SNode *next;
+  SNode(T value) {
     this->value = value;
     next = NULL;
   }

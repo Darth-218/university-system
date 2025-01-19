@@ -1,10 +1,11 @@
 #pragma once
 
 #include "binary_tree_node.h"
+#include "includes.h"
 
 template <typename T> class BinaryTree {
 private:
-  Node<T> *root;
+  TNode<T> *root;
   int size;
 
 public:
@@ -20,7 +21,7 @@ public:
 
   void displayTree();
 
-  void displayNode(Node<T> *root);
+  void displayNode(TNode<T> *root);
 };
 
 #include "../templates/binary_tree.tpp"

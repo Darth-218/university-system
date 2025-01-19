@@ -12,7 +12,7 @@ template <typename T> int SinglyLinkedList<T>::getLength() {
   return length;
 }
 
-template <typename T> Node<T> *SinglyLinkedList<T>::getHead() {
+template <typename T> SNode<T> *SinglyLinkedList<T>::getHead() {
   return head;
 }
 
@@ -21,7 +21,7 @@ template <typename T> bool SinglyLinkedList<T>::isEmpty() {
 }
 
 template <typename T> bool SinglyLinkedList<T>::append(T value) {
-  Node<T> *new_node = new Node<T>(value);
+  SNode<T> *new_node = new SNode<T>(value);
   // List is empty
   if (isEmpty()) {
     head = new_node;
@@ -40,7 +40,7 @@ template <typename T> bool SinglyLinkedList<T>::append(T value) {
 }
 
 template <typename T> bool SinglyLinkedList<T>::push(T value) {
-  Node<T> *newNode = new Node<T>(value);
+  SNode<T> *newNode = new SNode<T>(value);
   // List is empty.
   if (isEmpty()) {
     head = newNode;
@@ -73,9 +73,9 @@ template <typename T> bool SinglyLinkedList<T>::insert(T value, int position) {
     return true;
   }
 
-  Node<T> *prev;
-  Node<T> *current = head;
-  Node<T> *newNode = new Node<T>(value);
+  SNode<T> *prev;
+  SNode<T> *current = head;
+  SNode<T> *newNode = new SNode<T>(value);
   int current_position = 0;
   while (current != NULL && current_position < position) {
     prev = current;
@@ -98,11 +98,11 @@ template <typename T> bool SinglyLinkedList<T>::removeHead() {
 }
 
 template <typename T> bool SinglyLinkedList<T>::removeTail() {
-  Node<T> *current = head;
+  SNode<T> *current = head;
   if (isEmpty()) {
     return false;
   }
-  Node<T> *prev;
+  SNode<T> *prev;
   while (current->next != NULL) {
     prev = current;
     current = current->next;
@@ -113,8 +113,8 @@ template <typename T> bool SinglyLinkedList<T>::removeTail() {
   return true;
 }
 
-template <typename T> bool SinglyLinkedList<T>::removeNode(Node<T> *node) {
-  Node<T> *target = node->next;
+template <typename T> bool SinglyLinkedList<T>::removeNode(SNode<T> *node) {
+  SNode<T> *target = node->next;
   node->next = target->next;
   delete target;
   length--;
@@ -128,18 +128,17 @@ template <typename T> bool SinglyLinkedList<T>::deleteNode(int position) {
   if (position > length) {
     return false;
   }
-  if(position == 0) {
+  if (position == 0) {
     return removeHead();
   }
-  if(position + 1 == length){
+  if (position + 1 == length) {
     return removeTail();
-  }
-  else {
-    Node<T> *current = head;
+  } else {
+    SNode<T> *current = head;
     int current_position = 0;
     while (current_position < position - 1) {
-      current_position = current_position+1;
-      current=current->next;
+      current_position = current_position + 1;
+      current = current->next;
     }
     return removeNode(current);
   }
@@ -150,12 +149,10 @@ template <typename T> void SinglyLinkedList<T>::display() {
   if (head == NULL) {
     return;
   }
-  Node<T> *current = head;
+  SNode<T> *current = head;
   while (current != NULL) {
     cout << current->value << " ";
     current = current->next;
   }
   cout << endl;
 }
-
-

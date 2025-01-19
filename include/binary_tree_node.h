@@ -1,11 +1,13 @@
-#include <cstddef>
+#pragma once
 
-template <typename T> class Node {
+#include "includes.h"
+
+template <typename T> class TNode {
 public:
   T value;
-  Node *right, *left;
+  TNode *right, *left;
   bool is_root, is_right, is_left;
-  Node(T value) {
+  TNode(T value) {
     this->value = value;
     this->right = this->left = NULL;
     this->is_root = this->is_right = this->is_left = false;
