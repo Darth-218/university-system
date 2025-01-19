@@ -42,6 +42,10 @@ template <typename T> bool BinaryTree<T>::deleteNode(T value) {
   if (isEmpty()) {
     return false;
   }
+  if (root->value == value) {
+    root = NULL;
+    return true;
+  }
   TNode<T> *current = this->root;
   TNode<T> *previous;
   T new_value;
@@ -89,6 +93,7 @@ template <typename T> bool BinaryTree<T>::deleteNode(T value) {
 
 template <typename T> void BinaryTree<T>::displayTree() {
   displayNode(this->root);
+  cout << endl;
   return;
 }
 
