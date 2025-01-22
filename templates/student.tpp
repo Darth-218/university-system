@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../include/entities.h"
+#include "../include/system.h"
 
 Student::Student(int id, string name, string email, string password,
                  string address, int phone) {
@@ -23,20 +24,34 @@ Student::Student() {
   course_history = new DoublyLinkedList<Course>;
 }
 
+bool Student::alreadyEnrolled(Course course) {
+  DNode<Course> *current_course = course_history->getHead();
+  while (current_course != NULL) {
+    if (current_course->value == course) {
+      return true;
+    }
+    current_course = current_course->next;
+  }
+  return false;
+}
+
 bool Student::addCourse(Course course) {
+  course.updateSeats(course.seats + 1);
   course_history->append(course);
   return true;
 }
 
 void Student::viewCourses() {
+  cout << "\n ";
   course_history->display();
+  cout << "\n";
 }
 
 void Student::displayDetails() {
-  cout << endl << this << endl;
+  cout << endl << *this << endl;
 }
 
-std::ostream &operator<<(std::ostream &os, Student &student) {
+ostream &operator<<(std::ostream &os, Student &student) {
   cout << "ID: " << student.id << ", ";
   cout << "Name: " << student.name << ", ";
   cout << "Email: " << student.email << ", ";
@@ -44,8 +59,4 @@ std::ostream &operator<<(std::ostream &os, Student &student) {
   cout << "Address: " << student.address << ", ";
   cout << "Phone: " << student.phone << endl;
   return os;
-}
-
-bool operator!=(const Student &lhs, const Student &rhs) {
-  return lhs.id != rhs.id;
 }
