@@ -56,9 +56,9 @@ template <typename T> bool Queue<T>::dequeue() {
   return true;
 }
 
-template <typename T> void Queue<T>::peek() {
+template <typename T> T *Queue<T>::peek() {
   if (isEmpty()) {
-    return;
+    return NULL;
   }
-  cout << front->value << endl;
+  return &(front->value);
 }

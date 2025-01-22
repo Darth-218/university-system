@@ -111,8 +111,8 @@ bool add(string arg) {
     inputs.insert(5, input);
 
     try {
-      us.addStudent(stoi(inputs.get(0)), inputs.get(1), inputs.get(2),
-                    inputs.get(3), inputs.get(4), stoi(inputs.get(5)));
+      us.addStudent(stoi(*inputs.get(0)), *inputs.get(1), *inputs.get(2),
+                    *inputs.get(3), *inputs.get(4), stoi(*inputs.get(5)));
       cout << "\nStudent Added!\n\n";
     } catch (const exception &e) {
       cout << "\nInvalid Student Parameters.\n\n";
@@ -136,8 +136,8 @@ bool add(string arg) {
     inputs.insert(4, input);
 
     try {
-      us.addCourse(stoi(inputs.get(0)), inputs.get(1), stoi(inputs.get(2)),
-                   inputs.get(3), stoi(inputs.get(4)), 0);
+      us.addCourse(stoi(*inputs.get(0)), *inputs.get(1), stoi(*inputs.get(2)),
+                   *inputs.get(3), stoi(*inputs.get(4)), 0);
       cout << "\nCourse Added!\n\n";
     } catch (const exception &e) {
       cout << "\nInvalid Course Parameters.\n\n";
@@ -157,11 +157,11 @@ bool add(string arg) {
       cout << "\nInvalid Course ID's\n\n";
       return false;
     }
-    Course course = us.courses_table->get(stoi(course_id));
-    Course pre = us.courses_table->get(stoi(input));
-    course.addPrequisite(pre);
+    Course *course = us.courses_table->get(stoi(course_id));
+    Course *pre = us.courses_table->get(stoi(input));
+    course->addPrequisite(*pre);
     cout << endl
-         << pre.name << " is Now a Prerequisite for " << course.name << endl
+         << pre->name << " is Now a Prerequisite for " << course->name << endl
          << endl;
     return true;
   }
@@ -208,7 +208,7 @@ bool view(string arg) {
       cout << "\nStudent Does not Exist!\n\n";
       return false;
     }
-    us.students_table->get(stoi(id)).viewCourses();
+    us.students_table->get(stoi(id))->viewCourses();
     return true;
   }
   cout << "\nInvalid Arguemnt.\n\n";
@@ -239,19 +239,25 @@ bool enroll() {
   cout << "\nStudent ID: ", getline(cin, student_id);
   cout << "Course ID: ", getline(cin, course_id);
 
-  Course course = us.courses_table->get(stoi(course_id));
-  Student student = us.students_table->get(stoi(student_id));
+  try {
+    Course *course = us.courses_table->get(stoi(course_id));
+    Student *student = us.students_table->get(stoi(student_id));
 
-  if (!(us.courseExists(course.id) && us.studentExists(student.id))) {
-    cout << "\nEither the Student or the Course Does Not Exist.\n\n";
+    if (!(us.courseExists(stoi(course_id)) &&
+          us.studentExists(stoi(student_id)))) {
+      cout << "\nEither the Student or the Course Does Not Exist.\n\n";
+      return false;
+    }
+
+    if (course->isEligible(*student)) {
+      student->addCourse(course);
+      us.addCourse(*course);
+      cout << endl << *course << endl;
+      return true;
+    }
+  } catch (exception &e) {
+    cout << "\nInvalid ID's\n\n";
     return false;
-  }
-
-  if (course.isEligible(student)) {
-    student.addCourse(course);
-    course.seats = course.seats + 1;
-    cout << "\nStudent Enrolled!\n\n";
-    return true;
   }
   return false;
 }
@@ -259,12 +265,19 @@ bool enroll() {
 bool freeSeat() {
   string course_id;
   cout << "\nCourse ID: ", getline(cin, course_id);
-  Course course = us.courses_table->get(stoi(course_id));
-  course.seats = course.seats > 0 ? course.seats - 1 : course.seats;
-  cout << "\nSeat Freed!\n\n";
+  Course *course = us.courses_table->get(stoi(course_id));
+  if (course->seats > 0) {
+    course->seats--;
+    us.addCourse(*course);
+    cout << "\nSeat Freed! Occupied seats: " << course->seats << "\n\n";
+    if (us.checkWaitlist(*course)) {
+      cout << "\nStudent added from wait-list!\n\n";
+    }
+  } else {
+    cout << "\nNo seats to free!\n\n";
+  }
   return true;
 }
-
 int main() {
   testData();
   loop();

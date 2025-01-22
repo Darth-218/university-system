@@ -19,7 +19,7 @@ public:
 
   bool dequeue();
 
-  void peek();
+  T *peek();
 };
 
 #include "../templates/queue.tpp"

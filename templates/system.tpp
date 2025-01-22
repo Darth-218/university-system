@@ -10,16 +10,16 @@ UniSystem::UniSystem() {
 }
 
 bool UniSystem::studentExists(int id) {
-  return students_table->get(id).id != 0;
+  return students_table->get(id) != 0;
 }
 
 bool UniSystem::courseExists(int id) {
-  return courses_table->get(id).id != 0;
+  return courses_table->get(id) != 0;
 }
 
 bool UniSystem::addStudent(int id, string name, string email, string password,
                            string address, int phone) {
-  if (students_table->get(id) != Student()) {
+  if (students_table->get(id) != NULL) {
     deleteStudent(id);
   }
   Student new_student = Student(id, name, email, password, address, phone);
@@ -64,7 +64,7 @@ void UniSystem::listCourses() {
 
 bool UniSystem::addCourse(int id, string name, int credits, string instructor,
                           int max_seats, int seats) {
-  if (courses_table->get(id) != Course()) {
+  if (courses_table->get(id) != NULL) {
     dropCourse(id);
   }
   Course new_course = Course(id, credits, name, instructor, max_seats, seats);
@@ -73,21 +73,41 @@ bool UniSystem::addCourse(int id, string name, int credits, string instructor,
   return true;
 }
 
+bool UniSystem::addCourse(Course course) {
+  courses->deleteNode(course);
+  courses->insert(course);
+  return true;
+}
+
+bool UniSystem::checkWaitlist(Course &course) {
+  if (course.waitlist->isEmpty()) {
+    return false;
+  }
+  while (course.seats < course.max_seats) {
+    Student *student = course.waitlist->peek();
+    student->addCourse(&course);
+    course.waitlist->dequeue();
+    cout << "\nStudent with ID (" << student->id
+         << ") Enrolled from Wait-list\n\n";
+  }
+  return true;
+}
+
 bool UniSystem::dropCourse(int id) {
   if (!courseExists(id)) {
     cout << "\nCourse Does not Exist!\n\n";
   }
-  courses->deleteNode(courses_table->get(id));
+  courses->deleteNode(*courses_table->get(id));
   courses_table->remove(id);
   return true;
 }
 
 bool UniSystem::searchStudent(int id) {
-  students_table->get(id).displayDetails();
+  students_table->get(id)->displayDetails();
   return true;
 }
 
 bool UniSystem::searchCourse(int id) {
-  courses_table->get(id).displayDetails();
+  courses_table->get(id)->displayDetails();
   return true;
 }

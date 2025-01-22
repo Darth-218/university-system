@@ -32,7 +32,11 @@ public:
   bool addCourse(int id, string name, int credits, string instructor,
                  int max_seats, int seats);
 
+  bool addCourse(Course course);
+
   bool dropCourse(int id);
+
+  bool checkWaitlist(Course &course);
 
   bool searchStudent(int id);
 

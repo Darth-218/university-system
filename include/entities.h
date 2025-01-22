@@ -60,7 +60,7 @@ public:
 
   bool alreadyEnrolled(Course course);
 
-  bool addCourse(Course &course);
+  bool addCourse(Course *course);
 
   bool dropCourse(Course course);
 

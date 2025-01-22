@@ -26,20 +26,20 @@ template <typename K, typename V> bool HashTable<K, V>::insert(K key, V value) {
   return true;
 }
 
-template <typename K, typename V> V HashTable<K, V>::get(K key) {
+template <typename K, typename V> V *HashTable<K, V>::get(K key) {
   int hash = this->hash(key);
   try {
     SNode<table_pair<K, V>> *ptr = hash_array[hash].getHead();
     while (ptr != NULL) {
       if (ptr->value.key == key) {
-        return ptr->value.value;
+        return &(ptr->value.value);
       }
       ptr = ptr->next;
     }
   } catch (exception &e) {
     out_of_range("Object not found.");
   }
-  return V();
+  return NULL;
 }
 
 template <typename K, typename V> bool HashTable<K, V>::remove(K key) {

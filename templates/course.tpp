@@ -63,7 +63,7 @@ bool Course::isEligible(Student student) {
 
 bool Course::addToWaitlist(Student student) {
   waitlist->enqueue(student);
-  cout << "\nAdded Student to Waitlist\n";
+  cout << "\nAdded Student to Waitlist\n\n";
   return false;
 }
 

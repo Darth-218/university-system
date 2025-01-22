@@ -19,7 +19,7 @@ public:
 
   bool insert(K key, V value);
 
-  V get(K key);
+  V *get(K key);
 
   bool remove(K key);
 };
