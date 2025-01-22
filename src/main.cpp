@@ -11,8 +11,6 @@ slls *splitInput(string input);
 
 string strip(string arg);
 
-bool checkValidity(slls *commands, int argc);
-
 bool add(string arg);
 
 bool search(string arg);
@@ -24,6 +22,8 @@ bool remove(string arg);
 bool enroll();
 
 void testData();
+
+bool freeSeat();
 
 UniSystem us;
 
@@ -65,14 +65,6 @@ string strip(string arg) {
   return str;
 }
 
-bool checkValidity(slls *commands, int argc) {
-  if (commands->getLength() < argc) {
-    cout << "Invalid command.\n";
-    return false;
-  }
-  return true;
-}
-
 bool runCommand(slls *commands) {
   string command = strip(commands->getHead()->value);
   commands->removeHead();
@@ -89,8 +81,10 @@ bool runCommand(slls *commands) {
     return search(arg);
   if (command == "enroll")
     return enroll();
+  if (command == "free")
+    return freeSeat();
   else
-    cout << "Invalid command.\n";
+    cout << "\nInvalid command.\n\n";
   return false;
 }
 
@@ -98,7 +92,7 @@ bool add(string arg) {
   HashTable<int, string> inputs(4);
   string input;
   if (arg == "student") {
-    cout << "Student ID: ", getline(cin, input);
+    cout << "\nStudent ID: ", getline(cin, input);
     inputs.insert(0, input);
 
     cout << "Student Name: ", getline(cin, input);
@@ -126,7 +120,7 @@ bool add(string arg) {
     return true;
   }
   if (arg == "course") {
-    cout << "Course ID: ", getline(cin, input);
+    cout << "\nCourse ID: ", getline(cin, input);
     inputs.insert(0, input);
 
     cout << "Course Name: ", getline(cin, input);
@@ -143,7 +137,7 @@ bool add(string arg) {
 
     try {
       us.addCourse(stoi(inputs.get(0)), inputs.get(1), stoi(inputs.get(2)),
-                   inputs.get(3), stoi(inputs.get(4)));
+                   inputs.get(3), stoi(inputs.get(4)), 0);
       cout << "\nCourse Added!\n\n";
     } catch (const exception &e) {
       cout << "\nInvalid Course Parameters.\n\n";
@@ -152,7 +146,7 @@ bool add(string arg) {
   }
   if (arg == "prerequisite") {
     string course_id;
-    cout << "Course ID: ", getline(cin, course_id);
+    cout << "\nCourse ID: ", getline(cin, course_id);
     cout << "Prerequisite ID: ", getline(cin, input);
     try {
       if (!(us.courseExists(stoi(course_id)) && us.courseExists(stoi(input)))) {
@@ -179,7 +173,7 @@ bool search(string arg) {
   string id;
   bool searching;
   if (arg == "student") {
-    cout << "Student ID: ", getline(cin, id);
+    cout << "\nStudent ID: ", getline(cin, id);
     if (!us.studentExists(stoi(id))) {
       cout << "\nStudent Does not Exist!\n\n";
       return false;
@@ -188,7 +182,7 @@ bool search(string arg) {
     return searching;
   }
   if (arg == "course") {
-    cout << "Course ID: ", getline(cin, id);
+    cout << "\nCourse ID: ", getline(cin, id);
     if (!us.courseExists(stoi(id))) {
       cout << "\nCourse Does not Exist!\n\n";
       return false;
@@ -201,15 +195,15 @@ bool search(string arg) {
 }
 
 bool view(string arg) {
-  if (arg == "student") {
+  if (arg == "students") {
     us.listStudents();
     return true;
-  } else if (arg == "course") {
+  } else if (arg == "courses") {
     us.listCourses();
     return true;
   } else if (arg == "history") {
     string id;
-    cout << "Student ID: ", getline(cin, id);
+    cout << "\nStudent ID: ", getline(cin, id);
     if (!us.studentExists(stoi(id))) {
       cout << "\nStudent Does not Exist!\n\n";
       return false;
@@ -225,12 +219,12 @@ bool remove(string arg) {
   string id;
   bool deletion;
   if (arg == "student") {
-    cout << "Student ID: ", getline(cin, id);
+    cout << "\nStudent ID: ", getline(cin, id);
     deletion = us.deleteStudent(stoi(id));
     return deletion;
   }
   if (arg == "course") {
-    cout << "Course ID: ", getline(cin, id);
+    cout << "\nCourse ID: ", getline(cin, id);
     deletion = us.dropCourse(stoi(id));
     return deletion;
   }
@@ -242,7 +236,7 @@ bool enroll() {
 
   string student_id, course_id;
 
-  cout << "Student ID: ", getline(cin, student_id);
+  cout << "\nStudent ID: ", getline(cin, student_id);
   cout << "Course ID: ", getline(cin, course_id);
 
   Course course = us.courses_table->get(stoi(course_id));
@@ -255,10 +249,20 @@ bool enroll() {
 
   if (course.isEligible(student)) {
     student.addCourse(course);
+    course.seats = course.seats + 1;
     cout << "\nStudent Enrolled!\n\n";
     return true;
   }
   return false;
+}
+
+bool freeSeat() {
+  string course_id;
+  cout << "\nCourse ID: ", getline(cin, course_id);
+  Course course = us.courses_table->get(stoi(course_id));
+  course.seats = course.seats > 0 ? course.seats - 1 : course.seats;
+  cout << "\nSeat Freed!\n\n";
+  return true;
 }
 
 int main() {
@@ -268,19 +272,19 @@ int main() {
 }
 
 void testData() {
-  us.addStudent(68349, "Emily Carter", "emily.c@example.com", "Emily123",
-                "London", 1234567);
-  us.addStudent(21756, "Liam Neeson", "liam.n@example.com", "Liam456",
-                "California", 2345678);
-  us.addStudent(94512, "Sophia Sartor", "sophia.s@example.com", "Sophia789",
-                "Rome", 3456789);
-  us.addStudent(37084, "Noah Kim", "noah.k@example.com", "Noah012", "Istanbul",
+  us.addStudent(1, "Emily Carter", "emily.c@example.com", "Emily123", "London",
+                1234567);
+  us.addStudent(2, "Liam Neeson", "liam.n@example.com", "Liam456", "California",
+                2345678);
+  us.addStudent(3, "Sophia Sartor", "sophia.s@example.com", "Sophia789", "Rome",
+                3456789);
+  us.addStudent(4, "Noah Kim", "noah.k@example.com", "Noah012", "Istanbul",
                 4567890);
-  us.addStudent(52963, "Ava Martinez", "ava.m@example.com", "Ava345",
-                "New Mexico", 5678901);
+  us.addStudent(5, "Ava Martinez", "ava.m@example.com", "Ava345", "New Mexico",
+                5678901);
 
-  us.addCourse(47281, "Math", 4, "Josh Mika", 5);
-  us.addCourse(15827, "Physics", 2, "Albert Einstien", 8);
-  us.addCourse(35920, "Chemistry", 3, "Walter White", 3);
-  us.addCourse(93654, "English", 3, "Tom Riddle", 10);
+  us.addCourse(1, "Math", 4, "Josh Mika", 5, 0);
+  us.addCourse(2, "Physics", 2, "Albert Einstien", 8, 0);
+  us.addCourse(3, "Chemistry", 3, "Walter White", 3, 0);
+  us.addCourse(4, "English", 3, "Tom Riddle", 10, 0);
 }
