@@ -21,6 +21,28 @@ public:
   bool addToWaitlist(Student student);
 
   void displayDetails();
+
+  void updateSeats(int seats);
+
+  bool addPrequisite(Course course);
+
+  bool operator<(const Course &other) {
+    return this->id < other.id;
+  }
+
+  bool operator>(const Course &other) {
+    return this->id > other.id;
+  }
+
+  bool operator==(const Course &other) {
+    return this->id == other.id;
+  }
+
+  bool operator!=(const Course &other) {
+    return this->id != other.id;
+  }
+
+  friend ostream &operator<<(std::ostream &os, Course &course);
 };
 
 class Student {
@@ -35,6 +57,8 @@ public:
 
   Student();
 
+  bool alreadyEnrolled(Course course);
+
   bool addCourse(Course course);
 
   bool dropCourse(Course course);
@@ -42,6 +66,12 @@ public:
   void viewCourses();
 
   void displayDetails();
+
+  bool operator!=(const Student &other) {
+    return this->id != other.id;
+  }
+
+  friend ostream &operator<<(std::ostream &os, Student &student);
 };
 
 #include "../templates/student.tpp"
