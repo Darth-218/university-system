@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../include/entities.h"
+#include "../include/system.h"
 
 Course::Course(int id, int credits, string name, string instructor,
                int max_seats) {
@@ -66,10 +67,6 @@ bool Course::addToWaitlist(Student student) {
   return false;
 }
 
-void Course::updateSeats(int seats) {
-  this->seats = seats + 1;
-}
-
 bool Course::addPrequisite(Course course) {
   this->prerequisites->push(course);
   return true;
@@ -85,6 +82,6 @@ ostream &operator<<(std::ostream &os, Course &course) {
   cout << "Credits: " << course.credits << ", ";
   cout << "Instructor: " << course.instructor << ", ";
   cout << "Max seats: " << course.max_seats << ", ";
-  cout << "Taken seats: " << course.seats << endl;
+  cout << "Taken Seats: " << course.seats << endl;
   return os;
 }
