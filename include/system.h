@@ -27,8 +27,10 @@ public:
 
   void listCourses();
 
+  bool freeSeat(Course &course);
+
   bool addCourse(int id, string name, int credits, string instructor,
-                 int seats);
+                 int max_seats, int seats);
 
   bool dropCourse(int id);
 
