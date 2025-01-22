@@ -26,6 +26,10 @@ Course::Course() {
 }
 
 bool Course::isEligible(Student student) {
+  if (student.alreadyEnrolled(*this)) {
+    cout << "\nStudent Already Enrolled in This Coures!\n\n";
+    return false;
+  }
   if (seats >= max_seats) {
     addToWaitlist(student);
     return false;
@@ -44,7 +48,16 @@ bool Course::isEligible(Student student) {
     }
     current = current->next;
   }
-  return preq->isEmpty();
+  if (preq->isEmpty()) {
+    return true;
+  }
+  cout << "\nStudent Not Eligible to be Enrolled! missing:\n";
+  while (!preq->isEmpty()) {
+    cout << preq->peek().name << endl;
+    preq->pop();
+  }
+  cout << endl;
+  return false;
 }
 
 bool Course::addToWaitlist(Student student) {
@@ -53,27 +66,20 @@ bool Course::addToWaitlist(Student student) {
   return false;
 }
 
+void Course::updateSeats(int seats) {
+  this->seats = seats + 1;
+}
+
+bool Course::addPrequisite(Course course) {
+  this->prerequisites->push(course);
+  return true;
+}
+
 void Course::displayDetails() {
-  cout << endl << this << endl;
+  cout << endl << *this << endl;
 }
 
-bool operator<(const Course &lhs, const Course &rhs) {
-  return lhs.id < rhs.id;
-}
-
-bool operator>(const Course &lhs, const Course &rhs) {
-  return lhs.id > rhs.id;
-}
-
-bool operator==(const Course &lhs, const Course &rhs) {
-  return lhs.id == rhs.id;
-}
-
-bool operator!=(const Course &lhs, const Course &rhs) {
-  return lhs.id != rhs.id;
-}
-
-std::ostream &operator<<(std::ostream &os, Course &course) {
+ostream &operator<<(std::ostream &os, Course &course) {
   cout << "ID: " << course.id << ", ";
   cout << "Name: " << course.name << ", ";
   cout << "Credits: " << course.credits << ", ";
