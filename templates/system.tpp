@@ -63,11 +63,11 @@ void UniSystem::listCourses() {
 }
 
 bool UniSystem::addCourse(int id, string name, int credits, string instructor,
-                          int max_seats) {
+                          int max_seats, int seats) {
   if (courses_table->get(id) != Course()) {
     dropCourse(id);
   }
-  Course new_course = Course(id, credits, name, instructor, max_seats);
+  Course new_course = Course(id, credits, name, instructor, max_seats, seats);
   courses->insert(new_course);
   courses_table->insert(new_course.id, new_course);
   return true;

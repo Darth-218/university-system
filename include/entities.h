@@ -12,7 +12,8 @@ public:
   Stack<Course> *prerequisites;
   Queue<Student> *waitlist;
 
-  Course(int id, int credits, string name, string instructor, int max_seats);
+  Course(int id, int credits, string name, string instructor, int max_seats,
+         int seats);
 
   Course();
 
@@ -59,7 +60,7 @@ public:
 
   bool alreadyEnrolled(Course course);
 
-  bool addCourse(Course course);
+  bool addCourse(Course &course);
 
   bool dropCourse(Course course);
 

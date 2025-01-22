@@ -4,13 +4,13 @@
 #include "../include/system.h"
 
 Course::Course(int id, int credits, string name, string instructor,
-               int max_seats) {
+               int max_seats, int seats) {
   this->id = id;
   this->credits = credits;
   this->name = name;
   this->instructor = instructor;
   this->max_seats = max_seats;
-  this->seats = 0;
+  this->seats = seats;
   prerequisites = new Stack<Course>;
   waitlist = new Queue<Student>;
 }
