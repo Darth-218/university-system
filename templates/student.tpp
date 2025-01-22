@@ -35,8 +35,9 @@ bool Student::alreadyEnrolled(Course course) {
   return false;
 }
 
-bool Student::addCourse(Course &course) {
-  course_history->append(course);
+bool Student::addCourse(Course *course) {
+  course_history->append(*course);
+  course->seats = course->seats + 1;
   return true;
 }
 
