@@ -42,10 +42,6 @@ template <typename T> bool BinaryTree<T>::deleteNode(T value) {
   if (isEmpty()) {
     return false;
   }
-  if (root->value == value) {
-    root = NULL;
-    return true;
-  }
   TNode<T> *current = this->root;
   TNode<T> *previous;
   T new_value;
@@ -58,6 +54,10 @@ template <typename T> bool BinaryTree<T>::deleteNode(T value) {
     }
   }
   if (current->left == NULL && current->right == NULL) {
+    if (current->value == this->root->value) {
+      root = NULL;
+      return true, this->size--;
+    }
     if (current->is_right) {
       previous->right = NULL;
     } else {
