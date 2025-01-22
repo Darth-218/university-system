@@ -9,6 +9,14 @@ UniSystem::UniSystem() {
   students_table = new HashTable<int, Student>(100);
 }
 
+bool UniSystem::studentExists(int id) {
+  return students_table->get(id).id != 0;
+}
+
+bool UniSystem::courseExists(int id) {
+  return courses_table->get(id).id != 0;
+}
+
 bool UniSystem::addStudent(int id, string name, string email, string password,
                            string address, int phone) {
   if (students_table->get(id) != Student()) {
@@ -21,6 +29,10 @@ bool UniSystem::addStudent(int id, string name, string email, string password,
 }
 
 bool UniSystem::deleteStudent(int id) {
+  if (!studentExists(id)) {
+    cout << "\nStudent Does not Exist!\n\n";
+    return false;
+  }
   SNode<Student> *current = students->getHead();
   int current_position = 0;
   while (current != NULL) {
@@ -62,6 +74,9 @@ bool UniSystem::addCourse(int id, string name, int credits, string instructor,
 }
 
 bool UniSystem::dropCourse(int id) {
+  if (!courseExists(id)) {
+    cout << "\nCourse Does not Exist!\n\n";
+  }
   courses->deleteNode(courses_table->get(id));
   courses_table->remove(id);
   return true;
@@ -73,7 +88,6 @@ bool UniSystem::searchStudent(int id) {
 }
 
 bool UniSystem::searchCourse(int id) {
-  /* cout << courses_table->get(id) << endl; */
   courses_table->get(id).displayDetails();
   return true;
 }

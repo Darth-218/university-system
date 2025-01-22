@@ -14,6 +14,10 @@ public:
 
   UniSystem();
 
+  bool courseExists(int id);
+
+  bool studentExists(int id);
+
   bool addStudent(int id, string name, string email, string password,
                   string address, int phone);
 
