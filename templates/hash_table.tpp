@@ -42,7 +42,6 @@ template <typename K, typename V> V HashTable<K, V>::get(K key) {
   return V();
 }
 
-// TEST:
 template <typename K, typename V> bool HashTable<K, V>::remove(K key) {
   int hash = this->hash(key);
   int postition = 0;
