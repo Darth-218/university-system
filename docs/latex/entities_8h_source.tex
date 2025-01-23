@@ -1,0 +1,88 @@
+\doxysection{entities.\+h}
+\hypertarget{entities_8h_source}{}\label{entities_8h_source}\index{include/entities.h@{include/entities.h}}
+\mbox{\hyperlink{entities_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{structures_8h}{structures.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classStudent}{Student}};}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCourse}{Course}};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }Course\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \textcolor{keywordtype}{int}\ id,\ credits,\ max\_seats,\ seats;}
+\DoxyCodeLine{00016\ \ \ \textcolor{keywordtype}{string}\ name,\ instructor;}
+\DoxyCodeLine{00017\ \ \ \mbox{\hyperlink{classStack}{Stack<Course>}}\ *prerequisites;}
+\DoxyCodeLine{00018\ \ \ \mbox{\hyperlink{classQueue}{Queue<Student>}}\ *waitlist;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ Course(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}\ credits,\ \textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{string}\ instructor,\ \textcolor{keywordtype}{int}\ max\_seats,}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ seats);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ Course();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \textcolor{keywordtype}{bool}\ isEligible(\mbox{\hyperlink{classStudent}{Student}}\ student);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \textcolor{keywordtype}{bool}\ addToWaitlist(\mbox{\hyperlink{classStudent}{Student}}\ student);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \textcolor{keywordtype}{void}\ displayDetails();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \textcolor{keywordtype}{void}\ updateSeats(\textcolor{keywordtype}{int}\ seats);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \textcolor{keywordtype}{bool}\ addPrequisite(Course\ course);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \textcolor{keywordtype}{bool}\ operator<(\textcolor{keyword}{const}\ Course\ \&other)\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>\textcolor{keywordtype}{id}\ <\ other.id;}
+\DoxyCodeLine{00037\ \ \ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \textcolor{keywordtype}{bool}\ operator>(\textcolor{keyword}{const}\ Course\ \&other)\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>\textcolor{keywordtype}{id}\ >\ other.id;}
+\DoxyCodeLine{00041\ \ \ \}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \textcolor{keywordtype}{bool}\ operator==(\textcolor{keyword}{const}\ Course\ \&other)\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>\textcolor{keywordtype}{id}\ ==\ other.id;}
+\DoxyCodeLine{00045\ \ \ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \textcolor{keywordtype}{bool}\ operator!=(\textcolor{keyword}{const}\ Course\ \&other)\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>\textcolor{keywordtype}{id}\ !=\ other.id;}
+\DoxyCodeLine{00049\ \ \ \}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \textcolor{keyword}{friend}\ ostream\ \&operator<<(std::ostream\ \&os,\ Course\ \&course);}
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{keyword}{class\ }Student\ \{}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00057\ \ \ \textcolor{keywordtype}{string}\ name,\ email,\ password,\ address;}
+\DoxyCodeLine{00058\ \ \ \textcolor{keywordtype}{int}\ id,\ phone;}
+\DoxyCodeLine{00059\ \ \ \mbox{\hyperlink{classDoublyLinkedList}{DoublyLinkedList<Course>}}\ *course\_history;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ Student(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{string}\ email,\ \textcolor{keywordtype}{string}\ password,\ \textcolor{keywordtype}{string}\ address,}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ phone);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ Student();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \textcolor{keywordtype}{bool}\ alreadyEnrolled(\mbox{\hyperlink{classCourse}{Course}}\ course);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \textcolor{keywordtype}{bool}\ addCourse(\mbox{\hyperlink{classCourse}{Course}}\ *course);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \textcolor{keywordtype}{bool}\ dropCourse(\mbox{\hyperlink{classCourse}{Course}}\ course);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \textcolor{keywordtype}{void}\ viewCourses();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \textcolor{keywordtype}{void}\ displayDetails();}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \textcolor{keywordtype}{bool}\ operator!=(\textcolor{keyword}{const}\ Student\ \&other)\ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>\textcolor{keywordtype}{id}\ !=\ other.id;}
+\DoxyCodeLine{00078\ \ \ \}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \textcolor{keyword}{friend}\ ostream\ \&operator<<(std::ostream\ \&os,\ Student\ \&student);}
+\DoxyCodeLine{00081\ \};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#include\ "{}../templates/student.tpp"{}}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#include\ "{}../templates/course.tpp"{}}}
+
+\end{DoxyCode}

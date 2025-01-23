@@ -1,3 +1,8 @@
+/**
+ * @file doubly_linked_list.h
+ * @brief Defines the DoublyLinkedList class.
+ */
+
 #pragma once
 
 #include "double_node.h"

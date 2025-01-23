@@ -1,3 +1,8 @@
+/**
+ * @file single_node.h
+ * @brief Defines the SinglyLinkedList class.
+ */
+
 #pragma once
 
 #include "single_node.h"

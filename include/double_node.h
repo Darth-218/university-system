@@ -1,3 +1,8 @@
+/**
+ * @file double_node.h
+ * @brief Defines the Double Node (DNode) class.
+ */
+
 #pragma once
 
 #include "includes.h"

@@ -1,3 +1,8 @@
+/**
+ * @file entities.h
+ * @brief Defines the Student and Course classes.
+ */
+
 #pragma once
 
 #include "structures.h"

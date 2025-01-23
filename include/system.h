@@ -1,3 +1,8 @@
+/**
+ * @file system.h
+ * @brief Defines the University System (UniSystem) class.
+ */
+
 #pragma once
 
 #include "entities.h"

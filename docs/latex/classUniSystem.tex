@@ -1,0 +1,58 @@
+\doxysection{Uni\+System Class Reference}
+\hypertarget{classUniSystem}{}\label{classUniSystem}\index{UniSystem@{UniSystem}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classUniSystem_ac073798d3a4a99d9bf809fb070c50f9f}\label{classUniSystem_ac073798d3a4a99d9bf809fb070c50f9f} 
+bool {\bfseries course\+Exists} (int id)
+\item 
+\Hypertarget{classUniSystem_a4b4ad232210be670fe792d38584f0c1f}\label{classUniSystem_a4b4ad232210be670fe792d38584f0c1f} 
+bool {\bfseries student\+Exists} (int id)
+\item 
+\Hypertarget{classUniSystem_a437410e0eeea0056855839fd5ec5e420}\label{classUniSystem_a437410e0eeea0056855839fd5ec5e420} 
+bool {\bfseries add\+Student} (int id, string name, string email, string password, string address, int phone)
+\item 
+\Hypertarget{classUniSystem_a7247fb2b633c9046fdf3b9c0ca79fe19}\label{classUniSystem_a7247fb2b633c9046fdf3b9c0ca79fe19} 
+bool {\bfseries delete\+Student} (int id)
+\item 
+\Hypertarget{classUniSystem_aac7fa651bcb3c617dee25afe777bd8b2}\label{classUniSystem_aac7fa651bcb3c617dee25afe777bd8b2} 
+void {\bfseries list\+Students} ()
+\item 
+\Hypertarget{classUniSystem_a4d2d5dfe78082e4044b2a4d04a7f2ba4}\label{classUniSystem_a4d2d5dfe78082e4044b2a4d04a7f2ba4} 
+void {\bfseries list\+Courses} ()
+\item 
+\Hypertarget{classUniSystem_a6374d503f305afe14fa3c6659f18939d}\label{classUniSystem_a6374d503f305afe14fa3c6659f18939d} 
+bool {\bfseries free\+Seat} (\mbox{\hyperlink{classCourse}{Course}} \&course)
+\item 
+\Hypertarget{classUniSystem_a8bb14556d0c73063b33633a01e534069}\label{classUniSystem_a8bb14556d0c73063b33633a01e534069} 
+bool {\bfseries add\+Course} (int id, string name, int credits, string instructor, int max\+\_\+seats, int seats)
+\item 
+\Hypertarget{classUniSystem_a90f44ee808d2dc33fef133bd8a97afe1}\label{classUniSystem_a90f44ee808d2dc33fef133bd8a97afe1} 
+bool {\bfseries add\+Course} (\mbox{\hyperlink{classCourse}{Course}} course)
+\item 
+\Hypertarget{classUniSystem_aa2a0cb6c5aef1af97ee6e6bba66e2f8b}\label{classUniSystem_aa2a0cb6c5aef1af97ee6e6bba66e2f8b} 
+bool {\bfseries drop\+Course} (int id)
+\item 
+\Hypertarget{classUniSystem_aa6a5841c56699b35695260b0235b75f0}\label{classUniSystem_aa6a5841c56699b35695260b0235b75f0} 
+bool {\bfseries check\+Waitlist} (\mbox{\hyperlink{classCourse}{Course}} \&course)
+\item 
+\Hypertarget{classUniSystem_add02a89599a801e6edc8c3945197798d}\label{classUniSystem_add02a89599a801e6edc8c3945197798d} 
+bool {\bfseries search\+Student} (int id)
+\item 
+\Hypertarget{classUniSystem_a795b934fa85886b706e6c830939f3d8f}\label{classUniSystem_a795b934fa85886b706e6c830939f3d8f} 
+bool {\bfseries search\+Course} (int id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classUniSystem_ae96ef187c103b16cb20b45a55d4f0c19}\label{classUniSystem_ae96ef187c103b16cb20b45a55d4f0c19} 
+\mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ int, \mbox{\hyperlink{classCourse}{Course}} $>$ \texorpdfstring{$\ast$}{*} {\bfseries courses\+\_\+table}
+\item 
+\Hypertarget{classUniSystem_aef8450e005750906b4997680bce18e87}\label{classUniSystem_aef8450e005750906b4997680bce18e87} 
+\mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ int, \mbox{\hyperlink{classStudent}{Student}} $>$ \texorpdfstring{$\ast$}{*} {\bfseries students\+\_\+table}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{system_8h}{system.\+h}}\end{DoxyCompactItemize}

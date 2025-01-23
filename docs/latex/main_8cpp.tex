@@ -1,0 +1,195 @@
+\doxysection{src/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+
+
+Main program code.  
+
+
+{\ttfamily \#include "{}../include/entities.\+h"{}}\newline
+{\ttfamily \#include "{}../include/includes.\+h"{}}\newline
+{\ttfamily \#include "{}../include/structures.\+h"{}}\newline
+{\ttfamily \#include "{}../include/system.\+h"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{main_8cpp_aa5b92090c768b58e72e67f3ac52cf156}\label{main_8cpp_aa5b92090c768b58e72e67f3ac52cf156} 
+\#define {\bfseries slls}~\mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}}$<$string$>$
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{main_8cpp_ad640430bbf9f4820ce1ac37253b071ca}{run\+Command}} (slls \texorpdfstring{$\ast$}{*}commands)
+\item 
+slls \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{main_8cpp_a3b2387acb895c69aea7be91f52b7ae46}{split\+Input}} (string input)
+\item 
+string \mbox{\hyperlink{main_8cpp_a5811bd52e5213c9abf80ebab648353ab}{strip}} (string arg)
+\item 
+bool \mbox{\hyperlink{main_8cpp_aca12017dc090c74a82d957a80ef28a28}{add}} (string arg)
+\item 
+bool \mbox{\hyperlink{main_8cpp_a3eec88de0fe031b8b31a34449e783663}{search}} (string arg)
+\item 
+bool \mbox{\hyperlink{main_8cpp_a74c3212343e56ba048dccda0fbe39e79}{view}} (string arg)
+\item 
+bool \mbox{\hyperlink{main_8cpp_a1657e0af82c21b0340f2206e497e45bf}{remove}} (string arg)
+\item 
+bool \mbox{\hyperlink{main_8cpp_aa7a4e29c8e95d20eb7343d16dfdda028}{enroll}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_a6b066c2f447b0042bb140f87e3604337}{test\+Data}} ()
+\item 
+bool \mbox{\hyperlink{main_8cpp_aefec7344f19f6ae9b5ae50a0b1ec91cc}{free\+Seat}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_a0d20b69b0ad703df78459e1033d5c1d4}{print\+Help}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_afe461d27b9c48d5921c00d521181f12f}{loop}} ()
+\item 
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{main_8cpp_aa7afda227f50c93d91059d7a7cd4edde}\label{main_8cpp_aa7afda227f50c93d91059d7a7cd4edde} 
+\mbox{\hyperlink{classUniSystem}{Uni\+System}} {\bfseries us}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main program code. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_aca12017dc090c74a82d957a80ef28a28}\index{main.cpp@{main.cpp}!add@{add}}
+\index{add@{add}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{main_8cpp_aca12017dc090c74a82d957a80ef28a28} 
+bool add (\begin{DoxyParamCaption}\item[{string}]{arg}{}\end{DoxyParamCaption})}
+
+A function that adds students, courses, or prerequisites in their respective data structures. 
+\begin{DoxyParams}{Parameters}
+{\em arg,argument} & string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean for debugging purposes.
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_aa7a4e29c8e95d20eb7343d16dfdda028}\index{main.cpp@{main.cpp}!enroll@{enroll}}
+\index{enroll@{enroll}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{enroll()}{enroll()}}
+{\footnotesize\ttfamily \label{main_8cpp_aa7a4e29c8e95d20eb7343d16dfdda028} 
+bool enroll (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+A function that adds courses to students\textquotesingle{} enrollment histories. \begin{DoxyReturn}{Returns}
+boolean for debugging purposes.
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_aefec7344f19f6ae9b5ae50a0b1ec91cc}\index{main.cpp@{main.cpp}!freeSeat@{freeSeat}}
+\index{freeSeat@{freeSeat}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{freeSeat()}{freeSeat()}}
+{\footnotesize\ttfamily \label{main_8cpp_aefec7344f19f6ae9b5ae50a0b1ec91cc} 
+bool free\+Seat (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+a function that frees course seats. \begin{DoxyReturn}{Returns}
+boolean for debugging purposes.
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_afe461d27b9c48d5921c00d521181f12f}\index{main.cpp@{main.cpp}!loop@{loop}}
+\index{loop@{loop}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily \label{main_8cpp_afe461d27b9c48d5921c00d521181f12f} 
+void loop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+The main program loop.\Hypertarget{main_8cpp_a0d20b69b0ad703df78459e1033d5c1d4}\index{main.cpp@{main.cpp}!printHelp@{printHelp}}
+\index{printHelp@{printHelp}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{printHelp()}{printHelp()}}
+{\footnotesize\ttfamily \label{main_8cpp_a0d20b69b0ad703df78459e1033d5c1d4} 
+void print\+Help (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+A function that prints a help manual.\Hypertarget{main_8cpp_a1657e0af82c21b0340f2206e497e45bf}\index{main.cpp@{main.cpp}!remove@{remove}}
+\index{remove@{remove}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{main_8cpp_a1657e0af82c21b0340f2206e497e45bf} 
+bool remove (\begin{DoxyParamCaption}\item[{string}]{arg}{}\end{DoxyParamCaption})}
+
+A function that removes students or courses from their respective data structures. 
+\begin{DoxyParams}{Parameters}
+{\em arg,the} & object to remove. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean for debugging purposes.
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_ad640430bbf9f4820ce1ac37253b071ca}\index{main.cpp@{main.cpp}!runCommand@{runCommand}}
+\index{runCommand@{runCommand}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{runCommand()}{runCommand()}}
+{\footnotesize\ttfamily \label{main_8cpp_ad640430bbf9f4820ce1ac37253b071ca} 
+bool run\+Command (\begin{DoxyParamCaption}\item[{slls \texorpdfstring{$\ast$}{*}}]{commands}{}\end{DoxyParamCaption})}
+
+The function responsible for running commands. 
+\begin{DoxyParams}{Parameters}
+{\em The} & SLL with the command as well as the arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean for debugging purposes.
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_a3eec88de0fe031b8b31a34449e783663}\index{main.cpp@{main.cpp}!search@{search}}
+\index{search@{search}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily \label{main_8cpp_a3eec88de0fe031b8b31a34449e783663} 
+bool search (\begin{DoxyParamCaption}\item[{string}]{arg}{}\end{DoxyParamCaption})}
+
+A function that searches the respective hash table for students or courses. 
+\begin{DoxyParams}{Parameters}
+{\em arg,the} & argument to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean for debugging purposes.
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_a3b2387acb895c69aea7be91f52b7ae46}\index{main.cpp@{main.cpp}!splitInput@{splitInput}}
+\index{splitInput@{splitInput}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{splitInput()}{splitInput()}}
+{\footnotesize\ttfamily \label{main_8cpp_a3b2387acb895c69aea7be91f52b7ae46} 
+slls \texorpdfstring{$\ast$}{*} split\+Input (\begin{DoxyParamCaption}\item[{string}]{input}{}\end{DoxyParamCaption})}
+
+Splits the string input and stores it in a linked list. 
+\begin{DoxyParams}{Parameters}
+{\em input,a} & string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A singly linked list with each node holding a part of the string.
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_a5811bd52e5213c9abf80ebab648353ab}\index{main.cpp@{main.cpp}!strip@{strip}}
+\index{strip@{strip}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{strip()}{strip()}}
+{\footnotesize\ttfamily \label{main_8cpp_a5811bd52e5213c9abf80ebab648353ab} 
+string strip (\begin{DoxyParamCaption}\item[{string}]{arg}{}\end{DoxyParamCaption})}
+
+strips all whitespaces in a string. 
+\begin{DoxyParams}{Parameters}
+{\em arg,the} & string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string free of whitespace.
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_a6b066c2f447b0042bb140f87e3604337}\index{main.cpp@{main.cpp}!testData@{testData}}
+\index{testData@{testData}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{testData()}{testData()}}
+{\footnotesize\ttfamily \label{main_8cpp_a6b066c2f447b0042bb140f87e3604337} 
+void test\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+A function that adds dummy data for testing purposes\Hypertarget{main_8cpp_a74c3212343e56ba048dccda0fbe39e79}\index{main.cpp@{main.cpp}!view@{view}}
+\index{view@{view}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{view()}{view()}}
+{\footnotesize\ttfamily \label{main_8cpp_a74c3212343e56ba048dccda0fbe39e79} 
+bool view (\begin{DoxyParamCaption}\item[{string}]{arg}{}\end{DoxyParamCaption})}
+
+A function that lists students, courses, or enrollment histories. 
+\begin{DoxyParams}{Parameters}
+{\em arg,the} & object to list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean for debugging purposes.
+\end{DoxyReturn}

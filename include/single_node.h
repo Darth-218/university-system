@@ -1,3 +1,8 @@
+/**
+ * @file single_node.h
+ * @brief Defines the Single Node (SNode) class.
+ */
+
 #pragma once
 
 #include "includes.h"

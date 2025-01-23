@@ -1,3 +1,8 @@
+/**
+ * @file main.cpp
+ * @brief Main program code.
+ */
+
 #include "../include/entities.h"
 #include "../include/includes.h"
 #include "../include/structures.h"
@@ -25,9 +30,14 @@ void testData();
 
 bool freeSeat();
 
+void printHelp();
+
 UniSystem us;
 
 void loop() {
+  /**
+   * @brief The main program loop.
+   */
   string input;
   while (true) {
     cout << ">>> ";
@@ -40,6 +50,11 @@ void loop() {
 }
 
 slls *splitInput(string input) {
+  /**
+   * @brief Splits the string input and stores it in a linked list.
+   * @param input, a string.
+   * @return A singly linked list with each node holding a part of the string.
+   */
   slls *split_string = new slls;
   string arg = "";
   int index = 0;
@@ -56,6 +71,11 @@ slls *splitInput(string input) {
 }
 
 string strip(string arg) {
+  /**
+   * @brief strips all whitespaces in a string.
+   * @param arg, the string.
+   * @return A string free of whitespace.
+   */
   string str = "";
   for (int i = 0; i < arg.size(); i++) {
     if (arg[i] != ' ') {
@@ -66,6 +86,11 @@ string strip(string arg) {
 }
 
 bool runCommand(slls *commands) {
+  /**
+   * @brief The function responsible for running commands.
+   * @param The SLL with the command as well as the arguments.
+   * @return A boolean for debugging purposes.
+   */
   string command = strip(commands->getHead()->value);
   commands->removeHead();
   string arg = (commands->getLength()) ? strip(commands->getHead()->value) : "";
@@ -83,12 +108,21 @@ bool runCommand(slls *commands) {
     return enroll();
   if (command == "free")
     return freeSeat();
-  else
+  if (command == "help") {
+    printHelp();
+    return true;
+  } else
     cout << "\nInvalid command.\n\n";
   return false;
 }
 
 bool add(string arg) {
+  /**
+   * @brief A function that adds students, courses, or prerequisites in their
+   * respective data structures.
+   * @param arg, argument string.
+   * @return boolean for debugging purposes.
+   */
   HashTable<int, string> inputs(4);
   string input;
   if (arg == "student") {
@@ -170,6 +204,12 @@ bool add(string arg) {
 }
 
 bool search(string arg) {
+  /**
+   * @brief A function that searches the respective hash table for students or
+   * courses.
+   * @param arg, the argument to search for.
+   * @return boolean for debugging purposes.
+   */
   string id;
   bool searching;
   if (arg == "student") {
@@ -195,6 +235,11 @@ bool search(string arg) {
 }
 
 bool view(string arg) {
+  /**
+   * @brief A function that lists students, courses, or enrollment histories.
+   * @param arg, the object to list.
+   * @return boolean for debugging purposes.
+   */
   if (arg == "students") {
     us.listStudents();
     return true;
@@ -216,6 +261,12 @@ bool view(string arg) {
 }
 
 bool remove(string arg) {
+  /**
+   * @brief A function that removes students or courses from their respective
+   * data structures.
+   * @param arg, the object to remove.
+   * @return boolean for debugging purposes.
+   */
   string id;
   bool deletion;
   if (arg == "student") {
@@ -233,6 +284,11 @@ bool remove(string arg) {
 }
 
 bool enroll() {
+
+  /**
+   * @brief A function that adds courses to students' enrollment histories.
+   * @return boolean for debugging purposes.
+   */
 
   string student_id, course_id;
 
@@ -263,6 +319,10 @@ bool enroll() {
 }
 
 bool freeSeat() {
+  /**
+   * @brief a function that frees course seats.
+   * @return boolean for debugging purposes.
+   */
   string course_id;
   cout << "\nCourse ID: ", getline(cin, course_id);
   Course *course = us.courses_table->get(stoi(course_id));
@@ -278,13 +338,11 @@ bool freeSeat() {
   }
   return true;
 }
-int main() {
-  testData();
-  loop();
-  return 0;
-}
 
 void testData() {
+  /**
+   * @brief A function that adds dummy data for testing purposes
+   */
   us.addStudent(1, "Emily Carter", "emily.c@example.com", "Emily123", "London",
                 1234567);
   us.addStudent(2, "Liam Neeson", "liam.n@example.com", "Liam456", "California",
@@ -300,4 +358,30 @@ void testData() {
   us.addCourse(2, "Physics", 2, "Albert Einstien", 8, 0);
   us.addCourse(3, "Chemistry", 3, "Walter White", 3, 0);
   us.addCourse(4, "English", 3, "Tom Riddle", 10, 0);
+}
+
+void printHelp() {
+  /**
+   * @brief A function that prints a help manual.
+   */
+  cout << "\nadd [course, student, prerequisite]: to add a course, a student, "
+          "or "
+          "prerequisites to a course.\n\n";
+  cout << "view [courses, students, history]: to list courses, students, or "
+          "view a students enrollment history.\n\n";
+  cout << "search [course, student]: to print out a specific course or student "
+          "details.\n\n";
+  cout << "remove [course, student]: to remove a specific course or "
+          "student.\n\n";
+  cout << "enroll: to enroll a student in a course.\n\n";
+  cout << "free: to free a seat in a course.\n\n";
+  cout << "help: to print this help manual.\n\n";
+  cout << "exit: to exit the program.\n\n";
+}
+
+int main() {
+  printHelp();
+  testData();
+  loop();
+  return 0;
 }

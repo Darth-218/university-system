@@ -1,3 +1,8 @@
+/**
+ * @file binary_tree.h
+ * @brief Defines the BinaryTree class
+ */
+
 #pragma once
 
 #include "binary_tree_node.h"

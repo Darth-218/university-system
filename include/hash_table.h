@@ -1,3 +1,8 @@
+/**
+ * @file hash_table.h
+ * @brief Defines the HashTable and table_pair Classes.
+ */
+
 #pragma once
 
 #include "includes.h"

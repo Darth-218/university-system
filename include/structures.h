@@ -1,3 +1,8 @@
+/**
+ * @file structures.h
+ * @brief Collects all the implemented data structures in one file.
+ */
+
 #pragma once
 
 #include "binary_tree.h"

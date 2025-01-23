@@ -1,0 +1,302 @@
+\chapter{Project Code Standards}
+\hypertarget{md_00-project}{}\label{md_00-project}\index{Project Code Standards@{Project Code Standards}}
+\label{md_00-project_autotoc_md0}%
+\Hypertarget{md_00-project_autotoc_md0}%
+\hypertarget{md_00-project_autotoc_md1}{}\doxysection{\texorpdfstring{Module Header}{Module Header}}\label{md_00-project_autotoc_md1}
+Each Module should have a header that contains\+:
+\begin{DoxyEnumerate}
+\item The name of the module.
+\item What the module does.
+\item Module functions overview.
+\item The date of creation.
+\item The author of the module. 
+\end{DoxyEnumerate}\hypertarget{md_00-project_autotoc_md2}{}\doxysection{\texorpdfstring{Naming Conventions}{Naming Conventions}}\label{md_00-project_autotoc_md2}
+
+\begin{DoxyEnumerate}
+\item Local Variables\+: Snake case or Flat case (i.\+e. {\ttfamily variable\+\_\+name}, {\ttfamily variablename})
+\item Global Variables\+: Pascal snake case (i.\+e. {\ttfamily Global\+\_\+\+Variable})
+\item Constants\+: Capital letters only (i.\+e. {\ttfamily CONSTANT})
+\item Functions\+: Camel case (i.\+e. {\ttfamily function\+Name})
+\item Classes\+: Pascal case (i.\+e. {\ttfamily Class\+Name})
+\end{DoxyEnumerate}
+
+{\itshape Avoid including digits as much as possible.} \hypertarget{md_00-project_autotoc_md3}{}\doxysection{\texorpdfstring{Code Format}{Code Format}}\label{md_00-project_autotoc_md3}
+
+\begin{DoxyEnumerate}
+\item Indentation size\+: 2 space.
+\item Braces\+: Open brace on the same line as the control statement. 
+\end{DoxyEnumerate}\hypertarget{md_00-project_autotoc_md4}{}\doxysection{\texorpdfstring{Project Requirements}{Project Requirements}}\label{md_00-project_autotoc_md4}
+
+\begin{DoxyItemize}
+\item Singly Linked List to store students.
+\item \doxylink{classStack}{Stack} to store course prerequisites.
+\item Doubly Linked List to track students\textquotesingle{} course history.
+\item \doxylink{classQueue}{Queue} to be used as a wait-\/list for courses.
+\item Binary Tree to store courses.
+\item Hash table for searching. 
+\end{DoxyItemize}\hypertarget{md_00-project_autotoc_md5}{}\doxysection{\texorpdfstring{Project Class Diagram}{Project Class Diagram}}\label{md_00-project_autotoc_md5}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{-\/-\/-\/}
+\DoxyCodeLine{title:\ University\ System}
+\DoxyCodeLine{-\/-\/-\/}
+\DoxyCodeLine{classDiagram}
+\DoxyCodeLine{class\ Student\ \{}
+\DoxyCodeLine{\ \ \ \ +student\_name:\ string}
+\DoxyCodeLine{\ \ \ \ +student\_id:\ int}
+\DoxyCodeLine{\ \ \ \ +student\_email:\ string}
+\DoxyCodeLine{\ \ \ \ +student\_password:\ string}
+\DoxyCodeLine{\ \ \ \ +student\_phone\_number:\ int}
+\DoxyCodeLine{\ \ \ \ +student\_address:\ string}
+\DoxyCodeLine{\ \ \ \ +student\_course\_history:\ DoublyLinkedList\string~Course\string~}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{class\ Course\ \{}
+\DoxyCodeLine{\ \ \ \ +course\_name:\ string}
+\DoxyCodeLine{\ \ \ \ +course\_id:\ int}
+\DoxyCodeLine{\ \ \ \ +course\_instructor:\ string}
+\DoxyCodeLine{\ \ \ \ +course\_credits:\ int}
+\DoxyCodeLine{\ \ \ \ +course\_prerequisites:\ Stack\string~Course\string~}
+\DoxyCodeLine{\ \ \ \ +course\_waitlist:\ Queue\string~Student\string~}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{class\ Node\string~T\string~\ \{}
+\DoxyCodeLine{\ \ \ \ +value:\ T}
+\DoxyCodeLine{\ \ \ \ +next:\ Node<T>}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{class\ DoubleNode\string~T\string~\ \{}
+\DoxyCodeLine{\ \ \ \ +value:\ T}
+\DoxyCodeLine{\ \ \ \ +next:\ Node<T>}
+\DoxyCodeLine{\ \ \ \ +previous:\ Node<T>}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{class\ SinglyLinkedList\string~T\string~\ \{}
+\DoxyCodeLine{\ \ \ \ -\/head:\ Node\string~T\string~}
+\DoxyCodeLine{\ \ \ \ -\/tail:\ Node\string~T\string~}
+\DoxyCodeLine{\ \ \ \ -\/length:\ int}
+\DoxyCodeLine{\ \ \ \ +isEmpty()\ bool}
+\DoxyCodeLine{\ \ \ \ +getLength()\ int}
+\DoxyCodeLine{\ \ \ \ +append(T:\ value)\ bool}
+\DoxyCodeLine{\ \ \ \ +insert(T:\ value,\ int:\ position)\ bool}
+\DoxyCodeLine{\ \ \ \ +push(T:\ value)\ bool}
+\DoxyCodeLine{\ \ \ \ +removeHead()\ bool}
+\DoxyCodeLine{\ \ \ \ +removeNode()\ bool}
+\DoxyCodeLine{\ \ \ \ +removeTail()\ bool}
+\DoxyCodeLine{\ \ \ \ +deleteNode(T:\ value)\ bool}
+\DoxyCodeLine{\ \ \ \ +display()\ void}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{class\ Stack\string~T\string~\ \{}
+\DoxyCodeLine{\ \ \ \ -\/stack\_top:\ Node\string~T\string~}
+\DoxyCodeLine{\ \ \ \ -\/size:\ int}
+\DoxyCodeLine{\ \ \ \ +isEmpty()\ bool}
+\DoxyCodeLine{\ \ \ \ +getSize()\ int}
+\DoxyCodeLine{\ \ \ \ +push(T:\ object)\ bool}
+\DoxyCodeLine{\ \ \ \ +pop()\ bool}
+\DoxyCodeLine{\ \ \ \ +peek()\ T}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{class\ DoublyLinkedList\string~T\string~\ \{}
+\DoxyCodeLine{\ \ \ \ -\/head:\ Node\string~T\string~}
+\DoxyCodeLine{\ \ \ \ -\/tail:\ Node\string~T\string~}
+\DoxyCodeLine{\ \ \ \ -\/length:\ int}
+\DoxyCodeLine{\ \ \ \ +isEmpty()\ bool}
+\DoxyCodeLine{\ \ \ \ +getLength()\ int}
+\DoxyCodeLine{\ \ \ \ +append(T:\ value)\ bool}
+\DoxyCodeLine{\ \ \ \ +insert(T:\ value,\ int:\ position)\ bool}
+\DoxyCodeLine{\ \ \ \ +push(T:\ value)\ bool}
+\DoxyCodeLine{\ \ \ \ +removeHead()\ bool}
+\DoxyCodeLine{\ \ \ \ +removeNode()\ bool}
+\DoxyCodeLine{\ \ \ \ +removeTail()\ bool}
+\DoxyCodeLine{\ \ \ \ +deleteNode()\ bool}
+\DoxyCodeLine{\ \ \ \ +display()\ void}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{class\ Queue\string~T\string~\ \{}
+\DoxyCodeLine{\ \ \ \ -\/front:\ Node\string~T\string~}
+\DoxyCodeLine{\ \ \ \ -\/rear:\ Node\string~T\string~}
+\DoxyCodeLine{\ \ \ \ -\/size:\ int}
+\DoxyCodeLine{\ \ \ \ +isEmpty()\ bool}
+\DoxyCodeLine{\ \ \ \ +getSize()\ int}
+\DoxyCodeLine{\ \ \ \ +enqueue(T:\ value)\ bool}
+\DoxyCodeLine{\ \ \ \ +dequeue()\ bool}
+\DoxyCodeLine{\ \ \ \ +peek()\ T}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{class\ BinaryTree\string~T\string~\ \{}
+\DoxyCodeLine{\ \ \ \ -\/root:\ DoubleNode\string~T\string~}
+\DoxyCodeLine{\ \ \ \ -\/size:\ int}
+\DoxyCodeLine{\ \ \ \ +isEmpty()\ bool}
+\DoxyCodeLine{\ \ \ \ +getSize()\ int}
+\DoxyCodeLine{\ \ \ \ +insert(T:\ value)\ bool}
+\DoxyCodeLine{\ \ \ \ +deleteNode(T:\ value)\ bool}
+\DoxyCodeLine{\ \ \ \ +displayTree()\ void}
+\DoxyCodeLine{\ \ \ \ +displayNode(Node\string~T\string~:\ root)\ void}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{class\ HashTable\string~K,\ V\string~\ \{}
+\DoxyCodeLine{\ \ \ \ -\/table\_size:\ int}
+\DoxyCodeLine{\ \ \ \ -\/hash\_array:\ SinglyLinkedList[]}
+\DoxyCodeLine{\ \ \ \ +hash(K:\ key)\ int}
+\DoxyCodeLine{\ \ \ \ +insert(K:\ key,\ V:\ value)\ bool}
+\DoxyCodeLine{\ \ \ \ +get(K:\ key)\ V}
+\DoxyCodeLine{\ \ \ \ +remove(K:\ key)\ bool}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{Student\ <-\/-\/>\ Course}
+\DoxyCodeLine{Stack\ -\/-\/*\ SinglyLinkedList}
+\DoxyCodeLine{SinglyLinkedList\ -\/-\/*\ Node}
+\DoxyCodeLine{Queue\ -\/-\/*\ DoublyLinkedList}
+\DoxyCodeLine{DoublyLinkedList\ -\/-\/*\ DoubleNode}
+\DoxyCodeLine{BinaryTree\ -\/-\/*\ DoubleNode}
+\DoxyCodeLine{HashTable\ -\/-\/*\ SinglyLinkedList}
+
+\end{DoxyCode}
+ \hypertarget{md_00-project_autotoc_md6}{}\doxysection{\texorpdfstring{Modules}{Modules}}\label{md_00-project_autotoc_md6}
+\hypertarget{md_00-project_autotoc_md7}{}\doxysubsection{\texorpdfstring{Singly Linked List}{Singly Linked List}}\label{md_00-project_autotoc_md7}
+\hypertarget{md_00-project_autotoc_md8}{}\doxysubsubsection{\texorpdfstring{To-\/\+Do}{To-\/\+Do}}\label{md_00-project_autotoc_md8}
+
+\begin{DoxyItemize}
+\item[\DoxyUnchecked] {\ttfamily is\+Empty()} to check if the list is empty.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyUnchecked] Inserting
+\begin{DoxyItemize}
+\item[\DoxyUnchecked] {\ttfamily push()} to insert at the start.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyUnchecked] {\ttfamily append()} to insert at the end.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyUnchecked] {\ttfamily insert(\+T value, int position)} to insert at a specific position.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyUnchecked] Deleting
+\begin{DoxyItemize}
+\item[\DoxyUnchecked] {\ttfamily remove\+Head()} to remove the list\textquotesingle{}s head.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyUnchecked] {\ttfamily remove\+Tail()} to remove the list\textquotesingle{}s tail.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyUnchecked] {\ttfamily delete\+Node(\+T value)} to remove a specific value.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyUnchecked] {\ttfamily display()} to display the values in the list.
+\end{DoxyItemize}
+
+The Singly Linked will be used to store students and should\+:
+\begin{DoxyEnumerate}
+\item Add students with their ID, Name, Email, Phone Number, Address, and Password.
+\item Remove students by their ID.
+\item Display student details. 
+\end{DoxyEnumerate}\hypertarget{md_00-project_autotoc_md9}{}\doxysubsection{\texorpdfstring{Stack}{Stack}}\label{md_00-project_autotoc_md9}
+\hypertarget{md_00-project_autotoc_md10}{}\doxysubsubsection{\texorpdfstring{To-\/\+Do}{To-\/\+Do}}\label{md_00-project_autotoc_md10}
+
+\begin{DoxyItemize}
+\item[\DoxyUnchecked] {\ttfamily is\+Empty()} to check if the stack is empty.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyUnchecked] {\ttfamily push()} to add elements to the top of the stack.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyUnchecked] {\ttfamily pop()} to remove the top element in the stack.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyUnchecked] {\ttfamily peek()} to return the top element in the stack.
+\end{DoxyItemize}
+
+The \doxylink{classStack}{Stack} will be used to store course prerequisites and should\+:
+\begin{DoxyEnumerate}
+\item Check if a student is able to register a course by checking if their prerequisites stack is empty.
+\item If the student is not able to register a course, the prerequisites left should be displayed. The \doxylink{classStack}{Stack} is implemented using the Singly Linked List. 
+\end{DoxyEnumerate}\hypertarget{md_00-project_autotoc_md11}{}\doxysubsection{\texorpdfstring{Doubly Linked List}{Doubly Linked List}}\label{md_00-project_autotoc_md11}
+\hypertarget{md_00-project_autotoc_md12}{}\doxysubsubsection{\texorpdfstring{To-\/\+Do}{To-\/\+Do}}\label{md_00-project_autotoc_md12}
+
+\begin{DoxyItemize}
+\item[\DoxyChecked] {\ttfamily is\+Empty()} to check if the list is empty.
+\item[\DoxyUnchecked] Inserting
+\begin{DoxyItemize}
+\item[\DoxyChecked] {\ttfamily push()} to insert at the start.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyChecked] {\ttfamily append()} to insert at the end.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyChecked] {\ttfamily insert(\+T value, int position)} to insert at a specific position.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyUnchecked] Deleting
+\begin{DoxyItemize}
+\item[\DoxyChecked] {\ttfamily remove\+Head()} to remove the list\textquotesingle{}s head.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyChecked] {\ttfamily remove\+Tail()} to remove the list\textquotesingle{}s tail.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyChecked] {\ttfamily remove\+Node()} to remove a specific node
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyChecked] {\ttfamily delete\+Node(\+T value)} to remove a specific value.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyChecked] {\ttfamily display()} to display the values in the list.
+\end{DoxyItemize}
+
+The Doubly Linked List will be used to store each student\textquotesingle{}s course enrollment history and should\+:
+\begin{DoxyEnumerate}
+\item Add new completed courses.
+\item Display the enrollment history of a specific student. 
+\end{DoxyEnumerate}\hypertarget{md_00-project_autotoc_md13}{}\doxysubsection{\texorpdfstring{Queue}{Queue}}\label{md_00-project_autotoc_md13}
+\hypertarget{md_00-project_autotoc_md14}{}\doxysubsubsection{\texorpdfstring{To-\/\+Do}{To-\/\+Do}}\label{md_00-project_autotoc_md14}
+
+\begin{DoxyItemize}
+\item[\DoxyChecked] {\ttfamily enqueue(\+T value)} to add elements to the end of the \doxylink{classQueue}{Queue}.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyChecked] {\ttfamily dequeue()} to remove the first element in the \doxylink{classQueue}{Queue}.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyChecked] {\ttfamily peek()} to return the first element in the \doxylink{classQueue}{Queue}.
+\end{DoxyItemize}
+
+The \doxylink{classQueue}{Queue} will manage each course\textquotesingle{}s wait-\/list and should\+:
+\begin{DoxyEnumerate}
+\item Add a student to the wait-\/list when a course is full.
+\item Enroll the first student on the wait-\/list when a spot is free. The \doxylink{classQueue}{Queue} is implemented using a Doubly Linked List. 
+\end{DoxyEnumerate}\hypertarget{md_00-project_autotoc_md15}{}\doxysubsection{\texorpdfstring{Binary Tree}{Binary Tree}}\label{md_00-project_autotoc_md15}
+\hypertarget{md_00-project_autotoc_md16}{}\doxysubsubsection{\texorpdfstring{To-\/\+Do}{To-\/\+Do}}\label{md_00-project_autotoc_md16}
+
+\begin{DoxyItemize}
+\item[\DoxyChecked] {\ttfamily is\+Empty()} to check if the tree is empty.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyChecked] {\ttfamily insert(\+T value)} to add elements to their appropriate location in the tree.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyChecked] {\ttfamily delete\+Node(\+T value)} to remove elements from the tree.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyChecked] {\ttfamily traverse(Node\texorpdfstring{$<$}{<}T\texorpdfstring{$>$}{>} root)} to traverse the tree.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyChecked] {\ttfamily display()} to print all values in the tree.
+\end{DoxyItemize}
+
+The Binary Tree will be used to store courses and should\+:
+\begin{DoxyEnumerate}
+\item Add courses.
+\item Drop courses. 
+\end{DoxyEnumerate}\hypertarget{md_00-project_autotoc_md17}{}\doxysubsection{\texorpdfstring{Hash Table}{Hash Table}}\label{md_00-project_autotoc_md17}
+\hypertarget{md_00-project_autotoc_md18}{}\doxysubsubsection{\texorpdfstring{To-\/\+Do}{To-\/\+Do}}\label{md_00-project_autotoc_md18}
+
+\begin{DoxyItemize}
+\item \mbox{[}/\mbox{]} {\ttfamily hash(\+K key)} to compute the pair index.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyChecked] {\ttfamily insert(\+K key, V value)} to insert a pair to the table.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item[\DoxyChecked] {\ttfamily get(\+K key)} to retrieve the value at a key index.
+\end{DoxyItemize}
+\begin{DoxyItemize}
+\item \mbox{[}/\mbox{]} {\ttfamily remove(\+K key)} to remove the key-\/value pair.
+\end{DoxyItemize}
+
+The Hash Table will be used for efficient lookup. 

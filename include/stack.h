@@ -1,3 +1,8 @@
+/**
+ * @file stack.h
+ * @brief Defines the Stack class.
+ */
+
 #pragma once
 
 #include "includes.h"

@@ -1,3 +1,8 @@
+/**
+ * @file binary_tree_node.h
+ * @brief Defines the Binary Tree Nodes (TNode) class.
+ */
+
 #pragma once
 
 #include "includes.h"

@@ -1,3 +1,8 @@
+/**
+ * @file includes.h
+ * @brief Collects the included files used throughout the project.
+ */
+
 #pragma once
 
 #include <cstddef>

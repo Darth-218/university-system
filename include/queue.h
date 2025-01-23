@@ -1,3 +1,8 @@
+/**
+ * @file queue.h
+ * @brief Defines the Queue class.
+ */
+
 #pragma once
 
 #include "includes.h"
