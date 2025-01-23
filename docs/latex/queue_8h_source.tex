@@ -9,25 +9,26 @@
 \DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{includes_8h}{includes.h}}"{}}}
 \DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{single__node_8h}{single\_node.h}}"{}}}
 \DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>\ \textcolor{keyword}{class\ }Queue\ \{}
-\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00013\ \ \ \mbox{\hyperlink{classSNode}{SNode<T>}}\ *rear,\ *front;}
-\DoxyCodeLine{00014\ \ \ \textcolor{keywordtype}{int}\ size;}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00017\ \ \ Queue();}
-\DoxyCodeLine{00018\ }
-\DoxyCodeLine{00019\ \ \ \textcolor{keywordtype}{bool}\ isEmpty();}
-\DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ \ \ \textcolor{keywordtype}{bool}\ enqueue(T\ value);}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \ \ \textcolor{keywordtype}{int}\ getSize();}
-\DoxyCodeLine{00024\ }
-\DoxyCodeLine{00025\ \ \ \textcolor{keywordtype}{bool}\ dequeue();}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \ \ T\ *peek();}
-\DoxyCodeLine{00028\ \};}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ "{}../templates/queue.tpp"{}}}
+\DoxyCodeLine{00016\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classQueue_af73bb29c868f7b37f369c668f114bd9f}{Queue}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \mbox{\hyperlink{classSNode}{SNode<T>}}\ *rear,}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ *front;\ \textcolor{comment}{//<\ Pointers\ to\ the\ front\ and\ rear\ of\ the\ Queue\ object.}}
+\DoxyCodeLine{00020\ \ \ \textcolor{keywordtype}{int}\ size;\ \ \ \textcolor{comment}{//<\ The\ size\ of\ the\ Queue\ object.}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \mbox{\hyperlink{classQueue_af73bb29c868f7b37f369c668f114bd9f}{Queue}}();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00032\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classQueue_a515bd72c9d7d2bc12add78c0d2e79762}{isEmpty}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classQueue_aefc2563a28b93c8216ced448158ffebf}{getSize}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00045\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classQueue_a633a2dd3fdfa7433b03f2bbd571dcc27}{enqueue}}(T\ value);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classQueue_a1d22c47f34c8df152c48dcdb70c542c2}{dequeue}}();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ \ \ T\ *\mbox{\hyperlink{classQueue_aabb62b0949fae2d4fac14c07d1bf7098}{peek}}();}
+\DoxyCodeLine{00058\ \};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#include\ "{}../templates/queue.tpp"{}}}
 
 \end{DoxyCode}

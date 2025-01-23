@@ -9,27 +9,27 @@
 \DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{binary__tree__node_8h}{binary\_tree\_node.h}}"{}}}
 \DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{includes_8h}{includes.h}}"{}}}
 \DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>\ \textcolor{keyword}{class\ }BinaryTree\ \{}
-\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00013\ \ \ \mbox{\hyperlink{classTNode}{TNode<T>}}\ *root;}
-\DoxyCodeLine{00014\ \ \ \textcolor{keywordtype}{int}\ size;}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00017\ \ \ BinaryTree();}
-\DoxyCodeLine{00018\ }
-\DoxyCodeLine{00019\ \ \ \textcolor{keywordtype}{bool}\ isEmpty();}
+\DoxyCodeLine{00016\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classBinaryTree_a9202cce23960faf8f647c6765decccd4}{BinaryTree}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \mbox{\hyperlink{classTNode}{TNode<T>}}\ *root;\ \textcolor{comment}{//<\ A\ pointer\ to\ the\ BinaryTree's\ root.}}
+\DoxyCodeLine{00019\ \ \ \textcolor{keywordtype}{int}\ size;\ \ \ \ \ \ \ \textcolor{comment}{//<\ The\ size\ of\ the\ tree}}
 \DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ \ \ \textcolor{keywordtype}{int}\ getSize();}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \ \ \textcolor{keywordtype}{bool}\ insert(T\ value);}
-\DoxyCodeLine{00024\ }
-\DoxyCodeLine{00025\ \ \ \textcolor{keywordtype}{bool}\ deleteNode(T\ value);}
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \mbox{\hyperlink{classBinaryTree_a9202cce23960faf8f647c6765decccd4}{BinaryTree}}();}
 \DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \ \ \textcolor{keywordtype}{void}\ displayTree();}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \textcolor{keywordtype}{void}\ displayNode(\mbox{\hyperlink{classTNode}{TNode<T>}}\ *root);}
-\DoxyCodeLine{00030\ \};}
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#include\ "{}../templates/binary\_tree.tpp"{}}}
+\DoxyCodeLine{00031\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classBinaryTree_a7bb7652933b48daaa63c2737ed78e3bd}{isEmpty}}();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00037\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classBinaryTree_ad91aadeeb4ce25b841cac83b969e45b7}{getSize}}();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00044\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classBinaryTree_afe64f4a5572adc3c2a847c1e820e99e8}{insert}}(T\ value);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classBinaryTree_a528be36b55ef677bbb7f5f519603cf54}{deleteNode}}(T\ value);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00056\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBinaryTree_a1450639633abca5f851defaeb47090f2}{displayTree}}();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00062\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBinaryTree_a2a5c9f3e24e202135c83d76d7bdcbd69}{displayNode}}(\mbox{\hyperlink{classTNode}{TNode<T>}}\ *root);}
+\DoxyCodeLine{00063\ \};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#include\ "{}../templates/binary\_tree.tpp"{}}}
 
 \end{DoxyCode}

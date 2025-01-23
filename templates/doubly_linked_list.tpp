@@ -7,8 +7,6 @@
 
 #include "../include/doubly_linked_list.h"
 
-using namespace std;
-
 template <typename T> DoublyLinkedList<T>::DoublyLinkedList() {
 
   /**
@@ -54,8 +52,8 @@ template <typename T> bool DoublyLinkedList<T>::push(T value) {
 
   /**
    * @brief Adds a value to the begining of the list.
-   * @param value, the value to add.
-   * @return boolean for debugging purposes.
+   * @param value The value to add.
+   * @return boolean
    */
 
   DNode<T> *new_node = new DNode<T>(value);
@@ -79,10 +77,9 @@ template <typename T> bool DoublyLinkedList<T>::append(T value) {
 
   /**
    * @brief Adds a value to the end of the list.
-   * @param value, the value to add.
-   * @return boolean for debugging purposes.
+   * @param value The value to add.
+   * @return boolean
    */
-
   DNode<T> *new_node = new DNode<T>(value);
 
   if (isEmpty()) {
@@ -104,9 +101,9 @@ template <typename T> bool DoublyLinkedList<T>::insert(T value, int position) {
 
   /**
    * @brief Adds a value to an index in the list.
-   * @param value, the value to add.
-   * @param position, the position to add the value at.
-   * @return boolean for debugging purposes.
+   * @param value The value to add.
+   * @param position The position to add the value at.
+   * @return boolean
    */
 
   DNode<T> *new_node = new DNode<T>(value);
@@ -153,7 +150,7 @@ template <typename T> bool DoublyLinkedList<T>::removeHead() {
 
   /**
    * @brief A function that removes the head of the list.
-   * @return boolean for debugging purposes.
+   * @return boolean.
    */
 
   head = head->next;
@@ -167,7 +164,7 @@ template <typename T> bool DoublyLinkedList<T>::removeTail() {
 
   /**
    * @brief a function that removes the tail of the list.
-   * @return boolean for debugging purposes.
+   * @return boolean.
    */
 
   tail = tail->prev;
@@ -181,8 +178,8 @@ template <typename T> bool DoublyLinkedList<T>::removeNode(DNode<T> *node) {
 
   /**
    * @brief A function that removes a specific node.
-   * @param node, a pointer to the node to delete.
-   * @return boolean for debugging purposes.
+   * @param node A pointer to the node to delete.
+   * @return boolean.
    */
 
   node->next->prev = node->prev;
@@ -198,8 +195,8 @@ template <typename T> bool DoublyLinkedList<T>::deleteNode(int index) {
 
   /**
    * @brief A wrapper function that removes a node from anywhere in the list.
-   * @param index, the index of the node to remove.
-   * @return boolean for debugging purposes.
+   * @param index The index of the node to remove.
+   * @return boolean.
    */
 
   int current_position = 0;

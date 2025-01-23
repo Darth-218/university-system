@@ -8,37 +8,38 @@
 \DoxyCodeLine{00007\ }
 \DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{double__node_8h}{double\_node.h}}"{}}}
 \DoxyCodeLine{00009\ }
-\DoxyCodeLine{00010\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>\ \textcolor{keyword}{class\ }DoublyLinkedList\ \{}
-\DoxyCodeLine{00011\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00012\ \ \ \mbox{\hyperlink{classDNode}{DNode<T>}}\ *head,\ *tail;}
-\DoxyCodeLine{00013\ \ \ \textcolor{keywordtype}{int}\ length;}
-\DoxyCodeLine{00014\ }
-\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00016\ \ \ DoublyLinkedList();}
-\DoxyCodeLine{00017\ }
-\DoxyCodeLine{00018\ \ \ \textcolor{keywordtype}{bool}\ isEmpty();}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00020\ \ \ \textcolor{keywordtype}{int}\ getLength();}
-\DoxyCodeLine{00021\ }
-\DoxyCodeLine{00022\ \ \ \mbox{\hyperlink{classDNode}{DNode<T>}}\ *getHead();}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \ \ \textcolor{keywordtype}{bool}\ append(T\ value);}
-\DoxyCodeLine{00025\ }
-\DoxyCodeLine{00026\ \ \ \textcolor{keywordtype}{bool}\ insert(T\ value,\ \textcolor{keywordtype}{int}\ position);}
-\DoxyCodeLine{00027\ }
-\DoxyCodeLine{00028\ \ \ \textcolor{keywordtype}{bool}\ push(T\ value);}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00030\ \ \ \textcolor{keywordtype}{bool}\ removeHead();}
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00032\ \ \ \textcolor{keywordtype}{bool}\ removeTail();}
-\DoxyCodeLine{00033\ }
-\DoxyCodeLine{00034\ \ \ \textcolor{keywordtype}{bool}\ removeNode(\mbox{\hyperlink{classDNode}{DNode<T>}}\ *node);}
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \ \ \textcolor{keywordtype}{bool}\ deleteNode(\textcolor{keywordtype}{int}\ index);}
-\DoxyCodeLine{00037\ }
-\DoxyCodeLine{00038\ \ \ \textcolor{keywordtype}{void}\ display();}
-\DoxyCodeLine{00039\ \};}
-\DoxyCodeLine{00040\ }
-\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#include\ "{}../templates/doubly\_linked\_list.tpp"{}}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDoublyLinkedList_ab16fd160493247d26572b9bef7fa078b}{DoublyLinkedList}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \mbox{\hyperlink{classDNode}{DNode<T>}}\ *head,}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ *tail;\ \ \textcolor{comment}{//<\ Pointers\ to\ the\ head\ and\ tail\ of\ the\ DoublyLinkedList\ object.}}
+\DoxyCodeLine{00019\ \ \ \textcolor{keywordtype}{int}\ length;\ \textcolor{comment}{//<\ The\ length\ of\ the\ DoublyLinkedList\ object.}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \mbox{\hyperlink{classDoublyLinkedList_ab16fd160493247d26572b9bef7fa078b}{DoublyLinkedList}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00031\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDoublyLinkedList_a013e8970396a114c748840d5c7e353bc}{isEmpty}}();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00037\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classDoublyLinkedList_a3d6da4090f37ffa0ac4b1040ce4758c4}{getLength}}();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00043\ \ \ \mbox{\hyperlink{classDNode}{DNode<T>}}\ *\mbox{\hyperlink{classDoublyLinkedList_afed52ae173a6e29bda3fed9c174fef25}{getHead}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00050\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDoublyLinkedList_a8570c85c09e186d4aed50483037a1212}{append}}(T\ value);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00058\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDoublyLinkedList_aceab3a0bbe1bb55b151c93ff86fddf63}{insert}}(T\ value,\ \textcolor{keywordtype}{int}\ position);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00065\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDoublyLinkedList_a7fab7f34d1b8d39c187fb28eba4027cd}{push}}(T\ value);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00071\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDoublyLinkedList_a967720e20753ca810f13e7272dfa1691}{removeHead}}();}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00077\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDoublyLinkedList_ad81bc0b167faf246374ea7334bb442c5}{removeTail}}();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00084\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDoublyLinkedList_a8189cdf75ba1ba0e9608e62ec4c1b156}{removeNode}}(\mbox{\hyperlink{classDNode}{DNode<T>}}\ *node);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00091\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDoublyLinkedList_a93c7fd3870b6f1c5b2911fdcbd675bc0}{deleteNode}}(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00096\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDoublyLinkedList_a733d83f0c8329cdc300a6ab7c801b38c}{display}}();}
+\DoxyCodeLine{00097\ \};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#include\ "{}../templates/doubly\_linked\_list.tpp"{}}}
 
 \end{DoxyCode}

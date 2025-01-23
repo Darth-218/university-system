@@ -14,13 +14,13 @@ Main program code.
 \item 
 \Hypertarget{main_8cpp_aa5b92090c768b58e72e67f3ac52cf156}\label{main_8cpp_aa5b92090c768b58e72e67f3ac52cf156} 
 \#define {\bfseries slls}~\mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}}$<$string$>$
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \doxylink{classSinglyLinkedList}{Singly\+Linked\+List} containing strings. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{main_8cpp_ad640430bbf9f4820ce1ac37253b071ca}{run\+Command}} (slls \texorpdfstring{$\ast$}{*}commands)
+bool \mbox{\hyperlink{main_8cpp_ad640430bbf9f4820ce1ac37253b071ca}{run\+Command}} (\mbox{\hyperlink{main_8cpp_aa5b92090c768b58e72e67f3ac52cf156}{slls}} \texorpdfstring{$\ast$}{*}commands)
 \item 
-slls \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{main_8cpp_a3b2387acb895c69aea7be91f52b7ae46}{split\+Input}} (string input)
+\mbox{\hyperlink{main_8cpp_aa5b92090c768b58e72e67f3ac52cf156}{slls}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{main_8cpp_a3b2387acb895c69aea7be91f52b7ae46}{split\+Input}} (string input)
 \item 
 string \mbox{\hyperlink{main_8cpp_a5811bd52e5213c9abf80ebab648353ab}{strip}} (string arg)
 \item 
@@ -42,15 +42,14 @@ void \mbox{\hyperlink{main_8cpp_a0d20b69b0ad703df78459e1033d5c1d4}{print\+Help}}
 \item 
 void \mbox{\hyperlink{main_8cpp_afe461d27b9c48d5921c00d521181f12f}{loop}} ()
 \item 
-\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
-int {\bfseries main} ()
-\end{DoxyCompactItemize}
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em The main driver code for the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{main_8cpp_aa7afda227f50c93d91059d7a7cd4edde}\label{main_8cpp_aa7afda227f50c93d91059d7a7cd4edde} 
 \mbox{\hyperlink{classUniSystem}{Uni\+System}} {\bfseries us}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The main system object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -67,7 +66,7 @@ bool add (\begin{DoxyParamCaption}\item[{string}]{arg}{}\end{DoxyParamCaption})}
 
 A function that adds students, courses, or prerequisites in their respective data structures. 
 \begin{DoxyParams}{Parameters}
-{\em arg,argument} & string. \\
+{\em arg} & The argument string. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -97,7 +96,20 @@ boolean for debugging purposes.
 {\footnotesize\ttfamily \label{main_8cpp_afe461d27b9c48d5921c00d521181f12f} 
 void loop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-The main program loop.\Hypertarget{main_8cpp_a0d20b69b0ad703df78459e1033d5c1d4}\index{main.cpp@{main.cpp}!printHelp@{printHelp}}
+The main program loop.\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The main driver code for the program. 
+
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_a0d20b69b0ad703df78459e1033d5c1d4}\index{main.cpp@{main.cpp}!printHelp@{printHelp}}
 \index{printHelp@{printHelp}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{printHelp()}{printHelp()}}
 {\footnotesize\ttfamily \label{main_8cpp_a0d20b69b0ad703df78459e1033d5c1d4} 
@@ -111,7 +123,7 @@ bool remove (\begin{DoxyParamCaption}\item[{string}]{arg}{}\end{DoxyParamCaption
 
 A function that removes students or courses from their respective data structures. 
 \begin{DoxyParams}{Parameters}
-{\em arg,the} & object to remove. \\
+{\em arg} & The object to remove. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -121,11 +133,11 @@ boolean for debugging purposes.
 \index{runCommand@{runCommand}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{runCommand()}{runCommand()}}
 {\footnotesize\ttfamily \label{main_8cpp_ad640430bbf9f4820ce1ac37253b071ca} 
-bool run\+Command (\begin{DoxyParamCaption}\item[{slls \texorpdfstring{$\ast$}{*}}]{commands}{}\end{DoxyParamCaption})}
+bool run\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8cpp_aa5b92090c768b58e72e67f3ac52cf156}{slls}} \texorpdfstring{$\ast$}{*}}]{commands}{}\end{DoxyParamCaption})}
 
 The function responsible for running commands. 
 \begin{DoxyParams}{Parameters}
-{\em The} & SLL with the command as well as the arguments. \\
+{\em commands} & The pointer to the SLL with the command as well as the arguments. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -139,7 +151,7 @@ bool search (\begin{DoxyParamCaption}\item[{string}]{arg}{}\end{DoxyParamCaption
 
 A function that searches the respective hash table for students or courses. 
 \begin{DoxyParams}{Parameters}
-{\em arg,the} & argument to search for. \\
+{\em arg} & The argument to search for. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -149,11 +161,11 @@ boolean for debugging purposes.
 \index{splitInput@{splitInput}!main.cpp@{main.cpp}}
 \doxysubsubsection{\texorpdfstring{splitInput()}{splitInput()}}
 {\footnotesize\ttfamily \label{main_8cpp_a3b2387acb895c69aea7be91f52b7ae46} 
-slls \texorpdfstring{$\ast$}{*} split\+Input (\begin{DoxyParamCaption}\item[{string}]{input}{}\end{DoxyParamCaption})}
+\mbox{\hyperlink{main_8cpp_aa5b92090c768b58e72e67f3ac52cf156}{slls}} \texorpdfstring{$\ast$}{*} split\+Input (\begin{DoxyParamCaption}\item[{string}]{input}{}\end{DoxyParamCaption})}
 
 Splits the string input and stores it in a linked list. 
 \begin{DoxyParams}{Parameters}
-{\em input,a} & string. \\
+{\em input} & The input string. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -167,7 +179,7 @@ string strip (\begin{DoxyParamCaption}\item[{string}]{arg}{}\end{DoxyParamCaptio
 
 strips all whitespaces in a string. 
 \begin{DoxyParams}{Parameters}
-{\em arg,the} & string. \\
+{\em arg} & The string. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -187,7 +199,7 @@ bool view (\begin{DoxyParamCaption}\item[{string}]{arg}{}\end{DoxyParamCaption})
 
 A function that lists students, courses, or enrollment histories. 
 \begin{DoxyParams}{Parameters}
-{\em arg,the} & object to list. \\
+{\em arg} & The object to list. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

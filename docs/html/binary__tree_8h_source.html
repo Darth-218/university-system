@@ -34,6 +34,7 @@
   <td id="projectalign">
    <div id="projectname">University System
    </div>
+   <div id="projectbrief">A University System utilizing different data structures.</div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -111,33 +112,40 @@ $(function(){initNavTree('binary__tree_8h_source.html',''); initResizable(true);
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="binary__tree__node_8h.html">binary_tree_node.h</a>&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="includes_8h.html">includes.h</a>&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classBinaryTree.html">   11</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span>BinaryTree {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <a class="code hl_class" href="classTNode.html">TNode&lt;T&gt;</a> *root;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="keywordtype">int</span> size;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  BinaryTree();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keywordtype">bool</span> isEmpty();</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span></div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classBinaryTree.html">   16</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code hl_function" href="classBinaryTree.html#a9202cce23960faf8f647c6765decccd4">BinaryTree</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <a class="code hl_class" href="classTNode.html">TNode&lt;T&gt;</a> *root; <span class="comment">//&lt; A pointer to the BinaryTree&#39;s root.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keywordtype">int</span> size;       <span class="comment">//&lt; The size of the tree</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keywordtype">int</span> getSize();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordtype">bool</span> insert(T value);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordtype">bool</span> deleteNode(T value);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordtype">void</span> displayTree();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordtype">void</span> displayNode(<a class="code hl_class" href="classTNode.html">TNode&lt;T&gt;</a> *root);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classBinaryTree.html#a9202cce23960faf8f647c6765decccd4">   25</a></span>  <a class="code hl_function" href="classBinaryTree.html#a9202cce23960faf8f647c6765decccd4">BinaryTree</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classBinaryTree.html#a7bb7652933b48daaa63c2737ed78e3bd">   31</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classBinaryTree.html#a7bb7652933b48daaa63c2737ed78e3bd">isEmpty</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classBinaryTree.html#ad91aadeeb4ce25b841cac83b969e45b7">   37</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classBinaryTree.html#ad91aadeeb4ce25b841cac83b969e45b7">getSize</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classBinaryTree.html#afe64f4a5572adc3c2a847c1e820e99e8">   44</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classBinaryTree.html#afe64f4a5572adc3c2a847c1e820e99e8">insert</a>(T value);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classBinaryTree.html#a528be36b55ef677bbb7f5f519603cf54">   51</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classBinaryTree.html#a528be36b55ef677bbb7f5f519603cf54">deleteNode</a>(T value);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classBinaryTree.html#a1450639633abca5f851defaeb47090f2">   56</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classBinaryTree.html#a1450639633abca5f851defaeb47090f2">displayTree</a>();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classBinaryTree.html#a2a5c9f3e24e202135c83d76d7bdcbd69">   62</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classBinaryTree.html#a2a5c9f3e24e202135c83d76d7bdcbd69">displayNode</a>(<a class="code hl_class" href="classTNode.html">TNode&lt;T&gt;</a> *root);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
 </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;../templates/binary_tree.tpp&quot;</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#include &quot;../templates/binary_tree.tpp&quot;</span></div>
 <div class="ttc" id="abinary__tree__node_8h_html"><div class="ttname"><a href="binary__tree__node_8h.html">binary_tree_node.h</a></div><div class="ttdoc">Defines the Binary Tree Nodes (TNode) class.</div></div>
-<div class="ttc" id="aclassTNode_html"><div class="ttname"><a href="classTNode.html">TNode</a></div><div class="ttdef"><b>Definition</b> binary_tree_node.h:10</div></div>
+<div class="ttc" id="aclassBinaryTree_html_a1450639633abca5f851defaeb47090f2"><div class="ttname"><a href="classBinaryTree.html#a1450639633abca5f851defaeb47090f2">BinaryTree::displayTree</a></div><div class="ttdeci">void displayTree()</div><div class="ttdoc">A function that displays the tree in-order.</div></div>
+<div class="ttc" id="aclassBinaryTree_html_a2a5c9f3e24e202135c83d76d7bdcbd69"><div class="ttname"><a href="classBinaryTree.html#a2a5c9f3e24e202135c83d76d7bdcbd69">BinaryTree::displayNode</a></div><div class="ttdeci">void displayNode(TNode&lt; T &gt; *root)</div><div class="ttdoc">A function that traverses nodes in an in-order traversal.</div></div>
+<div class="ttc" id="aclassBinaryTree_html_a528be36b55ef677bbb7f5f519603cf54"><div class="ttname"><a href="classBinaryTree.html#a528be36b55ef677bbb7f5f519603cf54">BinaryTree::deleteNode</a></div><div class="ttdeci">bool deleteNode(T value)</div><div class="ttdoc">A function that removes a certain value from the tree.</div></div>
+<div class="ttc" id="aclassBinaryTree_html_a7bb7652933b48daaa63c2737ed78e3bd"><div class="ttname"><a href="classBinaryTree.html#a7bb7652933b48daaa63c2737ed78e3bd">BinaryTree::isEmpty</a></div><div class="ttdeci">bool isEmpty()</div><div class="ttdoc">A function to check if the tree is empty.</div></div>
+<div class="ttc" id="aclassBinaryTree_html_a9202cce23960faf8f647c6765decccd4"><div class="ttname"><a href="classBinaryTree.html#a9202cce23960faf8f647c6765decccd4">BinaryTree::BinaryTree</a></div><div class="ttdeci">BinaryTree()</div><div class="ttdoc">Constructs an empty tree.</div></div>
+<div class="ttc" id="aclassBinaryTree_html_ad91aadeeb4ce25b841cac83b969e45b7"><div class="ttname"><a href="classBinaryTree.html#ad91aadeeb4ce25b841cac83b969e45b7">BinaryTree::getSize</a></div><div class="ttdeci">int getSize()</div><div class="ttdoc">A function that returns the size of the tree.</div></div>
+<div class="ttc" id="aclassBinaryTree_html_afe64f4a5572adc3c2a847c1e820e99e8"><div class="ttname"><a href="classBinaryTree.html#afe64f4a5572adc3c2a847c1e820e99e8">BinaryTree::insert</a></div><div class="ttdeci">bool insert(T value)</div><div class="ttdoc">A function that inserts a value in the correct node in the tree.</div></div>
+<div class="ttc" id="aclassTNode_html"><div class="ttname"><a href="classTNode.html">TNode</a></div><div class="ttdoc">The nodes for the BinaryTree class.</div><div class="ttdef"><b>Definition</b> binary_tree_node.h:14</div></div>
 <div class="ttc" id="aincludes_8h_html"><div class="ttname"><a href="includes_8h.html">includes.h</a></div><div class="ttdoc">Collects the included files used throughout the project.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

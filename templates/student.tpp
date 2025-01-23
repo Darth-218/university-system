@@ -13,12 +13,12 @@ Student::Student(int id, string name, string email, string password,
 
   /**
    * @brief Constructs a new Student object with given values.
-   * @param id, the student's ID.
-   * @param name, this student's name.
-   * @param email, this student's email.
-   * @param password, this student's password.
-   * @param address, this student's address.
-   * @param phone, this student's phone.
+   * @param id the student's ID.
+   * @param name this student's name.
+   * @param email this student's email.
+   * @param password this student's password.
+   * @param address this student's address.
+   * @param phone this student's phone.
    */
 
   this->id = id;
@@ -51,7 +51,8 @@ bool Student::alreadyEnrolled(Course course) {
 
   /**
    * @brief Checks if this student is already enrolled in a course.
-   * @param course, the course this student intends to be enrolled in.
+   * @param course the course this student intends to be enrolled in.
+   * @return boolean.
    */
 
   DNode<Course> *current_course = course_history->getHead();
@@ -69,9 +70,11 @@ bool Student::alreadyEnrolled(Course course) {
 }
 
 bool Student::addCourse(Course *course) {
+
   /**
    * @brief A function that adds a course to this student's enrollment history.
-   * @param course, a pointer to the course to add.
+   * @param course a pointer to the course to add.
+   * @return boolean.
    */
 
   course_history->append(*course);
@@ -104,9 +107,11 @@ void Student::displayDetails() {
 ostream &operator<<(std::ostream &os, Student &student) {
 
   /**
-   * @brief Overloading the "<<" operator.
+   * @brief Stream insertion operator.
+   * @param os The input stream.
+   * @param student The object to insert in the stream.
+   * @return os
    */
-
   cout << "ID: " << student.id << ", ";
   cout << "Name: " << student.name << ", ";
   cout << "Email: " << student.email << ", ";

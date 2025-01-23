@@ -8,7 +8,7 @@
 #include "../include/structures.h"
 #include "../include/system.h"
 
-#define slls SinglyLinkedList<string>
+#define slls SinglyLinkedList<string> ///< SinglyLinkedList containing strings.
 
 bool runCommand(slls *commands);
 
@@ -32,7 +32,7 @@ bool freeSeat();
 
 void printHelp();
 
-UniSystem us;
+UniSystem us; ///< The main system object.
 
 void loop() {
   /**
@@ -52,7 +52,7 @@ void loop() {
 slls *splitInput(string input) {
   /**
    * @brief Splits the string input and stores it in a linked list.
-   * @param input, a string.
+   * @param input The input string.
    * @return A singly linked list with each node holding a part of the string.
    */
   slls *split_string = new slls;
@@ -73,7 +73,7 @@ slls *splitInput(string input) {
 string strip(string arg) {
   /**
    * @brief strips all whitespaces in a string.
-   * @param arg, the string.
+   * @param arg The string.
    * @return A string free of whitespace.
    */
   string str = "";
@@ -88,7 +88,8 @@ string strip(string arg) {
 bool runCommand(slls *commands) {
   /**
    * @brief The function responsible for running commands.
-   * @param The SLL with the command as well as the arguments.
+   * @param commands The pointer to the SLL with the command as well as the
+   * arguments.
    * @return A boolean for debugging purposes.
    */
   string command = strip(commands->getHead()->value);
@@ -120,7 +121,7 @@ bool add(string arg) {
   /**
    * @brief A function that adds students, courses, or prerequisites in their
    * respective data structures.
-   * @param arg, argument string.
+   * @param arg The argument string.
    * @return boolean for debugging purposes.
    */
   HashTable<int, string> inputs(4);
@@ -207,7 +208,7 @@ bool search(string arg) {
   /**
    * @brief A function that searches the respective hash table for students or
    * courses.
-   * @param arg, the argument to search for.
+   * @param arg The argument to search for.
    * @return boolean for debugging purposes.
    */
   string id;
@@ -237,7 +238,7 @@ bool search(string arg) {
 bool view(string arg) {
   /**
    * @brief A function that lists students, courses, or enrollment histories.
-   * @param arg, the object to list.
+   * @param arg The object to list.
    * @return boolean for debugging purposes.
    */
   if (arg == "students") {
@@ -264,7 +265,7 @@ bool remove(string arg) {
   /**
    * @brief A function that removes students or courses from their respective
    * data structures.
-   * @param arg, the object to remove.
+   * @param arg The object to remove.
    * @return boolean for debugging purposes.
    */
   string id;
@@ -379,6 +380,10 @@ void printHelp() {
   cout << "exit: to exit the program.\n\n";
 }
 
+/**
+ * @brief The main driver code for the program.
+ * @return 0
+ */
 int main() {
   printHelp();
   testData();

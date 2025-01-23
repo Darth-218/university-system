@@ -25,42 +25,23 @@
 var NAVTREE =
 [
   [ "University System", "index.html", [
-    [ "Project Code Standards", "md_00-project.html", [
-      [ "Module Header", "md_00-project.html#autotoc_md1", null ],
-      [ "Naming Conventions", "md_00-project.html#autotoc_md2", null ],
-      [ "Code Format", "md_00-project.html#autotoc_md3", null ],
-      [ "Project Requirements", "md_00-project.html#autotoc_md4", null ],
-      [ "Project Class Diagram", "md_00-project.html#autotoc_md5", null ],
-      [ "Modules", "md_00-project.html#autotoc_md6", [
-        [ "Singly Linked List", "md_00-project.html#autotoc_md7", [
-          [ "To-Do", "md_00-project.html#autotoc_md8", null ]
-        ] ],
-        [ "Stack", "md_00-project.html#autotoc_md9", [
-          [ "To-Do", "md_00-project.html#autotoc_md10", null ]
-        ] ],
-        [ "Doubly Linked List", "md_00-project.html#autotoc_md11", [
-          [ "To-Do", "md_00-project.html#autotoc_md12", null ]
-        ] ],
-        [ "Queue", "md_00-project.html#autotoc_md13", [
-          [ "To-Do", "md_00-project.html#autotoc_md14", null ]
-        ] ],
-        [ "Binary Tree", "md_00-project.html#autotoc_md15", [
-          [ "To-Do", "md_00-project.html#autotoc_md16", null ]
-        ] ],
-        [ "Hash Table", "md_00-project.html#autotoc_md17", [
-          [ "To-Do", "md_00-project.html#autotoc_md18", null ]
-        ] ]
-      ] ]
-    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ]
+      [ "Class Index", "classes.html", null ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ],
+        [ "Related Symbols", "functions_rela.html", null ]
+      ] ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ]
+        [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
+        [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]

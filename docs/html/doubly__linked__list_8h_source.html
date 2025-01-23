@@ -34,6 +34,7 @@
   <td id="projectalign">
    <div id="projectname">University System
    </div>
+   <div id="projectbrief">A University System utilizing different data structures.</div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -110,42 +111,55 @@ $(function(){initNavTree('doubly__linked__list_8h_source.html',''); initResizabl
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="double__node_8h.html">double_node.h</a>&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html">   10</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span>DoublyLinkedList {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <a class="code hl_class" href="classDNode.html">DNode&lt;T&gt;</a> *head, *tail;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <span class="keywordtype">int</span> length;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  DoublyLinkedList();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keywordtype">bool</span> isEmpty();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keywordtype">int</span> getLength();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <a class="code hl_class" href="classDNode.html">DNode&lt;T&gt;</a> *getHead();</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">bool</span> append(T value);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keywordtype">bool</span> insert(T value, <span class="keywordtype">int</span> position);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordtype">bool</span> push(T value);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordtype">bool</span> removeHead();</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keywordtype">bool</span> removeTail();</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordtype">bool</span> removeNode(<a class="code hl_class" href="classDNode.html">DNode&lt;T&gt;</a> *node);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">bool</span> deleteNode(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">void</span> display();</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html">   15</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code hl_function" href="classDoublyLinkedList.html#ab16fd160493247d26572b9bef7fa078b">DoublyLinkedList</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <a class="code hl_class" href="classDNode.html">DNode&lt;T&gt;</a> *head,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>      *tail;  <span class="comment">//&lt; Pointers to the head and tail of the DoublyLinkedList object.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keywordtype">int</span> length; <span class="comment">//&lt; The length of the DoublyLinkedList object.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#ab16fd160493247d26572b9bef7fa078b">   25</a></span>  <a class="code hl_function" href="classDoublyLinkedList.html#ab16fd160493247d26572b9bef7fa078b">DoublyLinkedList</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a013e8970396a114c748840d5c7e353bc">   31</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classDoublyLinkedList.html#a013e8970396a114c748840d5c7e353bc">isEmpty</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a3d6da4090f37ffa0ac4b1040ce4758c4">   37</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classDoublyLinkedList.html#a3d6da4090f37ffa0ac4b1040ce4758c4">getLength</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#afed52ae173a6e29bda3fed9c174fef25">   43</a></span>  <a class="code hl_class" href="classDNode.html">DNode&lt;T&gt;</a> *<a class="code hl_function" href="classDoublyLinkedList.html#afed52ae173a6e29bda3fed9c174fef25">getHead</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a8570c85c09e186d4aed50483037a1212">   50</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classDoublyLinkedList.html#a8570c85c09e186d4aed50483037a1212">append</a>(T value);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#aceab3a0bbe1bb55b151c93ff86fddf63">   58</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classDoublyLinkedList.html#aceab3a0bbe1bb55b151c93ff86fddf63">insert</a>(T value, <span class="keywordtype">int</span> position);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a7fab7f34d1b8d39c187fb28eba4027cd">   65</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classDoublyLinkedList.html#a7fab7f34d1b8d39c187fb28eba4027cd">push</a>(T value);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a967720e20753ca810f13e7272dfa1691">   71</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classDoublyLinkedList.html#a967720e20753ca810f13e7272dfa1691">removeHead</a>();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#ad81bc0b167faf246374ea7334bb442c5">   77</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classDoublyLinkedList.html#ad81bc0b167faf246374ea7334bb442c5">removeTail</a>();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a8189cdf75ba1ba0e9608e62ec4c1b156">   84</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classDoublyLinkedList.html#a8189cdf75ba1ba0e9608e62ec4c1b156">removeNode</a>(<a class="code hl_class" href="classDNode.html">DNode&lt;T&gt;</a> *node);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a93c7fd3870b6f1c5b2911fdcbd675bc0">   91</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classDoublyLinkedList.html#a93c7fd3870b6f1c5b2911fdcbd675bc0">deleteNode</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classDoublyLinkedList.html#a733d83f0c8329cdc300a6ab7c801b38c">   96</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classDoublyLinkedList.html#a733d83f0c8329cdc300a6ab7c801b38c">display</a>();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>};</div>
 </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &quot;../templates/doubly_linked_list.tpp&quot;</span></div>
-<div class="ttc" id="aclassDNode_html"><div class="ttname"><a href="classDNode.html">DNode</a></div><div class="ttdef"><b>Definition</b> double_node.h:10</div></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#include &quot;../templates/doubly_linked_list.tpp&quot;</span></div>
+<div class="ttc" id="aclassDNode_html"><div class="ttname"><a href="classDNode.html">DNode</a></div><div class="ttdoc">The nodes for the DoublyLinkedList class.</div><div class="ttdef"><b>Definition</b> double_node.h:15</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a013e8970396a114c748840d5c7e353bc"><div class="ttname"><a href="classDoublyLinkedList.html#a013e8970396a114c748840d5c7e353bc">DoublyLinkedList::isEmpty</a></div><div class="ttdeci">bool isEmpty()</div><div class="ttdoc">A function to check if the list is empty.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a3d6da4090f37ffa0ac4b1040ce4758c4"><div class="ttname"><a href="classDoublyLinkedList.html#a3d6da4090f37ffa0ac4b1040ce4758c4">DoublyLinkedList::getLength</a></div><div class="ttdeci">int getLength()</div><div class="ttdoc">A function that returns the length of the list.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a733d83f0c8329cdc300a6ab7c801b38c"><div class="ttname"><a href="classDoublyLinkedList.html#a733d83f0c8329cdc300a6ab7c801b38c">DoublyLinkedList::display</a></div><div class="ttdeci">void display()</div><div class="ttdoc">A function that displays the list.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a7fab7f34d1b8d39c187fb28eba4027cd"><div class="ttname"><a href="classDoublyLinkedList.html#a7fab7f34d1b8d39c187fb28eba4027cd">DoublyLinkedList::push</a></div><div class="ttdeci">bool push(T value)</div><div class="ttdoc">Adds a value to the begining of the list.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a8189cdf75ba1ba0e9608e62ec4c1b156"><div class="ttname"><a href="classDoublyLinkedList.html#a8189cdf75ba1ba0e9608e62ec4c1b156">DoublyLinkedList::removeNode</a></div><div class="ttdeci">bool removeNode(DNode&lt; T &gt; *node)</div><div class="ttdoc">A function that removes a specific node.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a8570c85c09e186d4aed50483037a1212"><div class="ttname"><a href="classDoublyLinkedList.html#a8570c85c09e186d4aed50483037a1212">DoublyLinkedList::append</a></div><div class="ttdeci">bool append(T value)</div><div class="ttdoc">Adds a value to the end of the list.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a93c7fd3870b6f1c5b2911fdcbd675bc0"><div class="ttname"><a href="classDoublyLinkedList.html#a93c7fd3870b6f1c5b2911fdcbd675bc0">DoublyLinkedList::deleteNode</a></div><div class="ttdeci">bool deleteNode(int index)</div><div class="ttdoc">A wrapper function that removes a node from anywhere in the list.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_a967720e20753ca810f13e7272dfa1691"><div class="ttname"><a href="classDoublyLinkedList.html#a967720e20753ca810f13e7272dfa1691">DoublyLinkedList::removeHead</a></div><div class="ttdeci">bool removeHead()</div><div class="ttdoc">A function that removes the head of the list.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_ab16fd160493247d26572b9bef7fa078b"><div class="ttname"><a href="classDoublyLinkedList.html#ab16fd160493247d26572b9bef7fa078b">DoublyLinkedList::DoublyLinkedList</a></div><div class="ttdeci">DoublyLinkedList()</div><div class="ttdoc">Constructs an empty DoublyLinkedList object.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_aceab3a0bbe1bb55b151c93ff86fddf63"><div class="ttname"><a href="classDoublyLinkedList.html#aceab3a0bbe1bb55b151c93ff86fddf63">DoublyLinkedList::insert</a></div><div class="ttdeci">bool insert(T value, int position)</div><div class="ttdoc">Adds a value to an index in the list.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_ad81bc0b167faf246374ea7334bb442c5"><div class="ttname"><a href="classDoublyLinkedList.html#ad81bc0b167faf246374ea7334bb442c5">DoublyLinkedList::removeTail</a></div><div class="ttdeci">bool removeTail()</div><div class="ttdoc">a function that removes the tail of the list.</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html_afed52ae173a6e29bda3fed9c174fef25"><div class="ttname"><a href="classDoublyLinkedList.html#afed52ae173a6e29bda3fed9c174fef25">DoublyLinkedList::getHead</a></div><div class="ttdeci">DNode&lt; T &gt; * getHead()</div><div class="ttdoc">A function that returns the head of the list.</div></div>
 <div class="ttc" id="adouble__node_8h_html"><div class="ttname"><a href="double__node_8h.html">double_node.h</a></div><div class="ttdoc">Defines the Double Node (DNode) class.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -23,7 +23,8 @@ bool UniSystem::studentExists(int id) {
 
   /**
    * @brief A function that checks if a student exists.
-   * @param id, the student's ID.
+   * @param id The student's ID.
+   * @return True if the student exists, false otherwise.
    */
 
   return students_table->get(id) != 0;
@@ -33,6 +34,8 @@ bool UniSystem::courseExists(int id) {
 
   /**
    * @brief A function that checks if a course exists.
+   * @param id The course's ID.
+   * @return True if the course exists, false otherwise.
    */
 
   return courses_table->get(id) != 0;
@@ -43,12 +46,13 @@ bool UniSystem::addStudent(int id, string name, string email, string password,
 
   /**
    * @brief A function that adds a student to the UniSystem object.
-   * @param id, the student's ID.
-   * @param name, this student's name.
-   * @param email, this student's email.
-   * @param password, this student's password.
-   * @param address, this student's address.
-   * @param phone, this student's phone.
+   * @param id The student's ID.
+   * @param name This student's name.
+   * @param email This student's email.
+   * @param password This student's password.
+   * @param address This student's address.
+   * @param phone This student's phone.
+   * @return boolean.
    */
 
   if (students_table->get(id) != NULL) {
@@ -67,7 +71,8 @@ bool UniSystem::deleteStudent(int id) {
 
   /**
    * @brief A function that removes a student from the UniSystem object.
-   * @param id, the student's ID.
+   * @param id the student's ID.
+   * @return boolean.
    */
 
   if (!studentExists(id)) {
@@ -127,12 +132,13 @@ bool UniSystem::addCourse(int id, string name, int credits, string instructor,
   /**
    * @brief A function that adds a course to the UniSystem with given
    * parameters.
-   * @param id, the course's ID.
-   * @param credits, the credits taken from this course.
-   * @param name, this course's name.
-   * @param instructor, this course instructor's name.
-   * @param max_seats, this course's max seats.
-   * @param seats, this course's taken seats.
+   * @param id The course's ID.
+   * @param credits The credits taken from this course.
+   * @param name This course's name.
+   * @param instructor This course instructor's name.
+   * @param max_seats This course's max seats.
+   * @param seats This course's taken seats.
+   * @return boolean.
    */
 
   if (courses_table->get(id) != NULL) {
@@ -151,7 +157,8 @@ bool UniSystem::addCourse(Course course) {
 
   /**
    * @brief A function that adds a course to the UniSystem.
-   * @param course, Course object.
+   * @param course Course object to add.
+   * @return boolean.
    */
 
   courses->deleteNode(course);
@@ -161,9 +168,11 @@ bool UniSystem::addCourse(Course course) {
 }
 
 bool UniSystem::checkWaitlist(Course &course) {
+
   /**
    * @brief A function that checks the waitlist when a course gets a free seat.
-   * @param course, a reference to the Course Object.
+   * @param course A reference to the Course Object.
+   * @return boolean.
    */
 
   if (course.waitlist->isEmpty()) {
@@ -188,7 +197,8 @@ bool UniSystem::dropCourse(int id) {
 
   /**
    * @brief A function that removes a course from the UniSystem object.
-   * @param id, The course ID.
+   * @param id The course ID.
+   * @return boolean.
    */
 
   if (!courseExists(id)) {
@@ -205,7 +215,8 @@ bool UniSystem::searchStudent(int id) {
 
   /**
    * @brief A function that displays a specific student details.
-   * @param id, student ID.
+   * @param id Student ID.
+   * @return boolean.
    */
 
   students_table->get(id)->displayDetails();
@@ -216,7 +227,8 @@ bool UniSystem::searchCourse(int id) {
 
   /**
    * @brief A function that displays a specific course details.
-   * @param id, course ID.
+   * @param id Course ID.
+   * @return boolean.
    */
 
   courses_table->get(id)->displayDetails();

@@ -9,27 +9,29 @@
 \DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{includes_8h}{includes.h}}"{}}}
 \DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}singly\_linked\_list.h"{}}}
 \DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ K,\ \textcolor{keyword}{typename}\ V>\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtable__pair}{table\_pair}}\ \{}
-\DoxyCodeLine{00012\ \ \ K\ key;}
-\DoxyCodeLine{00013\ \ \ V\ value;}
-\DoxyCodeLine{00014\ \};}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00016\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ K,\ \textcolor{keyword}{typename}\ V>\ \textcolor{keyword}{class\ }HashTable\ \{}
-\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00018\ \ \ \textcolor{keywordtype}{int}\ table\_size\ =\ 0;}
-\DoxyCodeLine{00019\ \ \ \mbox{\hyperlink{classSinglyLinkedList}{SinglyLinkedList<table\_pair<K,\ V>}}>\ *hash\_array;}
-\DoxyCodeLine{00020\ \ \ \textcolor{keywordtype}{int}\ hash(K\ key);}
+\DoxyCodeLine{00017\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ K,\ \textcolor{keyword}{typename}\ V>\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtable__pair}{table\_pair}}\ \{}
+\DoxyCodeLine{00018\ \ \ K\ \mbox{\hyperlink{structtable__pair_a0199a2c1cf3ffc3a31323e17f7e5b239}{key}};\ \ \ }
+\DoxyCodeLine{00019\ \ \ V\ \mbox{\hyperlink{structtable__pair_af5549504336cfe52a16d7181b03cd0b8}{value}};\ }
+\DoxyCodeLine{00020\ \};}
 \DoxyCodeLine{00021\ }
-\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00023\ \ \ HashTable(\textcolor{keywordtype}{int}\ table\_size);}
-\DoxyCodeLine{00024\ }
-\DoxyCodeLine{00025\ \ \ \textcolor{keywordtype}{bool}\ insert(K\ key,\ V\ value);}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \ \ V\ *get(K\ key);}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \textcolor{keywordtype}{bool}\ remove(K\ key);}
-\DoxyCodeLine{00030\ \};}
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#include\ "{}../templates/hash\_table.tpp"{}}}
+\DoxyCodeLine{00028\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ K,\ \textcolor{keyword}{typename}\ V>\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classHashTable_af28ab06e87c0b04094b295f8ed97dbd2}{HashTable}}\ \{}
+\DoxyCodeLine{00029\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \ \ \textcolor{keywordtype}{int}\ table\_size\ =\ 0;\ }
+\DoxyCodeLine{00031\ \ \ \mbox{\hyperlink{classSinglyLinkedList}{SinglyLinkedList<table\_pair<K,\ V>}}>}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ *hash\_array;\ }
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00039\ \ \ \textcolor{keywordtype}{int}\ hash(K\ key);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00046\ \ \ \mbox{\hyperlink{classHashTable_af28ab06e87c0b04094b295f8ed97dbd2}{HashTable}}(\textcolor{keywordtype}{int}\ table\_size);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00054\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classHashTable_a9179431b16a4c5660030d8f1dc737144}{insert}}(K\ key,\ V\ value);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00061\ \ \ V\ *\mbox{\hyperlink{classHashTable_af2fdb4563722149df02105e06c1dd958}{get}}(K\ key);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00068\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classHashTable_a569433949bf6814c02de22bd57776b89}{remove}}(K\ key);}
+\DoxyCodeLine{00069\ \};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#include\ "{}../templates/hash\_table.tpp"{}}}
 
 \end{DoxyCode}

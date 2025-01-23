@@ -34,6 +34,7 @@
   <td id="projectalign">
    <div id="projectname">University System
    </div>
+   <div id="projectbrief">A University System utilizing different data structures.</div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -111,36 +112,44 @@ $(function(){initNavTree('hash__table_8h_source.html',''); initResizable(true); 
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="includes_8h.html">includes.h</a>&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;singly_linked_list.h&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="structtable__pair.html">   11</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt; <span class="keyword">struct </span><a class="code hl_struct" href="structtable__pair.html">table_pair</a> {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  K key;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  V value;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>};</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span></div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structtable__pair.html">   17</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt; <span class="keyword">struct </span><a class="code hl_class" href="structtable__pair.html">table_pair</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structtable__pair.html#a0199a2c1cf3ffc3a31323e17f7e5b239">   18</a></span>  K <a class="code hl_variable" href="structtable__pair.html#a0199a2c1cf3ffc3a31323e17f7e5b239">key</a>;   </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structtable__pair.html#af5549504336cfe52a16d7181b03cd0b8">   19</a></span>  V <a class="code hl_variable" href="structtable__pair.html#af5549504336cfe52a16d7181b03cd0b8">value</a>; </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
 </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classHashTable.html">   16</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt; <span class="keyword">class </span>HashTable {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keywordtype">int</span> table_size = 0;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <a class="code hl_class" href="classSinglyLinkedList.html">SinglyLinkedList&lt;table_pair&lt;K, V&gt;</a>&gt; *hash_array;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keywordtype">int</span> hash(K key);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  HashTable(<span class="keywordtype">int</span> table_size);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordtype">bool</span> insert(K key, V value);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  V *get(K key);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordtype">bool</span> remove(K key);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classHashTable.html">   28</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> V&gt; <span class="keyword">class </span><a class="code hl_function" href="classHashTable.html#af28ab06e87c0b04094b295f8ed97dbd2">HashTable</a> {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordtype">int</span> table_size = 0; </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <a class="code hl_class" href="classSinglyLinkedList.html">SinglyLinkedList&lt;table_pair&lt;K, V&gt;</a>&gt;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      *hash_array; </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">int</span> hash(K key);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classHashTable.html#af28ab06e87c0b04094b295f8ed97dbd2">   46</a></span>  <a class="code hl_function" href="classHashTable.html#af28ab06e87c0b04094b295f8ed97dbd2">HashTable</a>(<span class="keywordtype">int</span> table_size);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classHashTable.html#a9179431b16a4c5660030d8f1dc737144">   54</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classHashTable.html#a9179431b16a4c5660030d8f1dc737144">insert</a>(K key, V value);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classHashTable.html#af2fdb4563722149df02105e06c1dd958">   61</a></span>  V *<a class="code hl_function" href="classHashTable.html#af2fdb4563722149df02105e06c1dd958">get</a>(K key);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classHashTable.html#a569433949bf6814c02de22bd57776b89">   68</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classHashTable.html#a569433949bf6814c02de22bd57776b89">remove</a>(K key);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>};</div>
 </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;../templates/hash_table.tpp&quot;</span></div>
-<div class="ttc" id="aclassSinglyLinkedList_html"><div class="ttname"><a href="classSinglyLinkedList.html">SinglyLinkedList</a></div><div class="ttdef"><b>Definition</b> singly_linked_list.h:12</div></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#include &quot;../templates/hash_table.tpp&quot;</span></div>
+<div class="ttc" id="aclassHashTable_html_a569433949bf6814c02de22bd57776b89"><div class="ttname"><a href="classHashTable.html#a569433949bf6814c02de22bd57776b89">HashTable::remove</a></div><div class="ttdeci">bool remove(K key)</div><div class="ttdoc">A function that removes a value from the HashTable object.</div></div>
+<div class="ttc" id="aclassHashTable_html_a9179431b16a4c5660030d8f1dc737144"><div class="ttname"><a href="classHashTable.html#a9179431b16a4c5660030d8f1dc737144">HashTable::insert</a></div><div class="ttdeci">bool insert(K key, V value)</div><div class="ttdoc">A function that inserts a value into the HashTable object.</div></div>
+<div class="ttc" id="aclassHashTable_html_af28ab06e87c0b04094b295f8ed97dbd2"><div class="ttname"><a href="classHashTable.html#af28ab06e87c0b04094b295f8ed97dbd2">HashTable::HashTable</a></div><div class="ttdeci">HashTable(int table_size)</div><div class="ttdoc">Constructs an empty HashTable object given a size.</div></div>
+<div class="ttc" id="aclassHashTable_html_af2fdb4563722149df02105e06c1dd958"><div class="ttname"><a href="classHashTable.html#af2fdb4563722149df02105e06c1dd958">HashTable::get</a></div><div class="ttdeci">V * get(K key)</div><div class="ttdoc">A function that returns a pointer to the value using a key.</div></div>
+<div class="ttc" id="aclassSinglyLinkedList_html"><div class="ttname"><a href="classSinglyLinkedList.html">SinglyLinkedList</a></div><div class="ttdoc">The SinglyLinkedList class.</div><div class="ttdef"><b>Definition</b> singly_linked_list.h:15</div></div>
 <div class="ttc" id="aincludes_8h_html"><div class="ttname"><a href="includes_8h.html">includes.h</a></div><div class="ttdoc">Collects the included files used throughout the project.</div></div>
-<div class="ttc" id="astructtable__pair_html"><div class="ttname"><a href="structtable__pair.html">table_pair</a></div><div class="ttdef"><b>Definition</b> hash_table.h:11</div></div>
+<div class="ttc" id="astructtable__pair_html"><div class="ttname"><a href="structtable__pair.html">table_pair</a></div><div class="ttdoc">A container for a key and its value.</div><div class="ttdef"><b>Definition</b> hash_table.h:17</div></div>
+<div class="ttc" id="astructtable__pair_html_a0199a2c1cf3ffc3a31323e17f7e5b239"><div class="ttname"><a href="structtable__pair.html#a0199a2c1cf3ffc3a31323e17f7e5b239">table_pair::key</a></div><div class="ttdeci">K key</div><div class="ttdoc">The key to store.</div><div class="ttdef"><b>Definition</b> hash_table.h:18</div></div>
+<div class="ttc" id="astructtable__pair_html_af5549504336cfe52a16d7181b03cd0b8"><div class="ttname"><a href="structtable__pair.html#af5549504336cfe52a16d7181b03cd0b8">table_pair::value</a></div><div class="ttdeci">V value</div><div class="ttdoc">The value to store.</div><div class="ttdef"><b>Definition</b> hash_table.h:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -34,6 +34,7 @@
   <td id="projectalign">
    <div id="projectname">University System
    </div>
+   <div id="projectbrief">A University System utilizing different data structures.</div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -108,22 +109,155 @@ $(function(){initNavTree('classHashTable.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">HashTable&lt; K, V &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="classHashTable.html" title="The HashTable class.">HashTable</a> class.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="hash__table_8h_source.html">hash_table.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af28ab06e87c0b04094b295f8ed97dbd2" id="r_af28ab06e87c0b04094b295f8ed97dbd2"><td class="memItemLeft" align="right" valign="top"><a id="af28ab06e87c0b04094b295f8ed97dbd2" name="af28ab06e87c0b04094b295f8ed97dbd2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>HashTable</b> (int table_size)</td></tr>
+<tr class="memitem:af28ab06e87c0b04094b295f8ed97dbd2" id="r_af28ab06e87c0b04094b295f8ed97dbd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af28ab06e87c0b04094b295f8ed97dbd2">HashTable</a> (int table_size)</td></tr>
+<tr class="memdesc:af28ab06e87c0b04094b295f8ed97dbd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty <a class="el" href="classHashTable.html" title="The HashTable class.">HashTable</a> object given a size.  <br /></td></tr>
 <tr class="separator:af28ab06e87c0b04094b295f8ed97dbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9179431b16a4c5660030d8f1dc737144" id="r_a9179431b16a4c5660030d8f1dc737144"><td class="memItemLeft" align="right" valign="top"><a id="a9179431b16a4c5660030d8f1dc737144" name="a9179431b16a4c5660030d8f1dc737144"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (K key, V value)</td></tr>
+<tr class="memitem:a9179431b16a4c5660030d8f1dc737144" id="r_a9179431b16a4c5660030d8f1dc737144"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9179431b16a4c5660030d8f1dc737144">insert</a> (K key, V value)</td></tr>
+<tr class="memdesc:a9179431b16a4c5660030d8f1dc737144"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that inserts a value into the <a class="el" href="classHashTable.html" title="The HashTable class.">HashTable</a> object.  <br /></td></tr>
 <tr class="separator:a9179431b16a4c5660030d8f1dc737144"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2fdb4563722149df02105e06c1dd958" id="r_af2fdb4563722149df02105e06c1dd958"><td class="memItemLeft" align="right" valign="top"><a id="af2fdb4563722149df02105e06c1dd958" name="af2fdb4563722149df02105e06c1dd958"></a>
-V *&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (K key)</td></tr>
+<tr class="memitem:af2fdb4563722149df02105e06c1dd958" id="r_af2fdb4563722149df02105e06c1dd958"><td class="memItemLeft" align="right" valign="top">V *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2fdb4563722149df02105e06c1dd958">get</a> (K key)</td></tr>
+<tr class="memdesc:af2fdb4563722149df02105e06c1dd958"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that returns a pointer to the value using a key.  <br /></td></tr>
 <tr class="separator:af2fdb4563722149df02105e06c1dd958"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a569433949bf6814c02de22bd57776b89" id="r_a569433949bf6814c02de22bd57776b89"><td class="memItemLeft" align="right" valign="top"><a id="a569433949bf6814c02de22bd57776b89" name="a569433949bf6814c02de22bd57776b89"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> (K key)</td></tr>
+<tr class="memitem:a569433949bf6814c02de22bd57776b89" id="r_a569433949bf6814c02de22bd57776b89"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a569433949bf6814c02de22bd57776b89">remove</a> (K key)</td></tr>
+<tr class="memdesc:a569433949bf6814c02de22bd57776b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that removes a value from the <a class="el" href="classHashTable.html" title="The HashTable class.">HashTable</a> object.  <br /></td></tr>
 <tr class="separator:a569433949bf6814c02de22bd57776b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename K, typename V&gt;<br />
+class HashTable&lt; K, V &gt;</div><p>The <a class="el" href="classHashTable.html" title="The HashTable class.">HashTable</a> class. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">K</td><td>The type of key values. </td></tr>
+    <tr><td class="paramname">V</td><td>The type of values. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af28ab06e87c0b04094b295f8ed97dbd2" name="af28ab06e87c0b04094b295f8ed97dbd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af28ab06e87c0b04094b295f8ed97dbd2">&#9670;&#160;</a></span>HashTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classHashTable.html">HashTable</a>&lt; K, V &gt;<a class="el" href="classHashTable.html">::HashTable</a> </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>table_size</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs an empty <a class="el" href="classHashTable.html" title="The HashTable class.">HashTable</a> object given a size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">table_size</td><td>The size intended for the table. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af2fdb4563722149df02105e06c1dd958" name="af2fdb4563722149df02105e06c1dd958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2fdb4563722149df02105e06c1dd958">&#9670;&#160;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">V * <a class="el" href="classHashTable.html">HashTable</a>&lt; K, V &gt;::get </td>
+          <td>(</td>
+          <td class="paramtype">K</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A function that returns a pointer to the value using a key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key of the value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the value. </dd></dl>
+
+</div>
+</div>
+<a id="a9179431b16a4c5660030d8f1dc737144" name="a9179431b16a4c5660030d8f1dc737144"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9179431b16a4c5660030d8f1dc737144">&#9670;&#160;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classHashTable.html">HashTable</a>&lt; K, V &gt;::insert </td>
+          <td>(</td>
+          <td class="paramtype">K</td>          <td class="paramname"><span class="paramname"><em>key</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">V</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A function that inserts a value into the <a class="el" href="classHashTable.html" title="The HashTable class.">HashTable</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the key of the value. </td></tr>
+    <tr><td class="paramname">value</td><td>the value to insert. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean. </dd></dl>
+
+</div>
+</div>
+<a id="a569433949bf6814c02de22bd57776b89" name="a569433949bf6814c02de22bd57776b89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a569433949bf6814c02de22bd57776b89">&#9670;&#160;</a></span>remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classHashTable.html">HashTable</a>&lt; K, V &gt;::remove </td>
+          <td>(</td>
+          <td class="paramtype">K</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A function that removes a value from the <a class="el" href="classHashTable.html" title="The HashTable class.">HashTable</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key of the value to remove. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/<a class="el" href="hash__table_8h_source.html">hash_table.h</a></li>
 </ul>

@@ -1,56 +1,261 @@
 \doxysection{Uni\+System Class Reference}
 \hypertarget{classUniSystem}{}\label{classUniSystem}\index{UniSystem@{UniSystem}}
+
+
+The \doxylink{classUniSystem}{Uni\+System} class.  
+
+
+
+
+{\ttfamily \#include $<$system.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classUniSystem_ac073798d3a4a99d9bf809fb070c50f9f}\label{classUniSystem_ac073798d3a4a99d9bf809fb070c50f9f} 
-bool {\bfseries course\+Exists} (int id)
-\item 
-\Hypertarget{classUniSystem_a4b4ad232210be670fe792d38584f0c1f}\label{classUniSystem_a4b4ad232210be670fe792d38584f0c1f} 
-bool {\bfseries student\+Exists} (int id)
-\item 
-\Hypertarget{classUniSystem_a437410e0eeea0056855839fd5ec5e420}\label{classUniSystem_a437410e0eeea0056855839fd5ec5e420} 
-bool {\bfseries add\+Student} (int id, string name, string email, string password, string address, int phone)
-\item 
-\Hypertarget{classUniSystem_a7247fb2b633c9046fdf3b9c0ca79fe19}\label{classUniSystem_a7247fb2b633c9046fdf3b9c0ca79fe19} 
-bool {\bfseries delete\+Student} (int id)
-\item 
+\Hypertarget{classUniSystem_a2be5802336ecf9b9d745f138a85aa512}\label{classUniSystem_a2be5802336ecf9b9d745f138a85aa512} 
+{\bfseries Uni\+System} ()
+\begin{DoxyCompactList}\small\item\em Constructs an empty \doxylink{classUniSystem}{Uni\+System} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUniSystem_ac073798d3a4a99d9bf809fb070c50f9f}{course\+Exists}} (int id)
+\begin{DoxyCompactList}\small\item\em A function that checks if a course exists. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUniSystem_a4b4ad232210be670fe792d38584f0c1f}{student\+Exists}} (int id)
+\begin{DoxyCompactList}\small\item\em A function that checks if a student exists. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUniSystem_a437410e0eeea0056855839fd5ec5e420}{add\+Student}} (int id, string name, string email, string password, string address, int phone)
+\begin{DoxyCompactList}\small\item\em A function that adds a student to the \doxylink{classUniSystem}{Uni\+System} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUniSystem_a7247fb2b633c9046fdf3b9c0ca79fe19}{delete\+Student}} (int id)
+\begin{DoxyCompactList}\small\item\em A function that removes a student from the \doxylink{classUniSystem}{Uni\+System} object. \end{DoxyCompactList}\item 
 \Hypertarget{classUniSystem_aac7fa651bcb3c617dee25afe777bd8b2}\label{classUniSystem_aac7fa651bcb3c617dee25afe777bd8b2} 
 void {\bfseries list\+Students} ()
-\item 
+\begin{DoxyCompactList}\small\item\em A function that lists all students in the \doxylink{classUniSystem}{Uni\+System} object. \end{DoxyCompactList}\item 
 \Hypertarget{classUniSystem_a4d2d5dfe78082e4044b2a4d04a7f2ba4}\label{classUniSystem_a4d2d5dfe78082e4044b2a4d04a7f2ba4} 
 void {\bfseries list\+Courses} ()
-\item 
-\Hypertarget{classUniSystem_a6374d503f305afe14fa3c6659f18939d}\label{classUniSystem_a6374d503f305afe14fa3c6659f18939d} 
-bool {\bfseries free\+Seat} (\mbox{\hyperlink{classCourse}{Course}} \&course)
-\item 
-\Hypertarget{classUniSystem_a8bb14556d0c73063b33633a01e534069}\label{classUniSystem_a8bb14556d0c73063b33633a01e534069} 
-bool {\bfseries add\+Course} (int id, string name, int credits, string instructor, int max\+\_\+seats, int seats)
-\item 
-\Hypertarget{classUniSystem_a90f44ee808d2dc33fef133bd8a97afe1}\label{classUniSystem_a90f44ee808d2dc33fef133bd8a97afe1} 
-bool {\bfseries add\+Course} (\mbox{\hyperlink{classCourse}{Course}} course)
-\item 
-\Hypertarget{classUniSystem_aa2a0cb6c5aef1af97ee6e6bba66e2f8b}\label{classUniSystem_aa2a0cb6c5aef1af97ee6e6bba66e2f8b} 
-bool {\bfseries drop\+Course} (int id)
-\item 
-\Hypertarget{classUniSystem_aa6a5841c56699b35695260b0235b75f0}\label{classUniSystem_aa6a5841c56699b35695260b0235b75f0} 
-bool {\bfseries check\+Waitlist} (\mbox{\hyperlink{classCourse}{Course}} \&course)
-\item 
-\Hypertarget{classUniSystem_add02a89599a801e6edc8c3945197798d}\label{classUniSystem_add02a89599a801e6edc8c3945197798d} 
-bool {\bfseries search\+Student} (int id)
-\item 
-\Hypertarget{classUniSystem_a795b934fa85886b706e6c830939f3d8f}\label{classUniSystem_a795b934fa85886b706e6c830939f3d8f} 
-bool {\bfseries search\+Course} (int id)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A function that lists all courses in the \doxylink{classUniSystem}{Uni\+System} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUniSystem_a8bb14556d0c73063b33633a01e534069}{add\+Course}} (int id, string name, int credits, string instructor, int max\+\_\+seats, int seats)
+\begin{DoxyCompactList}\small\item\em A function that adds a course to the \doxylink{classUniSystem}{Uni\+System} with given parameters. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUniSystem_a90f44ee808d2dc33fef133bd8a97afe1}{add\+Course}} (\mbox{\hyperlink{classCourse}{Course}} course)
+\begin{DoxyCompactList}\small\item\em A function that adds a course to the \doxylink{classUniSystem}{Uni\+System}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUniSystem_aa2a0cb6c5aef1af97ee6e6bba66e2f8b}{drop\+Course}} (int id)
+\begin{DoxyCompactList}\small\item\em A function that removes a course from the \doxylink{classUniSystem}{Uni\+System} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUniSystem_aa6a5841c56699b35695260b0235b75f0}{check\+Waitlist}} (\mbox{\hyperlink{classCourse}{Course}} \&course)
+\begin{DoxyCompactList}\small\item\em A function that checks the waitlist when a course gets a free seat. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUniSystem_add02a89599a801e6edc8c3945197798d}{search\+Student}} (int id)
+\begin{DoxyCompactList}\small\item\em A function that displays a specific student details. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUniSystem_a795b934fa85886b706e6c830939f3d8f}{search\+Course}} (int id)
+\begin{DoxyCompactList}\small\item\em A function that displays a specific course details. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{classUniSystem_ae96ef187c103b16cb20b45a55d4f0c19}\label{classUniSystem_ae96ef187c103b16cb20b45a55d4f0c19} 
 \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ int, \mbox{\hyperlink{classCourse}{Course}} $>$ \texorpdfstring{$\ast$}{*} {\bfseries courses\+\_\+table}
-\item 
+\begin{DoxyCompactList}\small\item\em A hash table to store \doxylink{classCourse}{Course} objects. \end{DoxyCompactList}\item 
 \Hypertarget{classUniSystem_aef8450e005750906b4997680bce18e87}\label{classUniSystem_aef8450e005750906b4997680bce18e87} 
 \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ int, \mbox{\hyperlink{classStudent}{Student}} $>$ \texorpdfstring{$\ast$}{*} {\bfseries students\+\_\+table}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A hash table to store \doxylink{classStudent}{Student} objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classUniSystem}{Uni\+System} class. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classUniSystem_a90f44ee808d2dc33fef133bd8a97afe1}\index{UniSystem@{UniSystem}!addCourse@{addCourse}}
+\index{addCourse@{addCourse}!UniSystem@{UniSystem}}
+\doxysubsubsection{\texorpdfstring{addCourse()}{addCourse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classUniSystem_a90f44ee808d2dc33fef133bd8a97afe1} 
+bool Uni\+System\+::add\+Course (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCourse}{Course}}}]{course}{}\end{DoxyParamCaption})}
+
+
+
+A function that adds a course to the \doxylink{classUniSystem}{Uni\+System}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & \doxylink{classCourse}{Course} object to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classUniSystem_a8bb14556d0c73063b33633a01e534069}\index{UniSystem@{UniSystem}!addCourse@{addCourse}}
+\index{addCourse@{addCourse}!UniSystem@{UniSystem}}
+\doxysubsubsection{\texorpdfstring{addCourse()}{addCourse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classUniSystem_a8bb14556d0c73063b33633a01e534069} 
+bool Uni\+System\+::add\+Course (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{string}]{name}{, }\item[{int}]{credits}{, }\item[{string}]{instructor}{, }\item[{int}]{max\+\_\+seats}{, }\item[{int}]{seats}{}\end{DoxyParamCaption})}
+
+
+
+A function that adds a course to the \doxylink{classUniSystem}{Uni\+System} with given parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The course\textquotesingle{}s ID. \\
+\hline
+{\em credits} & The credits taken from this course. \\
+\hline
+{\em name} & This course\textquotesingle{}s name. \\
+\hline
+{\em instructor} & This course instructor\textquotesingle{}s name. \\
+\hline
+{\em max\+\_\+seats} & This course\textquotesingle{}s max seats. \\
+\hline
+{\em seats} & This course\textquotesingle{}s taken seats. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classUniSystem_a437410e0eeea0056855839fd5ec5e420}\index{UniSystem@{UniSystem}!addStudent@{addStudent}}
+\index{addStudent@{addStudent}!UniSystem@{UniSystem}}
+\doxysubsubsection{\texorpdfstring{addStudent()}{addStudent()}}
+{\footnotesize\ttfamily \label{classUniSystem_a437410e0eeea0056855839fd5ec5e420} 
+bool Uni\+System\+::add\+Student (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{string}]{name}{, }\item[{string}]{email}{, }\item[{string}]{password}{, }\item[{string}]{address}{, }\item[{int}]{phone}{}\end{DoxyParamCaption})}
+
+
+
+A function that adds a student to the \doxylink{classUniSystem}{Uni\+System} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The student\textquotesingle{}s ID. \\
+\hline
+{\em name} & This student\textquotesingle{}s name. \\
+\hline
+{\em email} & This student\textquotesingle{}s email. \\
+\hline
+{\em password} & This student\textquotesingle{}s password. \\
+\hline
+{\em address} & This student\textquotesingle{}s address. \\
+\hline
+{\em phone} & This student\textquotesingle{}s phone. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classUniSystem_aa6a5841c56699b35695260b0235b75f0}\index{UniSystem@{UniSystem}!checkWaitlist@{checkWaitlist}}
+\index{checkWaitlist@{checkWaitlist}!UniSystem@{UniSystem}}
+\doxysubsubsection{\texorpdfstring{checkWaitlist()}{checkWaitlist()}}
+{\footnotesize\ttfamily \label{classUniSystem_aa6a5841c56699b35695260b0235b75f0} 
+bool Uni\+System\+::check\+Waitlist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCourse}{Course}} \&}]{course}{}\end{DoxyParamCaption})}
+
+
+
+A function that checks the waitlist when a course gets a free seat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & A reference to the \doxylink{classCourse}{Course} Object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classUniSystem_ac073798d3a4a99d9bf809fb070c50f9f}\index{UniSystem@{UniSystem}!courseExists@{courseExists}}
+\index{courseExists@{courseExists}!UniSystem@{UniSystem}}
+\doxysubsubsection{\texorpdfstring{courseExists()}{courseExists()}}
+{\footnotesize\ttfamily \label{classUniSystem_ac073798d3a4a99d9bf809fb070c50f9f} 
+bool Uni\+System\+::course\+Exists (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+A function that checks if a course exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The course\textquotesingle{}s ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the course exists, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classUniSystem_a7247fb2b633c9046fdf3b9c0ca79fe19}\index{UniSystem@{UniSystem}!deleteStudent@{deleteStudent}}
+\index{deleteStudent@{deleteStudent}!UniSystem@{UniSystem}}
+\doxysubsubsection{\texorpdfstring{deleteStudent()}{deleteStudent()}}
+{\footnotesize\ttfamily \label{classUniSystem_a7247fb2b633c9046fdf3b9c0ca79fe19} 
+bool Uni\+System\+::delete\+Student (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+A function that removes a student from the \doxylink{classUniSystem}{Uni\+System} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the student\textquotesingle{}s ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classUniSystem_aa2a0cb6c5aef1af97ee6e6bba66e2f8b}\index{UniSystem@{UniSystem}!dropCourse@{dropCourse}}
+\index{dropCourse@{dropCourse}!UniSystem@{UniSystem}}
+\doxysubsubsection{\texorpdfstring{dropCourse()}{dropCourse()}}
+{\footnotesize\ttfamily \label{classUniSystem_aa2a0cb6c5aef1af97ee6e6bba66e2f8b} 
+bool Uni\+System\+::drop\+Course (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+A function that removes a course from the \doxylink{classUniSystem}{Uni\+System} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The course ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classUniSystem_a795b934fa85886b706e6c830939f3d8f}\index{UniSystem@{UniSystem}!searchCourse@{searchCourse}}
+\index{searchCourse@{searchCourse}!UniSystem@{UniSystem}}
+\doxysubsubsection{\texorpdfstring{searchCourse()}{searchCourse()}}
+{\footnotesize\ttfamily \label{classUniSystem_a795b934fa85886b706e6c830939f3d8f} 
+bool Uni\+System\+::search\+Course (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+A function that displays a specific course details. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \doxylink{classCourse}{Course} ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classUniSystem_add02a89599a801e6edc8c3945197798d}\index{UniSystem@{UniSystem}!searchStudent@{searchStudent}}
+\index{searchStudent@{searchStudent}!UniSystem@{UniSystem}}
+\doxysubsubsection{\texorpdfstring{searchStudent()}{searchStudent()}}
+{\footnotesize\ttfamily \label{classUniSystem_add02a89599a801e6edc8c3945197798d} 
+bool Uni\+System\+::search\+Student (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+A function that displays a specific student details. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \doxylink{classStudent}{Student} ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classUniSystem_a4b4ad232210be670fe792d38584f0c1f}\index{UniSystem@{UniSystem}!studentExists@{studentExists}}
+\index{studentExists@{studentExists}!UniSystem@{UniSystem}}
+\doxysubsubsection{\texorpdfstring{studentExists()}{studentExists()}}
+{\footnotesize\ttfamily \label{classUniSystem_a4b4ad232210be670fe792d38584f0c1f} 
+bool Uni\+System\+::student\+Exists (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+A function that checks if a student exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The student\textquotesingle{}s ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the student exists, false otherwise. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

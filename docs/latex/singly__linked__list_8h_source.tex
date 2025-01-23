@@ -8,39 +8,38 @@
 \DoxyCodeLine{00007\ }
 \DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{single__node_8h}{single\_node.h}}"{}}}
 \DoxyCodeLine{00009\ }
-\DoxyCodeLine{00010\ \textcolor{keyword}{using\ namespace\ }std;}
-\DoxyCodeLine{00011\ }
-\DoxyCodeLine{00012\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>\ \textcolor{keyword}{class\ }SinglyLinkedList\ \{}
-\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00014\ \ \ \mbox{\hyperlink{classSNode}{SNode<T>}}\ *head,\ *tail;}
-\DoxyCodeLine{00015\ \ \ \textcolor{keywordtype}{int}\ length;}
-\DoxyCodeLine{00016\ }
-\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00018\ \ \ SinglyLinkedList();}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00020\ \ \ \mbox{\hyperlink{classSNode}{SNode<T>}}\ *getHead();}
-\DoxyCodeLine{00021\ }
-\DoxyCodeLine{00022\ \ \ \textcolor{keywordtype}{bool}\ isEmpty();}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \ \ \textcolor{keywordtype}{bool}\ append(T\ value);}
-\DoxyCodeLine{00025\ }
-\DoxyCodeLine{00026\ \ \ \textcolor{keywordtype}{bool}\ insert(T\ value,\ \textcolor{keywordtype}{int}\ position);}
-\DoxyCodeLine{00027\ }
-\DoxyCodeLine{00028\ \ \ \textcolor{keywordtype}{bool}\ push(T\ value);}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00030\ \ \ \textcolor{keywordtype}{bool}\ removeNode(\mbox{\hyperlink{classSNode}{SNode<T>}}\ *node);}
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00032\ \ \ \textcolor{keywordtype}{bool}\ removeHead();}
-\DoxyCodeLine{00033\ }
-\DoxyCodeLine{00034\ \ \ \textcolor{keywordtype}{bool}\ removeTail();}
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \ \ \textcolor{keywordtype}{bool}\ deleteNode(\textcolor{keywordtype}{int}\ position);}
-\DoxyCodeLine{00037\ }
-\DoxyCodeLine{00038\ \ \ \textcolor{keywordtype}{void}\ display();}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00040\ \ \ \textcolor{keywordtype}{int}\ getLength();}
-\DoxyCodeLine{00041\ \};}
-\DoxyCodeLine{00042\ }
-\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#include\ "{}../templates/singly\_linked\_list.tpp"{}}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSinglyLinkedList_ac0c697ada1d5f5977853e7e31364ef92}{SinglyLinkedList}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \mbox{\hyperlink{classSNode}{SNode<T>}}\ *head,}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ *tail;\ \ \textcolor{comment}{//<\ Pointers\ to\ the\ head\ and\ tail\ of\ the\ SinglyLinkedList\ object;}}
+\DoxyCodeLine{00019\ \ \ \textcolor{keywordtype}{int}\ length;\ \textcolor{comment}{//<\ The\ length\ of\ the\ SinglyLinkedList\ object;}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \mbox{\hyperlink{classSinglyLinkedList_ac0c697ada1d5f5977853e7e31364ef92}{SinglyLinkedList}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00031\ \ \ \mbox{\hyperlink{classSNode}{SNode<T>}}\ *\mbox{\hyperlink{classSinglyLinkedList_abff424e0d5a39f7c0ef65513aa8f0d3e}{getHead}}();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00037\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSinglyLinkedList_a080dd6ebc86ca8f0c166bcdd1c10ea58}{isEmpty}}();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00044\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSinglyLinkedList_af3e104eceb0327f22fdfba8b6d72df69}{append}}(T\ value);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00052\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSinglyLinkedList_a44972073264ea905f93732b4b3b6acb9}{insert}}(T\ value,\ \textcolor{keywordtype}{int}\ position);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSinglyLinkedList_a0ff5728d443501b7d4766802a520f116}{push}}(T\ value);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSinglyLinkedList_ad2478ed4d28e8a18a6fb3d12d69b6436}{removeNode}}(\mbox{\hyperlink{classSNode}{SNode<T>}}\ *node);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSinglyLinkedList_a2a500a7ff9cad579e9058a30d851335d}{removeHead}}();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00078\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSinglyLinkedList_ad98cfdd0e92e2d6e0c5e19e8c5ca6be4}{removeTail}}();}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00085\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSinglyLinkedList_a223740f7e3448a759435c03fd0b44682}{deleteNode}}(\textcolor{keywordtype}{int}\ position);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00090\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSinglyLinkedList_a4e246972efe73987cbbe5e78826b8d50}{display}}();}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00096\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSinglyLinkedList_a9e858453f33cae1fcd6764359b20bd27}{getLength}}();}
+\DoxyCodeLine{00097\ \};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#include\ "{}../templates/singly\_linked\_list.tpp"{}}}
 
 \end{DoxyCode}

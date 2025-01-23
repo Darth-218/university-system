@@ -1,23 +1,58 @@
 \doxysection{DNode\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
 \hypertarget{classDNode}{}\label{classDNode}\index{DNode$<$ T $>$@{DNode$<$ T $>$}}
+
+
+The nodes for the \doxylink{classDoublyLinkedList}{Doubly\+Linked\+List} class.  
+
+
+
+
+{\ttfamily \#include $<$double\+\_\+node.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classDNode_aff3a5ba82c6fee5b9863c5083e45ed0f}\label{classDNode_aff3a5ba82c6fee5b9863c5083e45ed0f} 
-{\bfseries DNode} (T value)
+\mbox{\hyperlink{classDNode_aff3a5ba82c6fee5b9863c5083e45ed0f}{DNode}} (T \mbox{\hyperlink{classDNode_a557604208e1ad4e6540a4098a5d08b47}{value}})
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{classDNode_a557604208e1ad4e6540a4098a5d08b47}\label{classDNode_a557604208e1ad4e6540a4098a5d08b47} 
 T {\bfseries value}
-\item 
+\begin{DoxyCompactList}\small\item\em The stored value. \end{DoxyCompactList}\item 
 \Hypertarget{classDNode_a60baec7505ba9191707eadf34e383ee8}\label{classDNode_a60baec7505ba9191707eadf34e383ee8} 
 \mbox{\hyperlink{classDNode}{DNode}} \texorpdfstring{$\ast$}{*} {\bfseries prev}
-\item 
+\begin{DoxyCompactList}\small\item\em Pointers to the previous \doxylink{classDNode}{DNode} object. \end{DoxyCompactList}\item 
 \Hypertarget{classDNode_a241190a5a779e031b3ae9c6019690428}\label{classDNode_a241190a5a779e031b3ae9c6019690428} 
 \mbox{\hyperlink{classDNode}{DNode}} \texorpdfstring{$\ast$}{*} {\bfseries next}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pointers to the next \doxylink{classDNode}{DNode} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class DNode$<$ T $>$}
+The nodes for the \doxylink{classDoublyLinkedList}{Doubly\+Linked\+List} class. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of values stored inside the \doxylink{classDNode}{DNode} object. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classDNode_aff3a5ba82c6fee5b9863c5083e45ed0f}\index{DNode$<$ T $>$@{DNode$<$ T $>$}!DNode@{DNode}}
+\index{DNode@{DNode}!DNode$<$ T $>$@{DNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{DNode()}{DNode()}}
+{\footnotesize\ttfamily \label{classDNode_aff3a5ba82c6fee5b9863c5083e45ed0f} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{classDNode}{DNode}}$<$ T $>$\mbox{\hyperlink{classDNode}{\+::\+DNode}} (\begin{DoxyParamCaption}\item[{T}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs an empty \doxylink{classDNode}{DNode} object. 
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to store inside the \doxylink{classDNode}{DNode} object.\\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

@@ -1,26 +1,130 @@
 \doxysection{Binary\+Tree\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
 \hypertarget{classBinaryTree}{}\label{classBinaryTree}\index{BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}}
+
+
+Definition of the \doxylink{classBinaryTree}{Binary\+Tree} class.  
+
+
+
+
+{\ttfamily \#include $<$binary\+\_\+tree.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classBinaryTree_a7bb7652933b48daaa63c2737ed78e3bd}\label{classBinaryTree_a7bb7652933b48daaa63c2737ed78e3bd} 
-bool {\bfseries is\+Empty} ()
-\item 
-\Hypertarget{classBinaryTree_ad91aadeeb4ce25b841cac83b969e45b7}\label{classBinaryTree_ad91aadeeb4ce25b841cac83b969e45b7} 
-int {\bfseries get\+Size} ()
-\item 
-\Hypertarget{classBinaryTree_afe64f4a5572adc3c2a847c1e820e99e8}\label{classBinaryTree_afe64f4a5572adc3c2a847c1e820e99e8} 
-bool {\bfseries insert} (T value)
-\item 
-\Hypertarget{classBinaryTree_a528be36b55ef677bbb7f5f519603cf54}\label{classBinaryTree_a528be36b55ef677bbb7f5f519603cf54} 
-bool {\bfseries delete\+Node} (T value)
-\item 
+\Hypertarget{classBinaryTree_a9202cce23960faf8f647c6765decccd4}\label{classBinaryTree_a9202cce23960faf8f647c6765decccd4} 
+{\bfseries Binary\+Tree} ()
+\begin{DoxyCompactList}\small\item\em Constructs an empty tree. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBinaryTree_a7bb7652933b48daaa63c2737ed78e3bd}{is\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em A function to check if the tree is empty. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBinaryTree_ad91aadeeb4ce25b841cac83b969e45b7}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em A function that returns the size of the tree. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBinaryTree_afe64f4a5572adc3c2a847c1e820e99e8}{insert}} (T value)
+\begin{DoxyCompactList}\small\item\em A function that inserts a value in the correct node in the tree. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBinaryTree_a528be36b55ef677bbb7f5f519603cf54}{delete\+Node}} (T value)
+\begin{DoxyCompactList}\small\item\em A function that removes a certain value from the tree. \end{DoxyCompactList}\item 
 \Hypertarget{classBinaryTree_a1450639633abca5f851defaeb47090f2}\label{classBinaryTree_a1450639633abca5f851defaeb47090f2} 
 void {\bfseries display\+Tree} ()
-\item 
-\Hypertarget{classBinaryTree_a2a5c9f3e24e202135c83d76d7bdcbd69}\label{classBinaryTree_a2a5c9f3e24e202135c83d76d7bdcbd69} 
-void {\bfseries display\+Node} (\mbox{\hyperlink{classTNode}{TNode}}$<$ T $>$ \texorpdfstring{$\ast$}{*}root)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A function that displays the tree in-\/order. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBinaryTree_a2a5c9f3e24e202135c83d76d7bdcbd69}{display\+Node}} (\mbox{\hyperlink{classTNode}{TNode}}$<$ T $>$ \texorpdfstring{$\ast$}{*}root)
+\begin{DoxyCompactList}\small\item\em A function that traverses nodes in an in-\/order traversal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Binary\+Tree$<$ T $>$}
+Definition of the \doxylink{classBinaryTree}{Binary\+Tree} class. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of values stored in the \doxylink{classBinaryTree}{Binary\+Tree} object. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classBinaryTree_a528be36b55ef677bbb7f5f519603cf54}\index{BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}!deleteNode@{deleteNode}}
+\index{deleteNode@{deleteNode}!BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{deleteNode()}{deleteNode()}}
+{\footnotesize\ttfamily \label{classBinaryTree_a528be36b55ef677bbb7f5f519603cf54} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classBinaryTree}{Binary\+Tree}}$<$ T $>$\+::delete\+Node (\begin{DoxyParamCaption}\item[{T}]{value}{}\end{DoxyParamCaption})}
+
+
+
+A function that removes a certain value from the tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to delete. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classBinaryTree_a2a5c9f3e24e202135c83d76d7bdcbd69}\index{BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}!displayNode@{displayNode}}
+\index{displayNode@{displayNode}!BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{displayNode()}{displayNode()}}
+{\footnotesize\ttfamily \label{classBinaryTree_a2a5c9f3e24e202135c83d76d7bdcbd69} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{classBinaryTree}{Binary\+Tree}}$<$ T $>$\+::display\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTNode}{TNode}}$<$ T $>$ \texorpdfstring{$\ast$}{*}}]{root}{}\end{DoxyParamCaption})}
+
+
+
+A function that traverses nodes in an in-\/order traversal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \texorpdfstring{$\ast$}{*}root} & A pointer to the starting node. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classBinaryTree_ad91aadeeb4ce25b841cac83b969e45b7}\index{BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}!getSize@{getSize}}
+\index{getSize@{getSize}!BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \label{classBinaryTree_ad91aadeeb4ce25b841cac83b969e45b7} 
+template$<$typename T$>$ \\
+int \mbox{\hyperlink{classBinaryTree}{Binary\+Tree}}$<$ T $>$\+::get\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A function that returns the size of the tree. 
+
+\begin{DoxyReturn}{Returns}
+Tree size. 
+\end{DoxyReturn}
+\Hypertarget{classBinaryTree_afe64f4a5572adc3c2a847c1e820e99e8}\index{BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}!insert@{insert}}
+\index{insert@{insert}!BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \label{classBinaryTree_afe64f4a5572adc3c2a847c1e820e99e8} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classBinaryTree}{Binary\+Tree}}$<$ T $>$\+::insert (\begin{DoxyParamCaption}\item[{T}]{value}{}\end{DoxyParamCaption})}
+
+
+
+A function that inserts a value in the correct node in the tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to store. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classBinaryTree_a7bb7652933b48daaa63c2737ed78e3bd}\index{BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \label{classBinaryTree_a7bb7652933b48daaa63c2737ed78e3bd} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classBinaryTree}{Binary\+Tree}}$<$ T $>$\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A function to check if the tree is empty. 
+
+\begin{DoxyReturn}{Returns}
+True if the tree is empty, false otherwise. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

@@ -1,41 +1,225 @@
 \doxysection{Doubly\+Linked\+List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
 \hypertarget{classDoublyLinkedList}{}\label{classDoublyLinkedList}\index{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}}
+
+
+The \doxylink{classDoublyLinkedList}{Doubly\+Linked\+List} class.  
+
+
+
+
+{\ttfamily \#include $<$doubly\+\_\+linked\+\_\+list.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classDoublyLinkedList_a013e8970396a114c748840d5c7e353bc}\label{classDoublyLinkedList_a013e8970396a114c748840d5c7e353bc} 
-bool {\bfseries is\+Empty} ()
-\item 
-\Hypertarget{classDoublyLinkedList_a3d6da4090f37ffa0ac4b1040ce4758c4}\label{classDoublyLinkedList_a3d6da4090f37ffa0ac4b1040ce4758c4} 
-int {\bfseries get\+Length} ()
-\item 
-\Hypertarget{classDoublyLinkedList_afed52ae173a6e29bda3fed9c174fef25}\label{classDoublyLinkedList_afed52ae173a6e29bda3fed9c174fef25} 
-\mbox{\hyperlink{classDNode}{DNode}}$<$ T $>$ \texorpdfstring{$\ast$}{*} {\bfseries get\+Head} ()
-\item 
-\Hypertarget{classDoublyLinkedList_a8570c85c09e186d4aed50483037a1212}\label{classDoublyLinkedList_a8570c85c09e186d4aed50483037a1212} 
-bool {\bfseries append} (T value)
-\item 
-\Hypertarget{classDoublyLinkedList_aceab3a0bbe1bb55b151c93ff86fddf63}\label{classDoublyLinkedList_aceab3a0bbe1bb55b151c93ff86fddf63} 
-bool {\bfseries insert} (T value, int position)
-\item 
-\Hypertarget{classDoublyLinkedList_a7fab7f34d1b8d39c187fb28eba4027cd}\label{classDoublyLinkedList_a7fab7f34d1b8d39c187fb28eba4027cd} 
-bool {\bfseries push} (T value)
-\item 
-\Hypertarget{classDoublyLinkedList_a967720e20753ca810f13e7272dfa1691}\label{classDoublyLinkedList_a967720e20753ca810f13e7272dfa1691} 
-bool {\bfseries remove\+Head} ()
-\item 
-\Hypertarget{classDoublyLinkedList_ad81bc0b167faf246374ea7334bb442c5}\label{classDoublyLinkedList_ad81bc0b167faf246374ea7334bb442c5} 
-bool {\bfseries remove\+Tail} ()
-\item 
-\Hypertarget{classDoublyLinkedList_a8189cdf75ba1ba0e9608e62ec4c1b156}\label{classDoublyLinkedList_a8189cdf75ba1ba0e9608e62ec4c1b156} 
-bool {\bfseries remove\+Node} (\mbox{\hyperlink{classDNode}{DNode}}$<$ T $>$ \texorpdfstring{$\ast$}{*}node)
-\item 
-\Hypertarget{classDoublyLinkedList_a93c7fd3870b6f1c5b2911fdcbd675bc0}\label{classDoublyLinkedList_a93c7fd3870b6f1c5b2911fdcbd675bc0} 
-bool {\bfseries delete\+Node} (int index)
-\item 
+\Hypertarget{classDoublyLinkedList_ab16fd160493247d26572b9bef7fa078b}\label{classDoublyLinkedList_ab16fd160493247d26572b9bef7fa078b} 
+{\bfseries Doubly\+Linked\+List} ()
+\begin{DoxyCompactList}\small\item\em Constructs an empty \doxylink{classDoublyLinkedList}{Doubly\+Linked\+List} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDoublyLinkedList_a013e8970396a114c748840d5c7e353bc}{is\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em A function to check if the list is empty. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDoublyLinkedList_a3d6da4090f37ffa0ac4b1040ce4758c4}{get\+Length}} ()
+\begin{DoxyCompactList}\small\item\em A function that returns the length of the list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDNode}{DNode}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classDoublyLinkedList_afed52ae173a6e29bda3fed9c174fef25}{get\+Head}} ()
+\begin{DoxyCompactList}\small\item\em A function that returns the head of the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDoublyLinkedList_a8570c85c09e186d4aed50483037a1212}{append}} (T value)
+\begin{DoxyCompactList}\small\item\em Adds a value to the end of the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDoublyLinkedList_aceab3a0bbe1bb55b151c93ff86fddf63}{insert}} (T value, int position)
+\begin{DoxyCompactList}\small\item\em Adds a value to an index in the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDoublyLinkedList_a7fab7f34d1b8d39c187fb28eba4027cd}{push}} (T value)
+\begin{DoxyCompactList}\small\item\em Adds a value to the begining of the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDoublyLinkedList_a967720e20753ca810f13e7272dfa1691}{remove\+Head}} ()
+\begin{DoxyCompactList}\small\item\em A function that removes the head of the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDoublyLinkedList_ad81bc0b167faf246374ea7334bb442c5}{remove\+Tail}} ()
+\begin{DoxyCompactList}\small\item\em a function that removes the tail of the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDoublyLinkedList_a8189cdf75ba1ba0e9608e62ec4c1b156}{remove\+Node}} (\mbox{\hyperlink{classDNode}{DNode}}$<$ T $>$ \texorpdfstring{$\ast$}{*}node)
+\begin{DoxyCompactList}\small\item\em A function that removes a specific node. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDoublyLinkedList_a93c7fd3870b6f1c5b2911fdcbd675bc0}{delete\+Node}} (int index)
+\begin{DoxyCompactList}\small\item\em A wrapper function that removes a node from anywhere in the list. \end{DoxyCompactList}\item 
 \Hypertarget{classDoublyLinkedList_a733d83f0c8329cdc300a6ab7c801b38c}\label{classDoublyLinkedList_a733d83f0c8329cdc300a6ab7c801b38c} 
 void {\bfseries display} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A function that displays the list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Doubly\+Linked\+List$<$ T $>$}
+The \doxylink{classDoublyLinkedList}{Doubly\+Linked\+List} class. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of values stored inside the \doxylink{classDoublyLinkedList}{Doubly\+Linked\+List} object. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classDoublyLinkedList_a8570c85c09e186d4aed50483037a1212}\index{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!append@{append}}
+\index{append@{append}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily \label{classDoublyLinkedList_a8570c85c09e186d4aed50483037a1212} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classDoublyLinkedList}{Doubly\+Linked\+List}}$<$ T $>$\+::append (\begin{DoxyParamCaption}\item[{T}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Adds a value to the end of the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classDoublyLinkedList_a93c7fd3870b6f1c5b2911fdcbd675bc0}\index{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!deleteNode@{deleteNode}}
+\index{deleteNode@{deleteNode}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{deleteNode()}{deleteNode()}}
+{\footnotesize\ttfamily \label{classDoublyLinkedList_a93c7fd3870b6f1c5b2911fdcbd675bc0} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classDoublyLinkedList}{Doubly\+Linked\+List}}$<$ T $>$\+::delete\+Node (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+A wrapper function that removes a node from anywhere in the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the node to remove. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classDoublyLinkedList_afed52ae173a6e29bda3fed9c174fef25}\index{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!getHead@{getHead}}
+\index{getHead@{getHead}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getHead()}{getHead()}}
+{\footnotesize\ttfamily \label{classDoublyLinkedList_afed52ae173a6e29bda3fed9c174fef25} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{classDNode}{DNode}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classDoublyLinkedList}{Doubly\+Linked\+List}}$<$ T $>$\+::get\+Head (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A function that returns the head of the list. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the head. 
+\end{DoxyReturn}
+\Hypertarget{classDoublyLinkedList_a3d6da4090f37ffa0ac4b1040ce4758c4}\index{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!getLength@{getLength}}
+\index{getLength@{getLength}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getLength()}{getLength()}}
+{\footnotesize\ttfamily \label{classDoublyLinkedList_a3d6da4090f37ffa0ac4b1040ce4758c4} 
+template$<$typename T$>$ \\
+int \mbox{\hyperlink{classDoublyLinkedList}{Doubly\+Linked\+List}}$<$ T $>$\+::get\+Length (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A function that returns the length of the list. 
+
+\begin{DoxyReturn}{Returns}
+List length. 
+\end{DoxyReturn}
+\Hypertarget{classDoublyLinkedList_aceab3a0bbe1bb55b151c93ff86fddf63}\index{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!insert@{insert}}
+\index{insert@{insert}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \label{classDoublyLinkedList_aceab3a0bbe1bb55b151c93ff86fddf63} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classDoublyLinkedList}{Doubly\+Linked\+List}}$<$ T $>$\+::insert (\begin{DoxyParamCaption}\item[{T}]{value}{, }\item[{int}]{position}{}\end{DoxyParamCaption})}
+
+
+
+Adds a value to an index in the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to add. \\
+\hline
+{\em position} & The position to add the value at. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classDoublyLinkedList_a013e8970396a114c748840d5c7e353bc}\index{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \label{classDoublyLinkedList_a013e8970396a114c748840d5c7e353bc} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classDoublyLinkedList}{Doubly\+Linked\+List}}$<$ T $>$\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A function to check if the list is empty. 
+
+\begin{DoxyReturn}{Returns}
+True if the list is empty, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classDoublyLinkedList_a7fab7f34d1b8d39c187fb28eba4027cd}\index{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!push@{push}}
+\index{push@{push}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{classDoublyLinkedList_a7fab7f34d1b8d39c187fb28eba4027cd} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classDoublyLinkedList}{Doubly\+Linked\+List}}$<$ T $>$\+::push (\begin{DoxyParamCaption}\item[{T}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Adds a value to the begining of the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classDoublyLinkedList_a967720e20753ca810f13e7272dfa1691}\index{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!removeHead@{removeHead}}
+\index{removeHead@{removeHead}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{removeHead()}{removeHead()}}
+{\footnotesize\ttfamily \label{classDoublyLinkedList_a967720e20753ca810f13e7272dfa1691} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classDoublyLinkedList}{Doubly\+Linked\+List}}$<$ T $>$\+::remove\+Head (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A function that removes the head of the list. 
+
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classDoublyLinkedList_a8189cdf75ba1ba0e9608e62ec4c1b156}\index{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!removeNode@{removeNode}}
+\index{removeNode@{removeNode}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{removeNode()}{removeNode()}}
+{\footnotesize\ttfamily \label{classDoublyLinkedList_a8189cdf75ba1ba0e9608e62ec4c1b156} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classDoublyLinkedList}{Doubly\+Linked\+List}}$<$ T $>$\+::remove\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDNode}{DNode}}$<$ T $>$ \texorpdfstring{$\ast$}{*}}]{node}{}\end{DoxyParamCaption})}
+
+
+
+A function that removes a specific node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The pointer to the node to delete. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classDoublyLinkedList_ad81bc0b167faf246374ea7334bb442c5}\index{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!removeTail@{removeTail}}
+\index{removeTail@{removeTail}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{removeTail()}{removeTail()}}
+{\footnotesize\ttfamily \label{classDoublyLinkedList_ad81bc0b167faf246374ea7334bb442c5} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classDoublyLinkedList}{Doubly\+Linked\+List}}$<$ T $>$\+::remove\+Tail (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+a function that removes the tail of the list. 
+
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

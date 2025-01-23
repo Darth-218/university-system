@@ -1,20 +1,120 @@
 \doxysection{Hash\+Table\texorpdfstring{$<$}{<} K, V \texorpdfstring{$>$}{>} Class Template Reference}
 \hypertarget{classHashTable}{}\label{classHashTable}\index{HashTable$<$ K, V $>$@{HashTable$<$ K, V $>$}}
+
+
+The \doxylink{classHashTable}{Hash\+Table} class.  
+
+
+
+
+{\ttfamily \#include $<$hash\+\_\+table.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classHashTable_af28ab06e87c0b04094b295f8ed97dbd2}\label{classHashTable_af28ab06e87c0b04094b295f8ed97dbd2} 
-{\bfseries Hash\+Table} (int table\+\_\+size)
-\item 
-\Hypertarget{classHashTable_a9179431b16a4c5660030d8f1dc737144}\label{classHashTable_a9179431b16a4c5660030d8f1dc737144} 
-bool {\bfseries insert} (K key, V value)
-\item 
-\Hypertarget{classHashTable_af2fdb4563722149df02105e06c1dd958}\label{classHashTable_af2fdb4563722149df02105e06c1dd958} 
-V \texorpdfstring{$\ast$}{*} {\bfseries get} (K key)
-\item 
-\Hypertarget{classHashTable_a569433949bf6814c02de22bd57776b89}\label{classHashTable_a569433949bf6814c02de22bd57776b89} 
-bool {\bfseries remove} (K key)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classHashTable_af28ab06e87c0b04094b295f8ed97dbd2}{Hash\+Table}} (int table\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Constructs an empty \doxylink{classHashTable}{Hash\+Table} object given a size. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classHashTable_a9179431b16a4c5660030d8f1dc737144}{insert}} (K key, V value)
+\begin{DoxyCompactList}\small\item\em A function that inserts a value into the \doxylink{classHashTable}{Hash\+Table} object. \end{DoxyCompactList}\item 
+V \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classHashTable_af2fdb4563722149df02105e06c1dd958}{get}} (K key)
+\begin{DoxyCompactList}\small\item\em A function that returns a pointer to the value using a key. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classHashTable_a569433949bf6814c02de22bd57776b89}{remove}} (K key)
+\begin{DoxyCompactList}\small\item\em A function that removes a value from the \doxylink{classHashTable}{Hash\+Table} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename K, typename V$>$\newline
+class Hash\+Table$<$ K, V $>$}
+The \doxylink{classHashTable}{Hash\+Table} class. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em K} & The type of key values. \\
+\hline
+{\em V} & The type of values. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classHashTable_af28ab06e87c0b04094b295f8ed97dbd2}\index{HashTable$<$ K, V $>$@{HashTable$<$ K, V $>$}!HashTable@{HashTable}}
+\index{HashTable@{HashTable}!HashTable$<$ K, V $>$@{HashTable$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{HashTable()}{HashTable()}}
+{\footnotesize\ttfamily \label{classHashTable_af28ab06e87c0b04094b295f8ed97dbd2} 
+template$<$typename K, typename V$>$ \\
+\mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ K, V $>$\mbox{\hyperlink{classHashTable}{\+::\+Hash\+Table}} (\begin{DoxyParamCaption}\item[{int}]{table\+\_\+size}{}\end{DoxyParamCaption})}
+
+
+
+Constructs an empty \doxylink{classHashTable}{Hash\+Table} object given a size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+\_\+size} & The size intended for the table. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classHashTable_af2fdb4563722149df02105e06c1dd958}\index{HashTable$<$ K, V $>$@{HashTable$<$ K, V $>$}!get@{get}}
+\index{get@{get}!HashTable$<$ K, V $>$@{HashTable$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{classHashTable_af2fdb4563722149df02105e06c1dd958} 
+template$<$typename K, typename V$>$ \\
+V \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ K, V $>$\+::get (\begin{DoxyParamCaption}\item[{K}]{key}{}\end{DoxyParamCaption})}
+
+
+
+A function that returns a pointer to the value using a key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key of the value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the value. 
+\end{DoxyReturn}
+\Hypertarget{classHashTable_a9179431b16a4c5660030d8f1dc737144}\index{HashTable$<$ K, V $>$@{HashTable$<$ K, V $>$}!insert@{insert}}
+\index{insert@{insert}!HashTable$<$ K, V $>$@{HashTable$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \label{classHashTable_a9179431b16a4c5660030d8f1dc737144} 
+template$<$typename K, typename V$>$ \\
+bool \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ K, V $>$\+::insert (\begin{DoxyParamCaption}\item[{K}]{key}{, }\item[{V}]{value}{}\end{DoxyParamCaption})}
+
+
+
+A function that inserts a value into the \doxylink{classHashTable}{Hash\+Table} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the key of the value. \\
+\hline
+{\em value} & the value to insert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classHashTable_a569433949bf6814c02de22bd57776b89}\index{HashTable$<$ K, V $>$@{HashTable$<$ K, V $>$}!remove@{remove}}
+\index{remove@{remove}!HashTable$<$ K, V $>$@{HashTable$<$ K, V $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{classHashTable_a569433949bf6814c02de22bd57776b89} 
+template$<$typename K, typename V$>$ \\
+bool \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ K, V $>$\+::remove (\begin{DoxyParamCaption}\item[{K}]{key}{}\end{DoxyParamCaption})}
+
+
+
+A function that removes a value from the \doxylink{classHashTable}{Hash\+Table} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key of the value to remove. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

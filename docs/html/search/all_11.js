@@ -1,4 +1,30 @@
 var searchData=
 [
-  ['view_0',['view',['../main_8cpp.html#a74c3212343e56ba048dccda0fbe39e79',1,'main.cpp']]]
+  ['search_0',['search',['../main_8cpp.html#a3eec88de0fe031b8b31a34449e783663',1,'main.cpp']]],
+  ['searchcourse_1',['searchCourse',['../classUniSystem.html#a795b934fa85886b706e6c830939f3d8f',1,'UniSystem']]],
+  ['searchstudent_2',['searchStudent',['../classUniSystem.html#add02a89599a801e6edc8c3945197798d',1,'UniSystem']]],
+  ['seats_3',['seats',['../classCourse.html#a8d09ffdbb59523b1fea5b2a9f453271f',1,'Course']]],
+  ['single_5fnode_2eh_4',['single_node.h',['../single__node_8h.html',1,'']]],
+  ['singlylinkedlist_5',['SinglyLinkedList',['../classSinglyLinkedList.html',1,'SinglyLinkedList&lt; T &gt;'],['../classSinglyLinkedList.html#ac0c697ada1d5f5977853e7e31364ef92',1,'SinglyLinkedList::SinglyLinkedList()']]],
+  ['singlylinkedlist_3c_20student_20_3e_6',['SinglyLinkedList&lt; Student &gt;',['../classSinglyLinkedList.html',1,'']]],
+  ['singlylinkedlist_3c_20table_5fpair_3c_20int_2c_20course_20_3e_20_3e_7',['SinglyLinkedList&lt; table_pair&lt; int, Course &gt; &gt;',['../classSinglyLinkedList.html',1,'']]],
+  ['singlylinkedlist_3c_20table_5fpair_3c_20int_2c_20student_20_3e_20_3e_8',['SinglyLinkedList&lt; table_pair&lt; int, Student &gt; &gt;',['../classSinglyLinkedList.html',1,'']]],
+  ['singlylinkedlist_3c_20table_5fpair_3c_20k_2c_20v_20_3e_20_3e_9',['SinglyLinkedList&lt; table_pair&lt; K, V &gt; &gt;',['../classSinglyLinkedList.html',1,'']]],
+  ['slls_10',['slls',['../main_8cpp.html#aa5b92090c768b58e72e67f3ac52cf156',1,'main.cpp']]],
+  ['snode_11',['SNode',['../classSNode.html',1,'SNode&lt; T &gt;'],['../classSNode.html#a5689846b99de23bd9ae1a676d728ef0b',1,'SNode::SNode()']]],
+  ['snode_3c_20course_20_3e_12',['SNode&lt; Course &gt;',['../classSNode.html',1,'']]],
+  ['snode_3c_20student_20_3e_13',['SNode&lt; Student &gt;',['../classSNode.html',1,'']]],
+  ['snode_3c_20table_5fpair_3c_20int_2c_20course_20_3e_20_3e_14',['SNode&lt; table_pair&lt; int, Course &gt; &gt;',['../classSNode.html',1,'']]],
+  ['snode_3c_20table_5fpair_3c_20int_2c_20student_20_3e_20_3e_15',['SNode&lt; table_pair&lt; int, Student &gt; &gt;',['../classSNode.html',1,'']]],
+  ['snode_3c_20table_5fpair_3c_20k_2c_20v_20_3e_20_3e_16',['SNode&lt; table_pair&lt; K, V &gt; &gt;',['../classSNode.html',1,'']]],
+  ['splitinput_17',['splitInput',['../main_8cpp.html#a3b2387acb895c69aea7be91f52b7ae46',1,'main.cpp']]],
+  ['stack_18',['Stack',['../classStack.html',1,'Stack&lt; T &gt;'],['../classStack.html#aefee698059467258bbd79045aca62a63',1,'Stack::Stack()']]],
+  ['stack_2eh_19',['stack.h',['../stack_8h.html',1,'']]],
+  ['stack_3c_20course_20_3e_20',['Stack&lt; Course &gt;',['../classStack.html',1,'']]],
+  ['strip_21',['strip',['../main_8cpp.html#a5811bd52e5213c9abf80ebab648353ab',1,'main.cpp']]],
+  ['structures_2eh_22',['structures.h',['../structures_8h.html',1,'']]],
+  ['student_23',['Student',['../classStudent.html',1,'Student'],['../classStudent.html#a726d8aeeb871c356065db8261f6b8bf1',1,'Student::Student(int id, string name, string email, string password, string address, int phone)'],['../classStudent.html#af9168cedbfa5565cf0b20c1a9d3f5c9d',1,'Student::Student()']]],
+  ['studentexists_24',['studentExists',['../classUniSystem.html#a4b4ad232210be670fe792d38584f0c1f',1,'UniSystem']]],
+  ['students_5ftable_25',['students_table',['../classUniSystem.html#aef8450e005750906b4997680bce18e87',1,'UniSystem']]],
+  ['system_2eh_26',['system.h',['../system_8h.html',1,'']]]
 ];

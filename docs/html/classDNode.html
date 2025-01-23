@@ -34,6 +34,7 @@
   <td id="projectalign">
    <div id="projectname">University System
    </div>
+   <div id="projectbrief">A University System utilizing different data structures.</div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -109,25 +110,75 @@ $(function(){initNavTree('classDNode.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">DNode&lt; T &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The nodes for the <a class="el" href="classDoublyLinkedList.html" title="The DoublyLinkedList class.">DoublyLinkedList</a> class.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="double__node_8h_source.html">double_node.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aff3a5ba82c6fee5b9863c5083e45ed0f" id="r_aff3a5ba82c6fee5b9863c5083e45ed0f"><td class="memItemLeft" align="right" valign="top"><a id="aff3a5ba82c6fee5b9863c5083e45ed0f" name="aff3a5ba82c6fee5b9863c5083e45ed0f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DNode</b> (T value)</td></tr>
+<tr class="memitem:aff3a5ba82c6fee5b9863c5083e45ed0f" id="r_aff3a5ba82c6fee5b9863c5083e45ed0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff3a5ba82c6fee5b9863c5083e45ed0f">DNode</a> (T <a class="el" href="#a557604208e1ad4e6540a4098a5d08b47">value</a>)</td></tr>
 <tr class="separator:aff3a5ba82c6fee5b9863c5083e45ed0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a557604208e1ad4e6540a4098a5d08b47" id="r_a557604208e1ad4e6540a4098a5d08b47"><td class="memItemLeft" align="right" valign="top"><a id="a557604208e1ad4e6540a4098a5d08b47" name="a557604208e1ad4e6540a4098a5d08b47"></a>
 T&#160;</td><td class="memItemRight" valign="bottom"><b>value</b></td></tr>
+<tr class="memdesc:a557604208e1ad4e6540a4098a5d08b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">The stored value. <br /></td></tr>
 <tr class="separator:a557604208e1ad4e6540a4098a5d08b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60baec7505ba9191707eadf34e383ee8" id="r_a60baec7505ba9191707eadf34e383ee8"><td class="memItemLeft" align="right" valign="top"><a id="a60baec7505ba9191707eadf34e383ee8" name="a60baec7505ba9191707eadf34e383ee8"></a>
 <a class="el" href="classDNode.html">DNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>prev</b></td></tr>
+<tr class="memdesc:a60baec7505ba9191707eadf34e383ee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointers to the previous <a class="el" href="classDNode.html" title="The nodes for the DoublyLinkedList class.">DNode</a> object. <br /></td></tr>
 <tr class="separator:a60baec7505ba9191707eadf34e383ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a241190a5a779e031b3ae9c6019690428" id="r_a241190a5a779e031b3ae9c6019690428"><td class="memItemLeft" align="right" valign="top"><a id="a241190a5a779e031b3ae9c6019690428" name="a241190a5a779e031b3ae9c6019690428"></a>
 <a class="el" href="classDNode.html">DNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>next</b></td></tr>
+<tr class="memdesc:a241190a5a779e031b3ae9c6019690428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointers to the next <a class="el" href="classDNode.html" title="The nodes for the DoublyLinkedList class.">DNode</a> object. <br /></td></tr>
 <tr class="separator:a241190a5a779e031b3ae9c6019690428"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
+class DNode&lt; T &gt;</div><p>The nodes for the <a class="el" href="classDoublyLinkedList.html" title="The DoublyLinkedList class.">DoublyLinkedList</a> class. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type of values stored inside the <a class="el" href="classDNode.html" title="The nodes for the DoublyLinkedList class.">DNode</a> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aff3a5ba82c6fee5b9863c5083e45ed0f" name="aff3a5ba82c6fee5b9863c5083e45ed0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff3a5ba82c6fee5b9863c5083e45ed0f">&#9670;&#160;</a></span>DNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDNode.html">DNode</a>&lt; T &gt;<a class="el" href="classDNode.html">::DNode</a> </td>
+          <td>(</td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs an empty <a class="el" href="classDNode.html" title="The nodes for the DoublyLinkedList class.">DNode</a> object. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The value to store inside the <a class="el" href="classDNode.html" title="The nodes for the DoublyLinkedList class.">DNode</a> object.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/<a class="el" href="double__node_8h_source.html">double_node.h</a></li>
 </ul>

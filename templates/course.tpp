@@ -13,12 +13,12 @@ Course::Course(int id, int credits, string name, string instructor,
 
   /**
    * @brief Constructs a new Course object with given values.
-   * @param id, the course's ID.
-   * @param credits, the credits taken from this course.
-   * @param name, this course's name.
-   * @param instructor, this course instructor's name.
-   * @param max_seats, this course's max seats.
-   * @param seats, this course's taken seats.
+   * @param id The course's ID.
+   * @param credits The credits taken from this course.
+   * @param name This course's name.
+   * @param instructor This course instructor's name.
+   * @param max_seats This course's max seats.
+   * @param seats This course's taken seats.
    */
 
   this->id = id;
@@ -53,7 +53,8 @@ bool Course::isEligible(Student student) {
 
   /**
    * @brief Checks if a student is eligible to enroll in this course.
-   * @param student, the student to enroll.
+   * @param student The student to enroll.
+   * @return boolean.
    */
 
   if (student.alreadyEnrolled(*this)) {
@@ -103,10 +104,12 @@ bool Course::isEligible(Student student) {
 }
 
 bool Course::addToWaitlist(Student student) {
+
   /**
    * @brief A function that adds students to this course's waitlist when no
    * seats are available.
-   * @param student, the student enrolling in this course.
+   * @param student The student enrolling in this course.
+   * @return boolean.
    */
 
   waitlist->enqueue(student);
@@ -120,7 +123,8 @@ bool Course::addPrequisite(Course course) {
 
   /**
    * @brief A function that adds prerequisites to this course.
-   * @param course, the prerequisite course.
+   * @param course The prerequisite course.
+   * @return boolean.
    */
 
   this->prerequisites->push(course);
@@ -140,7 +144,10 @@ void Course::displayDetails() {
 ostream &operator<<(std::ostream &os, Course &course) {
 
   /**
-   * @brief Overloading the "<<" operator to display course details.
+   * @brief Stream insertion operator.
+   * @param os The input stream.
+   * @param student The object to insert in the stream.
+   * @return os
    */
 
   cout << "ID: " << course.id << ", ";

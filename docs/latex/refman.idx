@@ -1,0 +1,197 @@
+\indexentry{BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}|hyperpage}{5}
+\indexentry{BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}!deleteNode@{deleteNode}|hyperpage}{6}
+\indexentry{deleteNode@{deleteNode}!BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}|hyperpage}{6}
+\indexentry{BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}!displayNode@{displayNode}|hyperpage}{6}
+\indexentry{displayNode@{displayNode}!BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}|hyperpage}{6}
+\indexentry{BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}!getSize@{getSize}|hyperpage}{6}
+\indexentry{getSize@{getSize}!BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}|hyperpage}{6}
+\indexentry{BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}!insert@{insert}|hyperpage}{6}
+\indexentry{insert@{insert}!BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}|hyperpage}{6}
+\indexentry{BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}!isEmpty@{isEmpty}|hyperpage}{7}
+\indexentry{isEmpty@{isEmpty}!BinaryTree$<$ T $>$@{BinaryTree$<$ T $>$}|hyperpage}{7}
+\indexentry{Course@{Course}|hyperpage}{7}
+\indexentry{Course@{Course}!Course@{Course}|hyperpage}{8}
+\indexentry{Course@{Course}!Course@{Course}|hyperpage}{8}
+\indexentry{Course@{Course}!addPrequisite@{addPrequisite}|hyperpage}{9}
+\indexentry{addPrequisite@{addPrequisite}!Course@{Course}|hyperpage}{9}
+\indexentry{Course@{Course}!addToWaitlist@{addToWaitlist}|hyperpage}{9}
+\indexentry{addToWaitlist@{addToWaitlist}!Course@{Course}|hyperpage}{9}
+\indexentry{Course@{Course}!isEligible@{isEligible}|hyperpage}{9}
+\indexentry{isEligible@{isEligible}!Course@{Course}|hyperpage}{9}
+\indexentry{Course@{Course}!operator"!=@{operator"!=}|hyperpage}{9}
+\indexentry{operator"!=@{operator"!=}!Course@{Course}|hyperpage}{9}
+\indexentry{Course@{Course}!operator$<$@{operator$<$}|hyperpage}{10}
+\indexentry{operator$<$@{operator$<$}!Course@{Course}|hyperpage}{10}
+\indexentry{Course@{Course}!operator==@{operator==}|hyperpage}{10}
+\indexentry{operator==@{operator==}!Course@{Course}|hyperpage}{10}
+\indexentry{Course@{Course}!operator$>$@{operator$>$}|hyperpage}{10}
+\indexentry{operator$>$@{operator$>$}!Course@{Course}|hyperpage}{10}
+\indexentry{Course@{Course}!operator$<$$<$@{operator$<$$<$}|hyperpage}{11}
+\indexentry{operator$<$$<$@{operator$<$$<$}!Course@{Course}|hyperpage}{11}
+\indexentry{DNode$<$ T $>$@{DNode$<$ T $>$}|hyperpage}{11}
+\indexentry{DNode$<$ T $>$@{DNode$<$ T $>$}!DNode@{DNode}|hyperpage}{12}
+\indexentry{DNode@{DNode}!DNode$<$ T $>$@{DNode$<$ T $>$}|hyperpage}{12}
+\indexentry{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}|hyperpage}{12}
+\indexentry{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!append@{append}|hyperpage}{13}
+\indexentry{append@{append}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}|hyperpage}{13}
+\indexentry{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!deleteNode@{deleteNode}|hyperpage}{13}
+\indexentry{deleteNode@{deleteNode}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}|hyperpage}{13}
+\indexentry{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!getHead@{getHead}|hyperpage}{13}
+\indexentry{getHead@{getHead}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}|hyperpage}{13}
+\indexentry{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!getLength@{getLength}|hyperpage}{14}
+\indexentry{getLength@{getLength}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}|hyperpage}{14}
+\indexentry{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!insert@{insert}|hyperpage}{14}
+\indexentry{insert@{insert}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}|hyperpage}{14}
+\indexentry{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!isEmpty@{isEmpty}|hyperpage}{14}
+\indexentry{isEmpty@{isEmpty}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}|hyperpage}{14}
+\indexentry{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!push@{push}|hyperpage}{14}
+\indexentry{push@{push}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}|hyperpage}{14}
+\indexentry{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!removeHead@{removeHead}|hyperpage}{15}
+\indexentry{removeHead@{removeHead}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}|hyperpage}{15}
+\indexentry{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!removeNode@{removeNode}|hyperpage}{15}
+\indexentry{removeNode@{removeNode}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}|hyperpage}{15}
+\indexentry{DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}!removeTail@{removeTail}|hyperpage}{15}
+\indexentry{removeTail@{removeTail}!DoublyLinkedList$<$ T $>$@{DoublyLinkedList$<$ T $>$}|hyperpage}{15}
+\indexentry{HashTable$<$ K, V $>$@{HashTable$<$ K, V $>$}|hyperpage}{16}
+\indexentry{HashTable$<$ K, V $>$@{HashTable$<$ K, V $>$}!HashTable@{HashTable}|hyperpage}{16}
+\indexentry{HashTable@{HashTable}!HashTable$<$ K, V $>$@{HashTable$<$ K, V $>$}|hyperpage}{16}
+\indexentry{HashTable$<$ K, V $>$@{HashTable$<$ K, V $>$}!get@{get}|hyperpage}{16}
+\indexentry{get@{get}!HashTable$<$ K, V $>$@{HashTable$<$ K, V $>$}|hyperpage}{16}
+\indexentry{HashTable$<$ K, V $>$@{HashTable$<$ K, V $>$}!insert@{insert}|hyperpage}{17}
+\indexentry{insert@{insert}!HashTable$<$ K, V $>$@{HashTable$<$ K, V $>$}|hyperpage}{17}
+\indexentry{HashTable$<$ K, V $>$@{HashTable$<$ K, V $>$}!remove@{remove}|hyperpage}{17}
+\indexentry{remove@{remove}!HashTable$<$ K, V $>$@{HashTable$<$ K, V $>$}|hyperpage}{17}
+\indexentry{Queue$<$ T $>$@{Queue$<$ T $>$}|hyperpage}{18}
+\indexentry{Queue$<$ T $>$@{Queue$<$ T $>$}!dequeue@{dequeue}|hyperpage}{18}
+\indexentry{dequeue@{dequeue}!Queue$<$ T $>$@{Queue$<$ T $>$}|hyperpage}{18}
+\indexentry{Queue$<$ T $>$@{Queue$<$ T $>$}!enqueue@{enqueue}|hyperpage}{18}
+\indexentry{enqueue@{enqueue}!Queue$<$ T $>$@{Queue$<$ T $>$}|hyperpage}{18}
+\indexentry{Queue$<$ T $>$@{Queue$<$ T $>$}!getSize@{getSize}|hyperpage}{19}
+\indexentry{getSize@{getSize}!Queue$<$ T $>$@{Queue$<$ T $>$}|hyperpage}{19}
+\indexentry{Queue$<$ T $>$@{Queue$<$ T $>$}!isEmpty@{isEmpty}|hyperpage}{19}
+\indexentry{isEmpty@{isEmpty}!Queue$<$ T $>$@{Queue$<$ T $>$}|hyperpage}{19}
+\indexentry{Queue$<$ T $>$@{Queue$<$ T $>$}!peek@{peek}|hyperpage}{19}
+\indexentry{peek@{peek}!Queue$<$ T $>$@{Queue$<$ T $>$}|hyperpage}{19}
+\indexentry{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}|hyperpage}{20}
+\indexentry{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!append@{append}|hyperpage}{20}
+\indexentry{append@{append}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}|hyperpage}{20}
+\indexentry{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!deleteNode@{deleteNode}|hyperpage}{21}
+\indexentry{deleteNode@{deleteNode}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}|hyperpage}{21}
+\indexentry{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!getHead@{getHead}|hyperpage}{21}
+\indexentry{getHead@{getHead}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}|hyperpage}{21}
+\indexentry{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!getLength@{getLength}|hyperpage}{21}
+\indexentry{getLength@{getLength}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}|hyperpage}{21}
+\indexentry{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!insert@{insert}|hyperpage}{21}
+\indexentry{insert@{insert}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}|hyperpage}{21}
+\indexentry{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!isEmpty@{isEmpty}|hyperpage}{22}
+\indexentry{isEmpty@{isEmpty}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}|hyperpage}{22}
+\indexentry{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!push@{push}|hyperpage}{22}
+\indexentry{push@{push}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}|hyperpage}{22}
+\indexentry{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!removeHead@{removeHead}|hyperpage}{22}
+\indexentry{removeHead@{removeHead}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}|hyperpage}{22}
+\indexentry{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!removeNode@{removeNode}|hyperpage}{22}
+\indexentry{removeNode@{removeNode}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}|hyperpage}{22}
+\indexentry{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!removeTail@{removeTail}|hyperpage}{23}
+\indexentry{removeTail@{removeTail}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}|hyperpage}{23}
+\indexentry{SNode$<$ T $>$@{SNode$<$ T $>$}|hyperpage}{23}
+\indexentry{SNode$<$ T $>$@{SNode$<$ T $>$}!SNode@{SNode}|hyperpage}{24}
+\indexentry{SNode@{SNode}!SNode$<$ T $>$@{SNode$<$ T $>$}|hyperpage}{24}
+\indexentry{Stack$<$ T $>$@{Stack$<$ T $>$}|hyperpage}{24}
+\indexentry{Stack$<$ T $>$@{Stack$<$ T $>$}!getSize@{getSize}|hyperpage}{25}
+\indexentry{getSize@{getSize}!Stack$<$ T $>$@{Stack$<$ T $>$}|hyperpage}{25}
+\indexentry{Stack$<$ T $>$@{Stack$<$ T $>$}!isEmpty@{isEmpty}|hyperpage}{25}
+\indexentry{isEmpty@{isEmpty}!Stack$<$ T $>$@{Stack$<$ T $>$}|hyperpage}{25}
+\indexentry{Stack$<$ T $>$@{Stack$<$ T $>$}!peek@{peek}|hyperpage}{25}
+\indexentry{peek@{peek}!Stack$<$ T $>$@{Stack$<$ T $>$}|hyperpage}{25}
+\indexentry{Stack$<$ T $>$@{Stack$<$ T $>$}!pop@{pop}|hyperpage}{25}
+\indexentry{pop@{pop}!Stack$<$ T $>$@{Stack$<$ T $>$}|hyperpage}{25}
+\indexentry{Stack$<$ T $>$@{Stack$<$ T $>$}!push@{push}|hyperpage}{25}
+\indexentry{push@{push}!Stack$<$ T $>$@{Stack$<$ T $>$}|hyperpage}{25}
+\indexentry{Student@{Student}|hyperpage}{26}
+\indexentry{Student@{Student}!Student@{Student}|hyperpage}{27}
+\indexentry{Student@{Student}!Student@{Student}|hyperpage}{27}
+\indexentry{Student@{Student}!addCourse@{addCourse}|hyperpage}{27}
+\indexentry{addCourse@{addCourse}!Student@{Student}|hyperpage}{27}
+\indexentry{Student@{Student}!alreadyEnrolled@{alreadyEnrolled}|hyperpage}{27}
+\indexentry{alreadyEnrolled@{alreadyEnrolled}!Student@{Student}|hyperpage}{27}
+\indexentry{Student@{Student}!operator"!=@{operator"!=}|hyperpage}{28}
+\indexentry{operator"!=@{operator"!=}!Student@{Student}|hyperpage}{28}
+\indexentry{Student@{Student}!operator$<$$<$@{operator$<$$<$}|hyperpage}{28}
+\indexentry{operator$<$$<$@{operator$<$$<$}!Student@{Student}|hyperpage}{28}
+\indexentry{table\_pair$<$ K, V $>$@{table\_pair$<$ K, V $>$}|hyperpage}{28}
+\indexentry{TNode$<$ T $>$@{TNode$<$ T $>$}|hyperpage}{29}
+\indexentry{TNode$<$ T $>$@{TNode$<$ T $>$}!TNode@{TNode}|hyperpage}{30}
+\indexentry{TNode@{TNode}!TNode$<$ T $>$@{TNode$<$ T $>$}|hyperpage}{30}
+\indexentry{UniSystem@{UniSystem}|hyperpage}{30}
+\indexentry{UniSystem@{UniSystem}!addCourse@{addCourse}|hyperpage}{31}
+\indexentry{addCourse@{addCourse}!UniSystem@{UniSystem}|hyperpage}{31}
+\indexentry{UniSystem@{UniSystem}!addCourse@{addCourse}|hyperpage}{31}
+\indexentry{addCourse@{addCourse}!UniSystem@{UniSystem}|hyperpage}{31}
+\indexentry{UniSystem@{UniSystem}!addStudent@{addStudent}|hyperpage}{32}
+\indexentry{addStudent@{addStudent}!UniSystem@{UniSystem}|hyperpage}{32}
+\indexentry{UniSystem@{UniSystem}!checkWaitlist@{checkWaitlist}|hyperpage}{32}
+\indexentry{checkWaitlist@{checkWaitlist}!UniSystem@{UniSystem}|hyperpage}{32}
+\indexentry{UniSystem@{UniSystem}!courseExists@{courseExists}|hyperpage}{32}
+\indexentry{courseExists@{courseExists}!UniSystem@{UniSystem}|hyperpage}{32}
+\indexentry{UniSystem@{UniSystem}!deleteStudent@{deleteStudent}|hyperpage}{33}
+\indexentry{deleteStudent@{deleteStudent}!UniSystem@{UniSystem}|hyperpage}{33}
+\indexentry{UniSystem@{UniSystem}!dropCourse@{dropCourse}|hyperpage}{33}
+\indexentry{dropCourse@{dropCourse}!UniSystem@{UniSystem}|hyperpage}{33}
+\indexentry{UniSystem@{UniSystem}!searchCourse@{searchCourse}|hyperpage}{33}
+\indexentry{searchCourse@{searchCourse}!UniSystem@{UniSystem}|hyperpage}{33}
+\indexentry{UniSystem@{UniSystem}!searchStudent@{searchStudent}|hyperpage}{34}
+\indexentry{searchStudent@{searchStudent}!UniSystem@{UniSystem}|hyperpage}{34}
+\indexentry{UniSystem@{UniSystem}!studentExists@{studentExists}|hyperpage}{34}
+\indexentry{studentExists@{studentExists}!UniSystem@{UniSystem}|hyperpage}{34}
+\indexentry{include/binary\_tree.h@{include/binary\_tree.h}|hyperpage}{35}
+\indexentry{include/binary\_tree.h@{include/binary\_tree.h}|hyperpage}{35}
+\indexentry{include/binary\_tree\_node.h@{include/binary\_tree\_node.h}|hyperpage}{36}
+\indexentry{include/binary\_tree\_node.h@{include/binary\_tree\_node.h}|hyperpage}{36}
+\indexentry{include/double\_node.h@{include/double\_node.h}|hyperpage}{36}
+\indexentry{include/double\_node.h@{include/double\_node.h}|hyperpage}{37}
+\indexentry{include/doubly\_linked\_list.h@{include/doubly\_linked\_list.h}|hyperpage}{37}
+\indexentry{include/doubly\_linked\_list.h@{include/doubly\_linked\_list.h}|hyperpage}{38}
+\indexentry{include/entities.h@{include/entities.h}|hyperpage}{38}
+\indexentry{include/entities.h@{include/entities.h}|hyperpage}{39}
+\indexentry{include/hash\_table.h@{include/hash\_table.h}|hyperpage}{40}
+\indexentry{include/hash\_table.h@{include/hash\_table.h}|hyperpage}{40}
+\indexentry{include/includes.h@{include/includes.h}|hyperpage}{41}
+\indexentry{include/includes.h@{include/includes.h}|hyperpage}{41}
+\indexentry{include/queue.h@{include/queue.h}|hyperpage}{41}
+\indexentry{include/queue.h@{include/queue.h}|hyperpage}{42}
+\indexentry{include/single\_node.h@{include/single\_node.h}|hyperpage}{42}
+\indexentry{include/single\_node.h@{include/single\_node.h}|hyperpage}{42}
+\indexentry{include/singly\_linked\_list.h@{include/singly\_linked\_list.h}|hyperpage}{43}
+\indexentry{include/stack.h@{include/stack.h}|hyperpage}{43}
+\indexentry{include/stack.h@{include/stack.h}|hyperpage}{44}
+\indexentry{include/structures.h@{include/structures.h}|hyperpage}{44}
+\indexentry{include/structures.h@{include/structures.h}|hyperpage}{44}
+\indexentry{include/system.h@{include/system.h}|hyperpage}{45}
+\indexentry{include/system.h@{include/system.h}|hyperpage}{45}
+\indexentry{src/main.cpp@{src/main.cpp}|hyperpage}{46}
+\indexentry{main.cpp@{main.cpp}!add@{add}|hyperpage}{46}
+\indexentry{add@{add}!main.cpp@{main.cpp}|hyperpage}{46}
+\indexentry{main.cpp@{main.cpp}!enroll@{enroll}|hyperpage}{47}
+\indexentry{enroll@{enroll}!main.cpp@{main.cpp}|hyperpage}{47}
+\indexentry{main.cpp@{main.cpp}!freeSeat@{freeSeat}|hyperpage}{47}
+\indexentry{freeSeat@{freeSeat}!main.cpp@{main.cpp}|hyperpage}{47}
+\indexentry{main.cpp@{main.cpp}!loop@{loop}|hyperpage}{47}
+\indexentry{loop@{loop}!main.cpp@{main.cpp}|hyperpage}{47}
+\indexentry{main.cpp@{main.cpp}!main@{main}|hyperpage}{47}
+\indexentry{main@{main}!main.cpp@{main.cpp}|hyperpage}{47}
+\indexentry{main.cpp@{main.cpp}!printHelp@{printHelp}|hyperpage}{47}
+\indexentry{printHelp@{printHelp}!main.cpp@{main.cpp}|hyperpage}{47}
+\indexentry{main.cpp@{main.cpp}!remove@{remove}|hyperpage}{47}
+\indexentry{remove@{remove}!main.cpp@{main.cpp}|hyperpage}{47}
+\indexentry{main.cpp@{main.cpp}!runCommand@{runCommand}|hyperpage}{48}
+\indexentry{runCommand@{runCommand}!main.cpp@{main.cpp}|hyperpage}{48}
+\indexentry{main.cpp@{main.cpp}!search@{search}|hyperpage}{48}
+\indexentry{search@{search}!main.cpp@{main.cpp}|hyperpage}{48}
+\indexentry{main.cpp@{main.cpp}!splitInput@{splitInput}|hyperpage}{48}
+\indexentry{splitInput@{splitInput}!main.cpp@{main.cpp}|hyperpage}{48}
+\indexentry{main.cpp@{main.cpp}!strip@{strip}|hyperpage}{49}
+\indexentry{strip@{strip}!main.cpp@{main.cpp}|hyperpage}{49}
+\indexentry{main.cpp@{main.cpp}!testData@{testData}|hyperpage}{49}
+\indexentry{testData@{testData}!main.cpp@{main.cpp}|hyperpage}{49}
+\indexentry{main.cpp@{main.cpp}!view@{view}|hyperpage}{49}
+\indexentry{view@{view}!main.cpp@{main.cpp}|hyperpage}{49}

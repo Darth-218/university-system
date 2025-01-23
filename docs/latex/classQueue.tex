@@ -1,23 +1,120 @@
 \doxysection{Queue\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
 \hypertarget{classQueue}{}\label{classQueue}\index{Queue$<$ T $>$@{Queue$<$ T $>$}}
+
+
+The \doxylink{classQueue}{Queue} class.  
+
+
+
+
+{\ttfamily \#include $<$queue.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classQueue_a515bd72c9d7d2bc12add78c0d2e79762}\label{classQueue_a515bd72c9d7d2bc12add78c0d2e79762} 
-bool {\bfseries is\+Empty} ()
-\item 
-\Hypertarget{classQueue_a633a2dd3fdfa7433b03f2bbd571dcc27}\label{classQueue_a633a2dd3fdfa7433b03f2bbd571dcc27} 
-bool {\bfseries enqueue} (T value)
-\item 
-\Hypertarget{classQueue_aefc2563a28b93c8216ced448158ffebf}\label{classQueue_aefc2563a28b93c8216ced448158ffebf} 
-int {\bfseries get\+Size} ()
-\item 
-\Hypertarget{classQueue_a1d22c47f34c8df152c48dcdb70c542c2}\label{classQueue_a1d22c47f34c8df152c48dcdb70c542c2} 
-bool {\bfseries dequeue} ()
-\item 
-\Hypertarget{classQueue_aabb62b0949fae2d4fac14c07d1bf7098}\label{classQueue_aabb62b0949fae2d4fac14c07d1bf7098} 
-T \texorpdfstring{$\ast$}{*} {\bfseries peek} ()
-\end{DoxyCompactItemize}
+\Hypertarget{classQueue_af73bb29c868f7b37f369c668f114bd9f}\label{classQueue_af73bb29c868f7b37f369c668f114bd9f} 
+{\bfseries Queue} ()
+\begin{DoxyCompactList}\small\item\em Constructs an empty \doxylink{classQueue}{Queue} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classQueue_a515bd72c9d7d2bc12add78c0d2e79762}{is\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em A function to check if the queue is empty. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classQueue_aefc2563a28b93c8216ced448158ffebf}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em A function that returns the length of the queue. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classQueue_a633a2dd3fdfa7433b03f2bbd571dcc27}{enqueue}} (T value)
+\begin{DoxyCompactList}\small\item\em A function that adds a value to the end of the queue. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classQueue_a1d22c47f34c8df152c48dcdb70c542c2}{dequeue}} ()
+\begin{DoxyCompactList}\small\item\em A function that removes the first value in the queue. \end{DoxyCompactList}\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classQueue_aabb62b0949fae2d4fac14c07d1bf7098}{peek}} ()
+\begin{DoxyCompactList}\small\item\em A function that returns a pointer to the first element in the queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Queue$<$ T $>$}
+The \doxylink{classQueue}{Queue} class. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of values store in the \doxylink{classQueue}{Queue} object. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classQueue_a1d22c47f34c8df152c48dcdb70c542c2}\index{Queue$<$ T $>$@{Queue$<$ T $>$}!dequeue@{dequeue}}
+\index{dequeue@{dequeue}!Queue$<$ T $>$@{Queue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{dequeue()}{dequeue()}}
+{\footnotesize\ttfamily \label{classQueue_a1d22c47f34c8df152c48dcdb70c542c2} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classQueue}{Queue}}$<$ T $>$\+::dequeue (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A function that removes the first value in the queue. 
+
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classQueue_a633a2dd3fdfa7433b03f2bbd571dcc27}\index{Queue$<$ T $>$@{Queue$<$ T $>$}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!Queue$<$ T $>$@{Queue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{enqueue()}{enqueue()}}
+{\footnotesize\ttfamily \label{classQueue_a633a2dd3fdfa7433b03f2bbd571dcc27} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classQueue}{Queue}}$<$ T $>$\+::enqueue (\begin{DoxyParamCaption}\item[{T}]{value}{}\end{DoxyParamCaption})}
+
+
+
+A function that adds a value to the end of the queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classQueue_aefc2563a28b93c8216ced448158ffebf}\index{Queue$<$ T $>$@{Queue$<$ T $>$}!getSize@{getSize}}
+\index{getSize@{getSize}!Queue$<$ T $>$@{Queue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \label{classQueue_aefc2563a28b93c8216ced448158ffebf} 
+template$<$typename T$>$ \\
+int \mbox{\hyperlink{classQueue}{Queue}}$<$ T $>$\+::get\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A function that returns the length of the queue. 
+
+\begin{DoxyReturn}{Returns}
+queue size. 
+\end{DoxyReturn}
+\Hypertarget{classQueue_a515bd72c9d7d2bc12add78c0d2e79762}\index{Queue$<$ T $>$@{Queue$<$ T $>$}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Queue$<$ T $>$@{Queue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \label{classQueue_a515bd72c9d7d2bc12add78c0d2e79762} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classQueue}{Queue}}$<$ T $>$\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A function to check if the queue is empty. 
+
+\begin{DoxyReturn}{Returns}
+True if the list is empty, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classQueue_aabb62b0949fae2d4fac14c07d1bf7098}\index{Queue$<$ T $>$@{Queue$<$ T $>$}!peek@{peek}}
+\index{peek@{peek}!Queue$<$ T $>$@{Queue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily \label{classQueue_aabb62b0949fae2d4fac14c07d1bf7098} 
+template$<$typename T$>$ \\
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classQueue}{Queue}}$<$ T $>$\+::peek (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A function that returns a pointer to the first element in the queue. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the stack top value. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

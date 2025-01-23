@@ -34,6 +34,7 @@
   <td id="projectalign">
    <div id="projectname">University System
    </div>
+   <div id="projectbrief">A University System utilizing different data structures.</div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -110,61 +111,258 @@ $(function(){initNavTree('classStudent.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Student Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="classStudent.html" title="The Student class.">Student</a> class.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="entities_8h_source.html">entities.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a726d8aeeb871c356065db8261f6b8bf1" id="r_a726d8aeeb871c356065db8261f6b8bf1"><td class="memItemLeft" align="right" valign="top"><a id="a726d8aeeb871c356065db8261f6b8bf1" name="a726d8aeeb871c356065db8261f6b8bf1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Student</b> (int id, string name, string email, string password, string address, int phone)</td></tr>
+<tr class="memitem:a726d8aeeb871c356065db8261f6b8bf1" id="r_a726d8aeeb871c356065db8261f6b8bf1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a726d8aeeb871c356065db8261f6b8bf1">Student</a> (int <a class="el" href="#a1351fb239711a78a8b115d75597b5df0">id</a>, string <a class="el" href="#a671f6b115a158653a0f0bece34ea0667">name</a>, string <a class="el" href="#ae7074837eb63db830e900bb4de553838">email</a>, string <a class="el" href="#a39c8f11d29857684feb1749717846bdb">password</a>, string <a class="el" href="#a9e5d401b7ce72aa21a4fdcec3d0cfa28">address</a>, int <a class="el" href="#ab00ef1891922021f507e996c3d2288a7">phone</a>)</td></tr>
+<tr class="memdesc:a726d8aeeb871c356065db8261f6b8bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="classStudent.html" title="The Student class.">Student</a> object with given values.  <br /></td></tr>
 <tr class="separator:a726d8aeeb871c356065db8261f6b8bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa1d9d4337578857a3f890dffc5843ff" id="r_afa1d9d4337578857a3f890dffc5843ff"><td class="memItemLeft" align="right" valign="top"><a id="afa1d9d4337578857a3f890dffc5843ff" name="afa1d9d4337578857a3f890dffc5843ff"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>alreadyEnrolled</b> (<a class="el" href="classCourse.html">Course</a> course)</td></tr>
+<tr class="memitem:af9168cedbfa5565cf0b20c1a9d3f5c9d" id="r_af9168cedbfa5565cf0b20c1a9d3f5c9d"><td class="memItemLeft" align="right" valign="top"><a id="af9168cedbfa5565cf0b20c1a9d3f5c9d" name="af9168cedbfa5565cf0b20c1a9d3f5c9d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Student</b> ()</td></tr>
+<tr class="memdesc:af9168cedbfa5565cf0b20c1a9d3f5c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty <a class="el" href="classStudent.html" title="The Student class.">Student</a> object. <br /></td></tr>
+<tr class="separator:af9168cedbfa5565cf0b20c1a9d3f5c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1d9d4337578857a3f890dffc5843ff" id="r_afa1d9d4337578857a3f890dffc5843ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa1d9d4337578857a3f890dffc5843ff">alreadyEnrolled</a> (<a class="el" href="classCourse.html">Course</a> course)</td></tr>
+<tr class="memdesc:afa1d9d4337578857a3f890dffc5843ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if this student is already enrolled in a course.  <br /></td></tr>
 <tr class="separator:afa1d9d4337578857a3f890dffc5843ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7c6aaec4194169af2191e735cd375a8" id="r_af7c6aaec4194169af2191e735cd375a8"><td class="memItemLeft" align="right" valign="top"><a id="af7c6aaec4194169af2191e735cd375a8" name="af7c6aaec4194169af2191e735cd375a8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>addCourse</b> (<a class="el" href="classCourse.html">Course</a> *course)</td></tr>
+<tr class="memitem:af7c6aaec4194169af2191e735cd375a8" id="r_af7c6aaec4194169af2191e735cd375a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7c6aaec4194169af2191e735cd375a8">addCourse</a> (<a class="el" href="classCourse.html">Course</a> *course)</td></tr>
+<tr class="memdesc:af7c6aaec4194169af2191e735cd375a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that adds a course to this student's enrollment history.  <br /></td></tr>
 <tr class="separator:af7c6aaec4194169af2191e735cd375a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb467714d90a6951d8055776dac108fd" id="r_adb467714d90a6951d8055776dac108fd"><td class="memItemLeft" align="right" valign="top"><a id="adb467714d90a6951d8055776dac108fd" name="adb467714d90a6951d8055776dac108fd"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>dropCourse</b> (<a class="el" href="classCourse.html">Course</a> course)</td></tr>
-<tr class="separator:adb467714d90a6951d8055776dac108fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab8bb9998e9ab147bef3b8915266487e" id="r_aab8bb9998e9ab147bef3b8915266487e"><td class="memItemLeft" align="right" valign="top"><a id="aab8bb9998e9ab147bef3b8915266487e" name="aab8bb9998e9ab147bef3b8915266487e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>viewCourses</b> ()</td></tr>
+<tr class="memdesc:aab8bb9998e9ab147bef3b8915266487e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that views course enrollment history. <br /></td></tr>
 <tr class="separator:aab8bb9998e9ab147bef3b8915266487e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e02fb416f57c0fe8e9fd2189813aafc" id="r_a3e02fb416f57c0fe8e9fd2189813aafc"><td class="memItemLeft" align="right" valign="top"><a id="a3e02fb416f57c0fe8e9fd2189813aafc" name="a3e02fb416f57c0fe8e9fd2189813aafc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>displayDetails</b> ()</td></tr>
+<tr class="memdesc:a3e02fb416f57c0fe8e9fd2189813aafc"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that displays this course's details. <br /></td></tr>
 <tr class="separator:a3e02fb416f57c0fe8e9fd2189813aafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fe33e59939e45cfe32974a5c14a33ef" id="r_a1fe33e59939e45cfe32974a5c14a33ef"><td class="memItemLeft" align="right" valign="top"><a id="a1fe33e59939e45cfe32974a5c14a33ef" name="a1fe33e59939e45cfe32974a5c14a33ef"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classStudent.html">Student</a> &amp;other)</td></tr>
+<tr class="memitem:a1fe33e59939e45cfe32974a5c14a33ef" id="r_a1fe33e59939e45cfe32974a5c14a33ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fe33e59939e45cfe32974a5c14a33ef">operator!=</a> (const <a class="el" href="classStudent.html">Student</a> &amp;other)</td></tr>
+<tr class="memdesc:a1fe33e59939e45cfe32974a5c14a33ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inequality Operator.  <br /></td></tr>
 <tr class="separator:a1fe33e59939e45cfe32974a5c14a33ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a671f6b115a158653a0f0bece34ea0667" id="r_a671f6b115a158653a0f0bece34ea0667"><td class="memItemLeft" align="right" valign="top"><a id="a671f6b115a158653a0f0bece34ea0667" name="a671f6b115a158653a0f0bece34ea0667"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
+<tr class="memdesc:a671f6b115a158653a0f0bece34ea0667"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classStudent.html" title="The Student class.">Student</a> name. <br /></td></tr>
 <tr class="separator:a671f6b115a158653a0f0bece34ea0667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7074837eb63db830e900bb4de553838" id="r_ae7074837eb63db830e900bb4de553838"><td class="memItemLeft" align="right" valign="top"><a id="ae7074837eb63db830e900bb4de553838" name="ae7074837eb63db830e900bb4de553838"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>email</b></td></tr>
+<tr class="memdesc:ae7074837eb63db830e900bb4de553838"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classStudent.html" title="The Student class.">Student</a> email. <br /></td></tr>
 <tr class="separator:ae7074837eb63db830e900bb4de553838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39c8f11d29857684feb1749717846bdb" id="r_a39c8f11d29857684feb1749717846bdb"><td class="memItemLeft" align="right" valign="top"><a id="a39c8f11d29857684feb1749717846bdb" name="a39c8f11d29857684feb1749717846bdb"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>password</b></td></tr>
+<tr class="memdesc:a39c8f11d29857684feb1749717846bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classStudent.html" title="The Student class.">Student</a> password. <br /></td></tr>
 <tr class="separator:a39c8f11d29857684feb1749717846bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e5d401b7ce72aa21a4fdcec3d0cfa28" id="r_a9e5d401b7ce72aa21a4fdcec3d0cfa28"><td class="memItemLeft" align="right" valign="top"><a id="a9e5d401b7ce72aa21a4fdcec3d0cfa28" name="a9e5d401b7ce72aa21a4fdcec3d0cfa28"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>address</b></td></tr>
+<tr class="memdesc:a9e5d401b7ce72aa21a4fdcec3d0cfa28"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classStudent.html" title="The Student class.">Student</a> address. <br /></td></tr>
 <tr class="separator:a9e5d401b7ce72aa21a4fdcec3d0cfa28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1351fb239711a78a8b115d75597b5df0" id="r_a1351fb239711a78a8b115d75597b5df0"><td class="memItemLeft" align="right" valign="top"><a id="a1351fb239711a78a8b115d75597b5df0" name="a1351fb239711a78a8b115d75597b5df0"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
+<tr class="memdesc:a1351fb239711a78a8b115d75597b5df0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classStudent.html" title="The Student class.">Student</a> ID. <br /></td></tr>
 <tr class="separator:a1351fb239711a78a8b115d75597b5df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab00ef1891922021f507e996c3d2288a7" id="r_ab00ef1891922021f507e996c3d2288a7"><td class="memItemLeft" align="right" valign="top"><a id="ab00ef1891922021f507e996c3d2288a7" name="ab00ef1891922021f507e996c3d2288a7"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>phone</b></td></tr>
+<tr class="memdesc:ab00ef1891922021f507e996c3d2288a7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classStudent.html" title="The Student class.">Student</a> phone number. <br /></td></tr>
 <tr class="separator:ab00ef1891922021f507e996c3d2288a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d067b7a11fa8e35653e6573adff40c4" id="r_a1d067b7a11fa8e35653e6573adff40c4"><td class="memItemLeft" align="right" valign="top"><a id="a1d067b7a11fa8e35653e6573adff40c4" name="a1d067b7a11fa8e35653e6573adff40c4"></a>
 <a class="el" href="classDoublyLinkedList.html">DoublyLinkedList</a>&lt; <a class="el" href="classCourse.html">Course</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>course_history</b></td></tr>
+<tr class="memdesc:a1d067b7a11fa8e35653e6573adff40c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classStudent.html" title="The Student class.">Student</a>'s enrollment history. <br /></td></tr>
 <tr class="separator:a1d067b7a11fa8e35653e6573adff40c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:aef1b3fd07ea0e2c1415fe63e566a73c4" id="r_aef1b3fd07ea0e2c1415fe63e566a73c4"><td class="memItemLeft" align="right" valign="top"><a id="aef1b3fd07ea0e2c1415fe63e566a73c4" name="aef1b3fd07ea0e2c1415fe63e566a73c4"></a>
-ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;os, <a class="el" href="classStudent.html">Student</a> &amp;student)</td></tr>
+<tr class="memitem:aef1b3fd07ea0e2c1415fe63e566a73c4" id="r_aef1b3fd07ea0e2c1415fe63e566a73c4"><td class="memItemLeft" align="right" valign="top">ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef1b3fd07ea0e2c1415fe63e566a73c4">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classStudent.html">Student</a> &amp;student)</td></tr>
+<tr class="memdesc:aef1b3fd07ea0e2c1415fe63e566a73c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream insertion operator.  <br /></td></tr>
 <tr class="separator:aef1b3fd07ea0e2c1415fe63e566a73c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="classStudent.html" title="The Student class.">Student</a> class. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a726d8aeeb871c356065db8261f6b8bf1" name="a726d8aeeb871c356065db8261f6b8bf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a726d8aeeb871c356065db8261f6b8bf1">&#9670;&#160;</a></span>Student()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Student::Student </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>email</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>password</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>address</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>phone</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a new <a class="el" href="classStudent.html" title="The Student class.">Student</a> object with given values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>the student's ID. </td></tr>
+    <tr><td class="paramname">name</td><td>this student's name. </td></tr>
+    <tr><td class="paramname">email</td><td>this student's email. </td></tr>
+    <tr><td class="paramname">password</td><td>this student's password. </td></tr>
+    <tr><td class="paramname">address</td><td>this student's address. </td></tr>
+    <tr><td class="paramname">phone</td><td>this student's phone. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af7c6aaec4194169af2191e735cd375a8" name="af7c6aaec4194169af2191e735cd375a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7c6aaec4194169af2191e735cd375a8">&#9670;&#160;</a></span>addCourse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Student::addCourse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCourse.html">Course</a> *</td>          <td class="paramname"><span class="paramname"><em>course</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A function that adds a course to this student's enrollment history. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">course</td><td>a pointer to the course to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afa1d9d4337578857a3f890dffc5843ff" name="afa1d9d4337578857a3f890dffc5843ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa1d9d4337578857a3f890dffc5843ff">&#9670;&#160;</a></span>alreadyEnrolled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Student::alreadyEnrolled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCourse.html">Course</a></td>          <td class="paramname"><span class="paramname"><em>course</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if this student is already enrolled in a course. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">course</td><td>the course this student intends to be enrolled in. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1fe33e59939e45cfe32974a5c14a33ef" name="a1fe33e59939e45cfe32974a5c14a33ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fe33e59939e45cfe32974a5c14a33ef">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Student::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classStudent.html">Student</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inequality Operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The objects to compare. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="aef1b3fd07ea0e2c1415fe63e566a73c4" name="aef1b3fd07ea0e2c1415fe63e566a73c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef1b3fd07ea0e2c1415fe63e566a73c4">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>os</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classStudent.html">Student</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>student</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stream insertion operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>The input stream. </td></tr>
+    <tr><td class="paramname">student</td><td>The object to insert in the stream. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>os </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/<a class="el" href="entities_8h_source.html">entities.h</a></li>
 </ul>

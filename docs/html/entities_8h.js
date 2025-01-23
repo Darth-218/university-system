@@ -1,5 +1,5 @@
 var entities_8h =
 [
-    [ "Course", "classCourse.html", null ],
-    [ "Student", "classStudent.html", null ]
+    [ "Course", "classCourse.html", "classCourse" ],
+    [ "Student", "classStudent.html", "classStudent" ]
 ];

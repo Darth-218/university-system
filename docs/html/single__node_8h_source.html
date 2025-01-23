@@ -34,6 +34,7 @@
   <td id="projectalign">
    <div id="projectname">University System
    </div>
+   <div id="projectbrief">A University System utilizing different data structures.</div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -110,18 +111,24 @@ $(function(){initNavTree('single__node_8h_source.html',''); initResizable(true);
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="includes_8h.html">includes.h</a>&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classSNode.html">   10</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span>SNode {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  T value;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  SNode *next;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  SNode(T value) {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    this-&gt;value = value;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    next = NULL;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  }</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classSNode.html">   15</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code hl_function" href="classSNode.html#a5689846b99de23bd9ae1a676d728ef0b">SNode</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classSNode.html#aa3208e572426a0fe4f249b154cda1452">   17</a></span>  T <a class="code hl_variable" href="classSNode.html#aa3208e572426a0fe4f249b154cda1452">value</a>;     </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classSNode.html#a72891e6ddeb88d479ce0dd9536f48b44">   18</a></span>  <a class="code hl_function" href="classSNode.html#a5689846b99de23bd9ae1a676d728ef0b">SNode</a> *<a class="code hl_variable" href="classSNode.html#a72891e6ddeb88d479ce0dd9536f48b44">next</a>; </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classSNode.html#a5689846b99de23bd9ae1a676d728ef0b">   24</a></span>  <a class="code hl_function" href="classSNode.html#a5689846b99de23bd9ae1a676d728ef0b">SNode</a>(T <a class="code hl_variable" href="classSNode.html#aa3208e572426a0fe4f249b154cda1452">value</a>) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    this-&gt;value = <a class="code hl_variable" href="classSNode.html#aa3208e572426a0fe4f249b154cda1452">value</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_variable" href="classSNode.html#a72891e6ddeb88d479ce0dd9536f48b44">next</a> = NULL;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  }</div>
 </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+</div>
+<div class="ttc" id="aclassSNode_html_a5689846b99de23bd9ae1a676d728ef0b"><div class="ttname"><a href="classSNode.html#a5689846b99de23bd9ae1a676d728ef0b">SNode::SNode</a></div><div class="ttdeci">SNode(T value)</div><div class="ttdoc">Constructs an empty SNode object.</div><div class="ttdef"><b>Definition</b> single_node.h:24</div></div>
+<div class="ttc" id="aclassSNode_html_a72891e6ddeb88d479ce0dd9536f48b44"><div class="ttname"><a href="classSNode.html#a72891e6ddeb88d479ce0dd9536f48b44">SNode::next</a></div><div class="ttdeci">SNode * next</div><div class="ttdoc">A pointer to the next SNode object.</div><div class="ttdef"><b>Definition</b> single_node.h:18</div></div>
+<div class="ttc" id="aclassSNode_html_aa3208e572426a0fe4f249b154cda1452"><div class="ttname"><a href="classSNode.html#aa3208e572426a0fe4f249b154cda1452">SNode::value</a></div><div class="ttdeci">T value</div><div class="ttdoc">The value stored in the SNode object.</div><div class="ttdef"><b>Definition</b> single_node.h:17</div></div>
 <div class="ttc" id="aincludes_8h_html"><div class="ttname"><a href="includes_8h.html">includes.h</a></div><div class="ttdoc">Collects the included files used throughout the project.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

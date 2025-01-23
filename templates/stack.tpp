@@ -41,7 +41,7 @@ template <typename T> bool Stack<T>::push(T value) {
 
   /**
    * @brief A function that pushes values into the stack.
-   * @param value, the value to push.
+   * @param value The value to push.
    */
 
   SNode<T> *new_node = new SNode<T>(value);
@@ -57,6 +57,7 @@ template <typename T> bool Stack<T>::pop() {
 
   /**
    * @brief A function that removes the top value of the stack.
+   * @return boolean.
    */
 
   if (isEmpty()) {
@@ -73,8 +74,10 @@ template <typename T> bool Stack<T>::pop() {
 }
 
 template <typename T> T Stack<T>::peek() {
+
   /**
    * @brief A function that returns the top value of the stack.
+   * @return T The top of the stack.
    */
 
   if (isEmpty()) {

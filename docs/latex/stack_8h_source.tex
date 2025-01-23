@@ -9,25 +9,25 @@
 \DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{includes_8h}{includes.h}}"{}}}
 \DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{single__node_8h}{single\_node.h}}"{}}}
 \DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>\ \textcolor{keyword}{class\ }Stack\ \{}
-\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00013\ \ \ \mbox{\hyperlink{classSNode}{SNode<T>}}\ *stack\_top;}
-\DoxyCodeLine{00014\ \ \ \textcolor{keywordtype}{int}\ size;}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00017\ \ \ Stack();}
-\DoxyCodeLine{00018\ }
-\DoxyCodeLine{00019\ \ \ \textcolor{keywordtype}{bool}\ isEmpty();}
+\DoxyCodeLine{00016\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classStack_aefee698059467258bbd79045aca62a63}{Stack}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \mbox{\hyperlink{classSNode}{SNode<T>}}\ *stack\_top;\ \textcolor{comment}{//<\ A\ pointer\ to\ the\ top\ of\ the\ Stack\ object.}}
+\DoxyCodeLine{00019\ \ \ \textcolor{keywordtype}{int}\ size;\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//<\ The\ size\ of\ the\ Stack\ object.}}
 \DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ \ \ \textcolor{keywordtype}{int}\ getSize();}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \ \ \textcolor{keywordtype}{bool}\ push(T\ \textcolor{keywordtype}{object});}
-\DoxyCodeLine{00024\ }
-\DoxyCodeLine{00025\ \ \ \textcolor{keywordtype}{bool}\ pop();}
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \mbox{\hyperlink{classStack_aefee698059467258bbd79045aca62a63}{Stack}}();}
 \DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \ \ T\ peek();}
-\DoxyCodeLine{00028\ \};}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ "{}../templates/stack.tpp"{}}}
+\DoxyCodeLine{00031\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classStack_ad0db0d9b249e871bb7504ed89a99d3a7}{isEmpty}}();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00037\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classStack_afe9003e80a092a61c5650ed99153fab7}{getSize}}();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00044\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classStack_af8bdaebf0b986df2cfd42406c483f81e}{push}}(T\ \textcolor{keywordtype}{object});}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00050\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classStack_a2cbafb4f2dcc4a8a27d661004e937f80}{pop}}();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00056\ \ \ T\ \mbox{\hyperlink{classStack_adcb4774ac8aa94cbc19b461da9bdee3a}{peek}}();}
+\DoxyCodeLine{00057\ \};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#include\ "{}../templates/stack.tpp"{}}}
 
 \end{DoxyCode}

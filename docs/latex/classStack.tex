@@ -1,23 +1,120 @@
 \doxysection{Stack\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
 \hypertarget{classStack}{}\label{classStack}\index{Stack$<$ T $>$@{Stack$<$ T $>$}}
+
+
+The \doxylink{classStack}{Stack} class.  
+
+
+
+
+{\ttfamily \#include $<$stack.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classStack_ad0db0d9b249e871bb7504ed89a99d3a7}\label{classStack_ad0db0d9b249e871bb7504ed89a99d3a7} 
-bool {\bfseries is\+Empty} ()
-\item 
-\Hypertarget{classStack_afe9003e80a092a61c5650ed99153fab7}\label{classStack_afe9003e80a092a61c5650ed99153fab7} 
-int {\bfseries get\+Size} ()
-\item 
-\Hypertarget{classStack_af8bdaebf0b986df2cfd42406c483f81e}\label{classStack_af8bdaebf0b986df2cfd42406c483f81e} 
-bool {\bfseries push} (T object)
-\item 
-\Hypertarget{classStack_a2cbafb4f2dcc4a8a27d661004e937f80}\label{classStack_a2cbafb4f2dcc4a8a27d661004e937f80} 
-bool {\bfseries pop} ()
-\item 
-\Hypertarget{classStack_adcb4774ac8aa94cbc19b461da9bdee3a}\label{classStack_adcb4774ac8aa94cbc19b461da9bdee3a} 
-T {\bfseries peek} ()
-\end{DoxyCompactItemize}
+\Hypertarget{classStack_aefee698059467258bbd79045aca62a63}\label{classStack_aefee698059467258bbd79045aca62a63} 
+{\bfseries Stack} ()
+\begin{DoxyCompactList}\small\item\em Constructs an empty \doxylink{classStack}{Stack} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classStack_ad0db0d9b249e871bb7504ed89a99d3a7}{is\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em A function to check if the stack is empty. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classStack_afe9003e80a092a61c5650ed99153fab7}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em A function to get the size of the stack. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classStack_af8bdaebf0b986df2cfd42406c483f81e}{push}} (T object)
+\begin{DoxyCompactList}\small\item\em A function that pushes values into the stack. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classStack_a2cbafb4f2dcc4a8a27d661004e937f80}{pop}} ()
+\begin{DoxyCompactList}\small\item\em A function that removes the top value of the stack. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classStack_adcb4774ac8aa94cbc19b461da9bdee3a}{peek}} ()
+\begin{DoxyCompactList}\small\item\em A function that returns the top value of the stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Stack$<$ T $>$}
+The \doxylink{classStack}{Stack} class. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of value stored in the stack. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classStack_afe9003e80a092a61c5650ed99153fab7}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!getSize@{getSize}}
+\index{getSize@{getSize}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \label{classStack_afe9003e80a092a61c5650ed99153fab7} 
+template$<$typename T$>$ \\
+int \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::get\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A function to get the size of the stack. 
+
+\begin{DoxyReturn}{Returns}
+The size of the stack. 
+\end{DoxyReturn}
+\Hypertarget{classStack_ad0db0d9b249e871bb7504ed89a99d3a7}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \label{classStack_ad0db0d9b249e871bb7504ed89a99d3a7} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A function to check if the stack is empty. 
+
+\begin{DoxyReturn}{Returns}
+True if the list is empty, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classStack_adcb4774ac8aa94cbc19b461da9bdee3a}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!peek@{peek}}
+\index{peek@{peek}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily \label{classStack_adcb4774ac8aa94cbc19b461da9bdee3a} 
+template$<$typename T$>$ \\
+T \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::peek (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A function that returns the top value of the stack. 
+
+\begin{DoxyReturn}{Returns}
+T The top of the stack. 
+\end{DoxyReturn}
+\Hypertarget{classStack_a2cbafb4f2dcc4a8a27d661004e937f80}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!pop@{pop}}
+\index{pop@{pop}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \label{classStack_a2cbafb4f2dcc4a8a27d661004e937f80} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::pop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A function that removes the top value of the stack. 
+
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classStack_af8bdaebf0b986df2cfd42406c483f81e}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!push@{push}}
+\index{push@{push}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{classStack_af8bdaebf0b986df2cfd42406c483f81e} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::push (\begin{DoxyParamCaption}\item[{T}]{object}{}\end{DoxyParamCaption})}
+
+
+
+A function that pushes values into the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The value to add to the stack. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

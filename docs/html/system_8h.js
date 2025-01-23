@@ -1,4 +1,4 @@
 var system_8h =
 [
-    [ "UniSystem", "classUniSystem.html", null ]
+    [ "UniSystem", "classUniSystem.html", "classUniSystem" ]
 ];

@@ -34,6 +34,7 @@
   <td id="projectalign">
    <div id="projectname">University System
    </div>
+   <div id="projectbrief">A University System utilizing different data structures.</div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -111,30 +112,36 @@ $(function(){initNavTree('stack_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="includes_8h.html">includes.h</a>&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="single__node_8h.html">single_node.h</a>&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classStack.html">   11</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span>Stack {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <a class="code hl_class" href="classSNode.html">SNode&lt;T&gt;</a> *stack_top;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="keywordtype">int</span> size;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  Stack();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keywordtype">bool</span> isEmpty();</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span></div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classStack.html">   16</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code hl_function" href="classStack.html#aefee698059467258bbd79045aca62a63">Stack</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <a class="code hl_class" href="classSNode.html">SNode&lt;T&gt;</a> *stack_top; <span class="comment">//&lt; A pointer to the top of the Stack object.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keywordtype">int</span> size;            <span class="comment">//&lt; The size of the Stack object.</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keywordtype">int</span> getSize();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordtype">bool</span> push(T <span class="keywordtype">object</span>);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordtype">bool</span> pop();</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  T peek();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classStack.html#aefee698059467258bbd79045aca62a63">   25</a></span>  <a class="code hl_function" href="classStack.html#aefee698059467258bbd79045aca62a63">Stack</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classStack.html#ad0db0d9b249e871bb7504ed89a99d3a7">   31</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classStack.html#ad0db0d9b249e871bb7504ed89a99d3a7">isEmpty</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classStack.html#afe9003e80a092a61c5650ed99153fab7">   37</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classStack.html#afe9003e80a092a61c5650ed99153fab7">getSize</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classStack.html#af8bdaebf0b986df2cfd42406c483f81e">   44</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classStack.html#af8bdaebf0b986df2cfd42406c483f81e">push</a>(T <span class="keywordtype">object</span>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classStack.html#a2cbafb4f2dcc4a8a27d661004e937f80">   50</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classStack.html#a2cbafb4f2dcc4a8a27d661004e937f80">pop</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classStack.html#adcb4774ac8aa94cbc19b461da9bdee3a">   56</a></span>  T <a class="code hl_function" href="classStack.html#adcb4774ac8aa94cbc19b461da9bdee3a">peek</a>();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
 </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;../templates/stack.tpp&quot;</span></div>
-<div class="ttc" id="aclassSNode_html"><div class="ttname"><a href="classSNode.html">SNode</a></div><div class="ttdef"><b>Definition</b> single_node.h:10</div></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#include &quot;../templates/stack.tpp&quot;</span></div>
+<div class="ttc" id="aclassSNode_html"><div class="ttname"><a href="classSNode.html">SNode</a></div><div class="ttdoc">The nodes for the SinglyLinkedList class.</div><div class="ttdef"><b>Definition</b> single_node.h:15</div></div>
+<div class="ttc" id="aclassStack_html_a2cbafb4f2dcc4a8a27d661004e937f80"><div class="ttname"><a href="classStack.html#a2cbafb4f2dcc4a8a27d661004e937f80">Stack::pop</a></div><div class="ttdeci">bool pop()</div><div class="ttdoc">A function that removes the top value of the stack.</div></div>
+<div class="ttc" id="aclassStack_html_ad0db0d9b249e871bb7504ed89a99d3a7"><div class="ttname"><a href="classStack.html#ad0db0d9b249e871bb7504ed89a99d3a7">Stack::isEmpty</a></div><div class="ttdeci">bool isEmpty()</div><div class="ttdoc">A function to check if the stack is empty.</div></div>
+<div class="ttc" id="aclassStack_html_adcb4774ac8aa94cbc19b461da9bdee3a"><div class="ttname"><a href="classStack.html#adcb4774ac8aa94cbc19b461da9bdee3a">Stack::peek</a></div><div class="ttdeci">T peek()</div><div class="ttdoc">A function that returns the top value of the stack.</div></div>
+<div class="ttc" id="aclassStack_html_aefee698059467258bbd79045aca62a63"><div class="ttname"><a href="classStack.html#aefee698059467258bbd79045aca62a63">Stack::Stack</a></div><div class="ttdeci">Stack()</div><div class="ttdoc">Constructs an empty Stack object.</div></div>
+<div class="ttc" id="aclassStack_html_af8bdaebf0b986df2cfd42406c483f81e"><div class="ttname"><a href="classStack.html#af8bdaebf0b986df2cfd42406c483f81e">Stack::push</a></div><div class="ttdeci">bool push(T object)</div><div class="ttdoc">A function that pushes values into the stack.</div></div>
+<div class="ttc" id="aclassStack_html_afe9003e80a092a61c5650ed99153fab7"><div class="ttname"><a href="classStack.html#afe9003e80a092a61c5650ed99153fab7">Stack::getSize</a></div><div class="ttdeci">int getSize()</div><div class="ttdoc">A function to get the size of the stack.</div></div>
 <div class="ttc" id="aincludes_8h_html"><div class="ttname"><a href="includes_8h.html">includes.h</a></div><div class="ttdoc">Collects the included files used throughout the project.</div></div>
 <div class="ttc" id="asingle__node_8h_html"><div class="ttname"><a href="single__node_8h.html">single_node.h</a></div><div class="ttdoc">Defines the Single Node (SNode) class.</div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -52,7 +52,7 @@ template <typename T> bool SinglyLinkedList<T>::push(T value) {
 
   /**
    * @brief Adds a value to the begining of the list.
-   * @param value, the value to add.
+   * @param value The value to add.
    * @return boolean for debugging purposes.
    */
 
@@ -79,7 +79,7 @@ template <typename T> bool SinglyLinkedList<T>::append(T value) {
 
   /**
    * @brief Adds a value to the end of the list.
-   * @param value, the value to add.
+   * @param value The value to add.
    * @return boolean for debugging purposes.
    */
 
@@ -107,8 +107,8 @@ template <typename T> bool SinglyLinkedList<T>::insert(T value, int position) {
 
   /**
    * @brief Adds a value to an index in the list.
-   * @param value, the value to add.
-   * @param position, the position to add the value at.
+   * @param value The value to add.
+   * @param position The position to add the value at.
    * @return boolean for debugging purposes.
    */
 
@@ -194,7 +194,7 @@ template <typename T> bool SinglyLinkedList<T>::removeNode(SNode<T> *node) {
 
   /**
    * @brief A function that removes a specific node.
-   * @param node, a pointer to the node to delete.
+   * @param node A pointer to the node to delete.
    * @return boolean for debugging purposes.
    */
 
@@ -211,7 +211,7 @@ template <typename T> bool SinglyLinkedList<T>::deleteNode(int position) {
 
   /**
    * @brief A wrapper function that removes a node from anywhere in the list.
-   * @param index, the index of the node to remove.
+   * @param index The index of the node to remove.
    * @return boolean for debugging purposes.
    */
 

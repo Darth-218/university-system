@@ -9,46 +9,48 @@
 \DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{entities_8h}{entities.h}}"{}}}
 \DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{structures_8h}{structures.h}}"{}}}
 \DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }UniSystem\ \{}
-\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00013\ \ \ \mbox{\hyperlink{classSinglyLinkedList}{SinglyLinkedList<Student>}}\ *students;}
-\DoxyCodeLine{00014\ \ \ \mbox{\hyperlink{classBinaryTree}{BinaryTree<Course>}}\ *courses;}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00017\ \ \ \mbox{\hyperlink{classHashTable}{HashTable<int,\ Course>}}\ *courses\_table;}
-\DoxyCodeLine{00018\ \ \ \mbox{\hyperlink{classHashTable}{HashTable<int,\ Student>}}\ *students\_table;}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00020\ \ \ UniSystem();}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classUniSystem_a2be5802336ecf9b9d745f138a85aa512}{UniSystem}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \mbox{\hyperlink{classSinglyLinkedList}{SinglyLinkedList<Student>}}}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ *students;\ }
+\DoxyCodeLine{00019\ \ \ \mbox{\hyperlink{classBinaryTree}{BinaryTree<Course>}}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ *courses;\ }
 \DoxyCodeLine{00021\ }
-\DoxyCodeLine{00022\ \ \ \textcolor{keywordtype}{bool}\ courseExists(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \ \ \textcolor{keywordtype}{bool}\ studentExists(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00025\ }
-\DoxyCodeLine{00026\ \ \ \textcolor{keywordtype}{bool}\ addStudent(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{string}\ email,\ \textcolor{keywordtype}{string}\ password,}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ address,\ \textcolor{keywordtype}{int}\ phone);}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \textcolor{keywordtype}{bool}\ deleteStudent(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00030\ }
-\DoxyCodeLine{00031\ \ \ \textcolor{keywordtype}{void}\ listStudents();}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \mbox{\hyperlink{classHashTable}{HashTable<int,\ Course>}}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ *\mbox{\hyperlink{classUniSystem_ae96ef187c103b16cb20b45a55d4f0c19}{courses\_table}};\ }
+\DoxyCodeLine{00025\ \ \ \mbox{\hyperlink{classHashTable}{HashTable<int,\ Student>}}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ *\mbox{\hyperlink{classUniSystem_aef8450e005750906b4997680bce18e87}{students\_table}};\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00031\ \ \ \mbox{\hyperlink{classUniSystem_a2be5802336ecf9b9d745f138a85aa512}{UniSystem}}();}
 \DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ \ \ \textcolor{keywordtype}{void}\ listCourses();}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{main_8cpp_aefec7344f19f6ae9b5ae50a0b1ec91cc}{freeSeat}}(\mbox{\hyperlink{classCourse}{Course}}\ \&course);}
-\DoxyCodeLine{00036\ }
-\DoxyCodeLine{00037\ \ \ \textcolor{keywordtype}{bool}\ addCourse(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{int}\ credits,\ \textcolor{keywordtype}{string}\ instructor,}
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ max\_seats,\ \textcolor{keywordtype}{int}\ seats);}
+\DoxyCodeLine{00038\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUniSystem_ac073798d3a4a99d9bf809fb070c50f9f}{courseExists}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
 \DoxyCodeLine{00039\ }
-\DoxyCodeLine{00040\ \ \ \textcolor{keywordtype}{bool}\ addCourse(\mbox{\hyperlink{classCourse}{Course}}\ course);}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \ \ \textcolor{keywordtype}{bool}\ dropCourse(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00043\ }
-\DoxyCodeLine{00044\ \ \ \textcolor{keywordtype}{bool}\ checkWaitlist(\mbox{\hyperlink{classCourse}{Course}}\ \&course);}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00046\ \ \ \textcolor{keywordtype}{bool}\ searchStudent(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00047\ }
-\DoxyCodeLine{00048\ \ \ \textcolor{keywordtype}{bool}\ searchCourse(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00049\ \};}
-\DoxyCodeLine{00050\ }
-\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#include\ "{}../templates/system.tpp"{}}}
+\DoxyCodeLine{00045\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUniSystem_a4b4ad232210be670fe792d38584f0c1f}{studentExists}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00057\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUniSystem_a437410e0eeea0056855839fd5ec5e420}{addStudent}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{string}\ email,\ \textcolor{keywordtype}{string}\ password,}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ address,\ \textcolor{keywordtype}{int}\ phone);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00065\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUniSystem_a7247fb2b633c9046fdf3b9c0ca79fe19}{deleteStudent}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00070\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUniSystem_aac7fa651bcb3c617dee25afe777bd8b2}{listStudents}}();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00075\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUniSystem_a4d2d5dfe78082e4044b2a4d04a7f2ba4}{listCourses}}();}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00088\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUniSystem_a8bb14556d0c73063b33633a01e534069}{addCourse}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{int}\ credits,\ \textcolor{keywordtype}{string}\ instructor,}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ max\_seats,\ \textcolor{keywordtype}{int}\ seats);}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00096\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUniSystem_a90f44ee808d2dc33fef133bd8a97afe1}{addCourse}}(\mbox{\hyperlink{classCourse}{Course}}\ course);}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00103\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUniSystem_aa2a0cb6c5aef1af97ee6e6bba66e2f8b}{dropCourse}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00110\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUniSystem_aa6a5841c56699b35695260b0235b75f0}{checkWaitlist}}(\mbox{\hyperlink{classCourse}{Course}}\ \&course);}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00117\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUniSystem_add02a89599a801e6edc8c3945197798d}{searchStudent}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00124\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUniSystem_a795b934fa85886b706e6c830939f3d8f}{searchCourse}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00125\ \};}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \textcolor{preprocessor}{\#include\ "{}../templates/system.tpp"{}}}
 
 \end{DoxyCode}

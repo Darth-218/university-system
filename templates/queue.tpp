@@ -42,7 +42,8 @@ template <typename T> bool Queue<T>::enqueue(T value) {
 
   /**
    * @brief A function that adds a value to the end of the queue.
-   * @param value, the value to add.
+   * @param value The value to add.
+   * @return boolean.
    */
 
   SNode<T> *new_node = new SNode<T>(value);
@@ -62,8 +63,10 @@ template <typename T> bool Queue<T>::enqueue(T value) {
 }
 
 template <typename T> bool Queue<T>::dequeue() {
+
   /**
    * @brief A function that removes the first value in the queue.
+   * @return boolean.
    */
 
   if (isEmpty()) {
@@ -86,7 +89,8 @@ template <typename T> bool Queue<T>::dequeue() {
 template <typename T> T *Queue<T>::peek() {
 
   /**
-   * @brief A function that returns the first element in the queue.
+   * @brief A function that returns a pointer to the first element in the queue.
+   * @return A pointer to the front of the queue.
    */
 
   if (isEmpty()) {

@@ -1,41 +1,225 @@
 \doxysection{Singly\+Linked\+List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
 \hypertarget{classSinglyLinkedList}{}\label{classSinglyLinkedList}\index{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}}
+
+
+The \doxylink{classSinglyLinkedList}{Singly\+Linked\+List} class.  
+
+
+
+
+{\ttfamily \#include $<$singly\+\_\+linked\+\_\+list.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classSinglyLinkedList_abff424e0d5a39f7c0ef65513aa8f0d3e}\label{classSinglyLinkedList_abff424e0d5a39f7c0ef65513aa8f0d3e} 
-\mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$ \texorpdfstring{$\ast$}{*} {\bfseries get\+Head} ()
-\item 
-\Hypertarget{classSinglyLinkedList_a080dd6ebc86ca8f0c166bcdd1c10ea58}\label{classSinglyLinkedList_a080dd6ebc86ca8f0c166bcdd1c10ea58} 
-bool {\bfseries is\+Empty} ()
-\item 
-\Hypertarget{classSinglyLinkedList_af3e104eceb0327f22fdfba8b6d72df69}\label{classSinglyLinkedList_af3e104eceb0327f22fdfba8b6d72df69} 
-bool {\bfseries append} (T value)
-\item 
-\Hypertarget{classSinglyLinkedList_a44972073264ea905f93732b4b3b6acb9}\label{classSinglyLinkedList_a44972073264ea905f93732b4b3b6acb9} 
-bool {\bfseries insert} (T value, int position)
-\item 
-\Hypertarget{classSinglyLinkedList_a0ff5728d443501b7d4766802a520f116}\label{classSinglyLinkedList_a0ff5728d443501b7d4766802a520f116} 
-bool {\bfseries push} (T value)
-\item 
-\Hypertarget{classSinglyLinkedList_ad2478ed4d28e8a18a6fb3d12d69b6436}\label{classSinglyLinkedList_ad2478ed4d28e8a18a6fb3d12d69b6436} 
-bool {\bfseries remove\+Node} (\mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$ \texorpdfstring{$\ast$}{*}node)
-\item 
-\Hypertarget{classSinglyLinkedList_a2a500a7ff9cad579e9058a30d851335d}\label{classSinglyLinkedList_a2a500a7ff9cad579e9058a30d851335d} 
-bool {\bfseries remove\+Head} ()
-\item 
-\Hypertarget{classSinglyLinkedList_ad98cfdd0e92e2d6e0c5e19e8c5ca6be4}\label{classSinglyLinkedList_ad98cfdd0e92e2d6e0c5e19e8c5ca6be4} 
-bool {\bfseries remove\+Tail} ()
-\item 
-\Hypertarget{classSinglyLinkedList_a223740f7e3448a759435c03fd0b44682}\label{classSinglyLinkedList_a223740f7e3448a759435c03fd0b44682} 
-bool {\bfseries delete\+Node} (int position)
-\item 
+\Hypertarget{classSinglyLinkedList_ac0c697ada1d5f5977853e7e31364ef92}\label{classSinglyLinkedList_ac0c697ada1d5f5977853e7e31364ef92} 
+{\bfseries Singly\+Linked\+List} ()
+\begin{DoxyCompactList}\small\item\em Constructs an empty \doxylink{classSinglyLinkedList}{Singly\+Linked\+List} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classSinglyLinkedList_abff424e0d5a39f7c0ef65513aa8f0d3e}{get\+Head}} ()
+\begin{DoxyCompactList}\small\item\em A function that returns the head of the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSinglyLinkedList_a080dd6ebc86ca8f0c166bcdd1c10ea58}{is\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em A function to check if the list is empty. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSinglyLinkedList_af3e104eceb0327f22fdfba8b6d72df69}{append}} (T value)
+\begin{DoxyCompactList}\small\item\em Adds a value to the end of the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSinglyLinkedList_a44972073264ea905f93732b4b3b6acb9}{insert}} (T value, int position)
+\begin{DoxyCompactList}\small\item\em Adds a value to an index in the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSinglyLinkedList_a0ff5728d443501b7d4766802a520f116}{push}} (T value)
+\begin{DoxyCompactList}\small\item\em Adds a value to the begining of the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSinglyLinkedList_ad2478ed4d28e8a18a6fb3d12d69b6436}{remove\+Node}} (\mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$ \texorpdfstring{$\ast$}{*}node)
+\begin{DoxyCompactList}\small\item\em A function that removes a specific node. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSinglyLinkedList_a2a500a7ff9cad579e9058a30d851335d}{remove\+Head}} ()
+\begin{DoxyCompactList}\small\item\em A function that removes the head of the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSinglyLinkedList_ad98cfdd0e92e2d6e0c5e19e8c5ca6be4}{remove\+Tail}} ()
+\begin{DoxyCompactList}\small\item\em a function that removes the tail of the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSinglyLinkedList_a223740f7e3448a759435c03fd0b44682}{delete\+Node}} (int position)
+\begin{DoxyCompactList}\small\item\em A wrapper function that removes a node from anywhere in the list. \end{DoxyCompactList}\item 
 \Hypertarget{classSinglyLinkedList_a4e246972efe73987cbbe5e78826b8d50}\label{classSinglyLinkedList_a4e246972efe73987cbbe5e78826b8d50} 
 void {\bfseries display} ()
-\item 
-\Hypertarget{classSinglyLinkedList_a9e858453f33cae1fcd6764359b20bd27}\label{classSinglyLinkedList_a9e858453f33cae1fcd6764359b20bd27} 
-int {\bfseries get\+Length} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A function that displays the list. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSinglyLinkedList_a9e858453f33cae1fcd6764359b20bd27}{get\+Length}} ()
+\begin{DoxyCompactList}\small\item\em A function that returns the length of the list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Singly\+Linked\+List$<$ T $>$}
+The \doxylink{classSinglyLinkedList}{Singly\+Linked\+List} class. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of values stored inside the \doxylink{classSinglyLinkedList}{Singly\+Linked\+List} object. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSinglyLinkedList_af3e104eceb0327f22fdfba8b6d72df69}\index{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!append@{append}}
+\index{append@{append}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily \label{classSinglyLinkedList_af3e104eceb0327f22fdfba8b6d72df69} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}}$<$ T $>$\+::append (\begin{DoxyParamCaption}\item[{T}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Adds a value to the end of the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classSinglyLinkedList_a223740f7e3448a759435c03fd0b44682}\index{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!deleteNode@{deleteNode}}
+\index{deleteNode@{deleteNode}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{deleteNode()}{deleteNode()}}
+{\footnotesize\ttfamily \label{classSinglyLinkedList_a223740f7e3448a759435c03fd0b44682} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}}$<$ T $>$\+::delete\+Node (\begin{DoxyParamCaption}\item[{int}]{position}{}\end{DoxyParamCaption})}
+
+
+
+A wrapper function that removes a node from anywhere in the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The index of the node to remove. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classSinglyLinkedList_abff424e0d5a39f7c0ef65513aa8f0d3e}\index{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!getHead@{getHead}}
+\index{getHead@{getHead}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getHead()}{getHead()}}
+{\footnotesize\ttfamily \label{classSinglyLinkedList_abff424e0d5a39f7c0ef65513aa8f0d3e} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}}$<$ T $>$\+::get\+Head (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A function that returns the head of the list. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the head. 
+\end{DoxyReturn}
+\Hypertarget{classSinglyLinkedList_a9e858453f33cae1fcd6764359b20bd27}\index{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!getLength@{getLength}}
+\index{getLength@{getLength}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getLength()}{getLength()}}
+{\footnotesize\ttfamily \label{classSinglyLinkedList_a9e858453f33cae1fcd6764359b20bd27} 
+template$<$typename T$>$ \\
+int \mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}}$<$ T $>$\+::get\+Length (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A function that returns the length of the list. 
+
+\begin{DoxyReturn}{Returns}
+List length. 
+\end{DoxyReturn}
+\Hypertarget{classSinglyLinkedList_a44972073264ea905f93732b4b3b6acb9}\index{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!insert@{insert}}
+\index{insert@{insert}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \label{classSinglyLinkedList_a44972073264ea905f93732b4b3b6acb9} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}}$<$ T $>$\+::insert (\begin{DoxyParamCaption}\item[{T}]{value}{, }\item[{int}]{position}{}\end{DoxyParamCaption})}
+
+
+
+Adds a value to an index in the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to add. \\
+\hline
+{\em position} & The position to add the value at. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classSinglyLinkedList_a080dd6ebc86ca8f0c166bcdd1c10ea58}\index{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \label{classSinglyLinkedList_a080dd6ebc86ca8f0c166bcdd1c10ea58} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}}$<$ T $>$\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A function to check if the list is empty. 
+
+\begin{DoxyReturn}{Returns}
+True if the list is empty, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classSinglyLinkedList_a0ff5728d443501b7d4766802a520f116}\index{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!push@{push}}
+\index{push@{push}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{classSinglyLinkedList_a0ff5728d443501b7d4766802a520f116} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}}$<$ T $>$\+::push (\begin{DoxyParamCaption}\item[{T}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Adds a value to the begining of the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classSinglyLinkedList_a2a500a7ff9cad579e9058a30d851335d}\index{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!removeHead@{removeHead}}
+\index{removeHead@{removeHead}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{removeHead()}{removeHead()}}
+{\footnotesize\ttfamily \label{classSinglyLinkedList_a2a500a7ff9cad579e9058a30d851335d} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}}$<$ T $>$\+::remove\+Head (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+A function that removes the head of the list. 
+
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classSinglyLinkedList_ad2478ed4d28e8a18a6fb3d12d69b6436}\index{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!removeNode@{removeNode}}
+\index{removeNode@{removeNode}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{removeNode()}{removeNode()}}
+{\footnotesize\ttfamily \label{classSinglyLinkedList_ad2478ed4d28e8a18a6fb3d12d69b6436} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}}$<$ T $>$\+::remove\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$ \texorpdfstring{$\ast$}{*}}]{node}{}\end{DoxyParamCaption})}
+
+
+
+A function that removes a specific node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The pointer to the previous node to the target to delete. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classSinglyLinkedList_ad98cfdd0e92e2d6e0c5e19e8c5ca6be4}\index{SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}!removeTail@{removeTail}}
+\index{removeTail@{removeTail}!SinglyLinkedList$<$ T $>$@{SinglyLinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{removeTail()}{removeTail()}}
+{\footnotesize\ttfamily \label{classSinglyLinkedList_ad98cfdd0e92e2d6e0c5e19e8c5ca6be4} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{classSinglyLinkedList}{Singly\+Linked\+List}}$<$ T $>$\+::remove\+Tail (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+a function that removes the tail of the list. 
+
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

@@ -1,59 +1,168 @@
 \doxysection{Student Class Reference}
 \hypertarget{classStudent}{}\label{classStudent}\index{Student@{Student}}
+
+
+The \doxylink{classStudent}{Student} class.  
+
+
+
+
+{\ttfamily \#include $<$entities.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classStudent_a726d8aeeb871c356065db8261f6b8bf1}\label{classStudent_a726d8aeeb871c356065db8261f6b8bf1} 
-{\bfseries Student} (int id, string name, string email, string password, string address, int phone)
-\item 
-\Hypertarget{classStudent_afa1d9d4337578857a3f890dffc5843ff}\label{classStudent_afa1d9d4337578857a3f890dffc5843ff} 
-bool {\bfseries already\+Enrolled} (\mbox{\hyperlink{classCourse}{Course}} course)
-\item 
-\Hypertarget{classStudent_af7c6aaec4194169af2191e735cd375a8}\label{classStudent_af7c6aaec4194169af2191e735cd375a8} 
-bool {\bfseries add\+Course} (\mbox{\hyperlink{classCourse}{Course}} \texorpdfstring{$\ast$}{*}course)
-\item 
-\Hypertarget{classStudent_adb467714d90a6951d8055776dac108fd}\label{classStudent_adb467714d90a6951d8055776dac108fd} 
-bool {\bfseries drop\+Course} (\mbox{\hyperlink{classCourse}{Course}} course)
-\item 
+\mbox{\hyperlink{classStudent_a726d8aeeb871c356065db8261f6b8bf1}{Student}} (int \mbox{\hyperlink{classStudent_a1351fb239711a78a8b115d75597b5df0}{id}}, string \mbox{\hyperlink{classStudent_a671f6b115a158653a0f0bece34ea0667}{name}}, string \mbox{\hyperlink{classStudent_ae7074837eb63db830e900bb4de553838}{email}}, string \mbox{\hyperlink{classStudent_a39c8f11d29857684feb1749717846bdb}{password}}, string \mbox{\hyperlink{classStudent_a9e5d401b7ce72aa21a4fdcec3d0cfa28}{address}}, int \mbox{\hyperlink{classStudent_ab00ef1891922021f507e996c3d2288a7}{phone}})
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{classStudent}{Student} object with given values. \end{DoxyCompactList}\item 
+\Hypertarget{classStudent_af9168cedbfa5565cf0b20c1a9d3f5c9d}\label{classStudent_af9168cedbfa5565cf0b20c1a9d3f5c9d} 
+{\bfseries Student} ()
+\begin{DoxyCompactList}\small\item\em Constructs an empty \doxylink{classStudent}{Student} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classStudent_afa1d9d4337578857a3f890dffc5843ff}{already\+Enrolled}} (\mbox{\hyperlink{classCourse}{Course}} course)
+\begin{DoxyCompactList}\small\item\em Checks if this student is already enrolled in a course. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classStudent_af7c6aaec4194169af2191e735cd375a8}{add\+Course}} (\mbox{\hyperlink{classCourse}{Course}} \texorpdfstring{$\ast$}{*}course)
+\begin{DoxyCompactList}\small\item\em A function that adds a course to this student\textquotesingle{}s enrollment history. \end{DoxyCompactList}\item 
 \Hypertarget{classStudent_aab8bb9998e9ab147bef3b8915266487e}\label{classStudent_aab8bb9998e9ab147bef3b8915266487e} 
 void {\bfseries view\+Courses} ()
-\item 
+\begin{DoxyCompactList}\small\item\em A function that views course enrollment history. \end{DoxyCompactList}\item 
 \Hypertarget{classStudent_a3e02fb416f57c0fe8e9fd2189813aafc}\label{classStudent_a3e02fb416f57c0fe8e9fd2189813aafc} 
 void {\bfseries display\+Details} ()
-\item 
-\Hypertarget{classStudent_a1fe33e59939e45cfe32974a5c14a33ef}\label{classStudent_a1fe33e59939e45cfe32974a5c14a33ef} 
-bool {\bfseries operator!=} (const \mbox{\hyperlink{classStudent}{Student}} \&other)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A function that displays this course\textquotesingle{}s details. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classStudent_a1fe33e59939e45cfe32974a5c14a33ef}{operator!=}} (const \mbox{\hyperlink{classStudent}{Student}} \&other)
+\begin{DoxyCompactList}\small\item\em Inequality Operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{classStudent_a671f6b115a158653a0f0bece34ea0667}\label{classStudent_a671f6b115a158653a0f0bece34ea0667} 
 string {\bfseries name}
-\item 
+\begin{DoxyCompactList}\small\item\em \doxylink{classStudent}{Student} name. \end{DoxyCompactList}\item 
 \Hypertarget{classStudent_ae7074837eb63db830e900bb4de553838}\label{classStudent_ae7074837eb63db830e900bb4de553838} 
 string {\bfseries email}
-\item 
+\begin{DoxyCompactList}\small\item\em \doxylink{classStudent}{Student} email. \end{DoxyCompactList}\item 
 \Hypertarget{classStudent_a39c8f11d29857684feb1749717846bdb}\label{classStudent_a39c8f11d29857684feb1749717846bdb} 
 string {\bfseries password}
-\item 
+\begin{DoxyCompactList}\small\item\em \doxylink{classStudent}{Student} password. \end{DoxyCompactList}\item 
 \Hypertarget{classStudent_a9e5d401b7ce72aa21a4fdcec3d0cfa28}\label{classStudent_a9e5d401b7ce72aa21a4fdcec3d0cfa28} 
 string {\bfseries address}
-\item 
+\begin{DoxyCompactList}\small\item\em \doxylink{classStudent}{Student} address. \end{DoxyCompactList}\item 
 \Hypertarget{classStudent_a1351fb239711a78a8b115d75597b5df0}\label{classStudent_a1351fb239711a78a8b115d75597b5df0} 
 int {\bfseries id}
-\item 
+\begin{DoxyCompactList}\small\item\em \doxylink{classStudent}{Student} ID. \end{DoxyCompactList}\item 
 \Hypertarget{classStudent_ab00ef1891922021f507e996c3d2288a7}\label{classStudent_ab00ef1891922021f507e996c3d2288a7} 
 int {\bfseries phone}
-\item 
+\begin{DoxyCompactList}\small\item\em \doxylink{classStudent}{Student} phone number. \end{DoxyCompactList}\item 
 \Hypertarget{classStudent_a1d067b7a11fa8e35653e6573adff40c4}\label{classStudent_a1d067b7a11fa8e35653e6573adff40c4} 
 \mbox{\hyperlink{classDoublyLinkedList}{Doubly\+Linked\+List}}$<$ \mbox{\hyperlink{classCourse}{Course}} $>$ \texorpdfstring{$\ast$}{*} {\bfseries course\+\_\+history}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The \doxylink{classStudent}{Student}\textquotesingle{}s enrollment history. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classStudent_aef1b3fd07ea0e2c1415fe63e566a73c4}\label{classStudent_aef1b3fd07ea0e2c1415fe63e566a73c4} 
-ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, \mbox{\hyperlink{classStudent}{Student}} \&student)
-\end{DoxyCompactItemize}
+ostream \& \mbox{\hyperlink{classStudent_aef1b3fd07ea0e2c1415fe63e566a73c4}{operator$<$$<$}} (std\+::ostream \&os, \mbox{\hyperlink{classStudent}{Student}} \&student)
+\begin{DoxyCompactList}\small\item\em Stream insertion operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classStudent}{Student} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classStudent_a726d8aeeb871c356065db8261f6b8bf1}\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}}
+{\footnotesize\ttfamily \label{classStudent_a726d8aeeb871c356065db8261f6b8bf1} 
+Student\+::\+Student (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{string}]{name}{, }\item[{string}]{email}{, }\item[{string}]{password}{, }\item[{string}]{address}{, }\item[{int}]{phone}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{classStudent}{Student} object with given values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the student\textquotesingle{}s ID. \\
+\hline
+{\em name} & this student\textquotesingle{}s name. \\
+\hline
+{\em email} & this student\textquotesingle{}s email. \\
+\hline
+{\em password} & this student\textquotesingle{}s password. \\
+\hline
+{\em address} & this student\textquotesingle{}s address. \\
+\hline
+{\em phone} & this student\textquotesingle{}s phone. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classStudent_af7c6aaec4194169af2191e735cd375a8}\index{Student@{Student}!addCourse@{addCourse}}
+\index{addCourse@{addCourse}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{addCourse()}{addCourse()}}
+{\footnotesize\ttfamily \label{classStudent_af7c6aaec4194169af2191e735cd375a8} 
+bool Student\+::add\+Course (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCourse}{Course}} \texorpdfstring{$\ast$}{*}}]{course}{}\end{DoxyParamCaption})}
+
+
+
+A function that adds a course to this student\textquotesingle{}s enrollment history. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & a pointer to the course to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classStudent_afa1d9d4337578857a3f890dffc5843ff}\index{Student@{Student}!alreadyEnrolled@{alreadyEnrolled}}
+\index{alreadyEnrolled@{alreadyEnrolled}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{alreadyEnrolled()}{alreadyEnrolled()}}
+{\footnotesize\ttfamily \label{classStudent_afa1d9d4337578857a3f890dffc5843ff} 
+bool Student\+::already\+Enrolled (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCourse}{Course}}}]{course}{}\end{DoxyParamCaption})}
+
+
+
+Checks if this student is already enrolled in a course. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & the course this student intends to be enrolled in. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classStudent_a1fe33e59939e45cfe32974a5c14a33ef}\index{Student@{Student}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{classStudent_a1fe33e59939e45cfe32974a5c14a33ef} 
+bool Student\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classStudent}{Student}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inequality Operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The objects to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classStudent_aef1b3fd07ea0e2c1415fe63e566a73c4}\index{Student@{Student}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{classStudent_aef1b3fd07ea0e2c1415fe63e566a73c4} 
+ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{\mbox{\hyperlink{classStudent}{Student}} \&}]{student}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Stream insertion operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The input stream. \\
+\hline
+{\em student} & The object to insert in the stream. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+os 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['printhelp_0',['printHelp',['../main_8cpp.html#a0d20b69b0ad703df78459e1033d5c1d4',1,'main.cpp']]]
+  ['enqueue_0',['enqueue',['../classQueue.html#a633a2dd3fdfa7433b03f2bbd571dcc27',1,'Queue']]],
+  ['enroll_1',['enroll',['../main_8cpp.html#aa7a4e29c8e95d20eb7343d16dfdda028',1,'main.cpp']]]
 ];

@@ -34,6 +34,7 @@
   <td id="projectalign">
    <div id="projectname">University System
    </div>
+   <div id="projectbrief">A University System utilizing different data structures.</div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -110,44 +111,55 @@ $(function(){initNavTree('singly__linked__list_8h_source.html',''); initResizabl
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="single__node_8h.html">single_node.h</a>&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">using namespace </span>std;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classSinglyLinkedList.html">   12</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span>SinglyLinkedList {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <a class="code hl_class" href="classSNode.html">SNode&lt;T&gt;</a> *head, *tail;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keywordtype">int</span> length;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  SinglyLinkedList();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <a class="code hl_class" href="classSNode.html">SNode&lt;T&gt;</a> *getHead();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordtype">bool</span> isEmpty();</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">bool</span> append(T value);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keywordtype">bool</span> insert(T value, <span class="keywordtype">int</span> position);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordtype">bool</span> push(T value);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordtype">bool</span> removeNode(<a class="code hl_class" href="classSNode.html">SNode&lt;T&gt;</a> *node);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keywordtype">bool</span> removeHead();</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordtype">bool</span> removeTail();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">bool</span> deleteNode(<span class="keywordtype">int</span> position);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">void</span> display();</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordtype">int</span> getLength();</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classSinglyLinkedList.html">   15</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code hl_function" href="classSinglyLinkedList.html#ac0c697ada1d5f5977853e7e31364ef92">SinglyLinkedList</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <a class="code hl_class" href="classSNode.html">SNode&lt;T&gt;</a> *head,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>      *tail;  <span class="comment">//&lt; Pointers to the head and tail of the SinglyLinkedList object;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keywordtype">int</span> length; <span class="comment">//&lt; The length of the SinglyLinkedList object;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classSinglyLinkedList.html#ac0c697ada1d5f5977853e7e31364ef92">   25</a></span>  <a class="code hl_function" href="classSinglyLinkedList.html#ac0c697ada1d5f5977853e7e31364ef92">SinglyLinkedList</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classSinglyLinkedList.html#abff424e0d5a39f7c0ef65513aa8f0d3e">   31</a></span>  <a class="code hl_class" href="classSNode.html">SNode&lt;T&gt;</a> *<a class="code hl_function" href="classSinglyLinkedList.html#abff424e0d5a39f7c0ef65513aa8f0d3e">getHead</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classSinglyLinkedList.html#a080dd6ebc86ca8f0c166bcdd1c10ea58">   37</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classSinglyLinkedList.html#a080dd6ebc86ca8f0c166bcdd1c10ea58">isEmpty</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classSinglyLinkedList.html#af3e104eceb0327f22fdfba8b6d72df69">   44</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classSinglyLinkedList.html#af3e104eceb0327f22fdfba8b6d72df69">append</a>(T value);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classSinglyLinkedList.html#a44972073264ea905f93732b4b3b6acb9">   52</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classSinglyLinkedList.html#a44972073264ea905f93732b4b3b6acb9">insert</a>(T value, <span class="keywordtype">int</span> position);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classSinglyLinkedList.html#a0ff5728d443501b7d4766802a520f116">   59</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classSinglyLinkedList.html#a0ff5728d443501b7d4766802a520f116">push</a>(T value);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classSinglyLinkedList.html#ad2478ed4d28e8a18a6fb3d12d69b6436">   66</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classSinglyLinkedList.html#ad2478ed4d28e8a18a6fb3d12d69b6436">removeNode</a>(<a class="code hl_class" href="classSNode.html">SNode&lt;T&gt;</a> *node);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classSinglyLinkedList.html#a2a500a7ff9cad579e9058a30d851335d">   72</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classSinglyLinkedList.html#a2a500a7ff9cad579e9058a30d851335d">removeHead</a>();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classSinglyLinkedList.html#ad98cfdd0e92e2d6e0c5e19e8c5ca6be4">   78</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classSinglyLinkedList.html#ad98cfdd0e92e2d6e0c5e19e8c5ca6be4">removeTail</a>();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="classSinglyLinkedList.html#a223740f7e3448a759435c03fd0b44682">   85</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classSinglyLinkedList.html#a223740f7e3448a759435c03fd0b44682">deleteNode</a>(<span class="keywordtype">int</span> position);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classSinglyLinkedList.html#a4e246972efe73987cbbe5e78826b8d50">   90</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classSinglyLinkedList.html#a4e246972efe73987cbbe5e78826b8d50">display</a>();</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classSinglyLinkedList.html#a9e858453f33cae1fcd6764359b20bd27">   96</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classSinglyLinkedList.html#a9e858453f33cae1fcd6764359b20bd27">getLength</a>();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>};</div>
 </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &quot;../templates/singly_linked_list.tpp&quot;</span></div>
-<div class="ttc" id="aclassSNode_html"><div class="ttname"><a href="classSNode.html">SNode</a></div><div class="ttdef"><b>Definition</b> single_node.h:10</div></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#include &quot;../templates/singly_linked_list.tpp&quot;</span></div>
+<div class="ttc" id="aclassSNode_html"><div class="ttname"><a href="classSNode.html">SNode</a></div><div class="ttdoc">The nodes for the SinglyLinkedList class.</div><div class="ttdef"><b>Definition</b> single_node.h:15</div></div>
+<div class="ttc" id="aclassSinglyLinkedList_html_a080dd6ebc86ca8f0c166bcdd1c10ea58"><div class="ttname"><a href="classSinglyLinkedList.html#a080dd6ebc86ca8f0c166bcdd1c10ea58">SinglyLinkedList::isEmpty</a></div><div class="ttdeci">bool isEmpty()</div><div class="ttdoc">A function to check if the list is empty.</div></div>
+<div class="ttc" id="aclassSinglyLinkedList_html_a0ff5728d443501b7d4766802a520f116"><div class="ttname"><a href="classSinglyLinkedList.html#a0ff5728d443501b7d4766802a520f116">SinglyLinkedList::push</a></div><div class="ttdeci">bool push(T value)</div><div class="ttdoc">Adds a value to the begining of the list.</div></div>
+<div class="ttc" id="aclassSinglyLinkedList_html_a223740f7e3448a759435c03fd0b44682"><div class="ttname"><a href="classSinglyLinkedList.html#a223740f7e3448a759435c03fd0b44682">SinglyLinkedList::deleteNode</a></div><div class="ttdeci">bool deleteNode(int position)</div><div class="ttdoc">A wrapper function that removes a node from anywhere in the list.</div></div>
+<div class="ttc" id="aclassSinglyLinkedList_html_a2a500a7ff9cad579e9058a30d851335d"><div class="ttname"><a href="classSinglyLinkedList.html#a2a500a7ff9cad579e9058a30d851335d">SinglyLinkedList::removeHead</a></div><div class="ttdeci">bool removeHead()</div><div class="ttdoc">A function that removes the head of the list.</div></div>
+<div class="ttc" id="aclassSinglyLinkedList_html_a44972073264ea905f93732b4b3b6acb9"><div class="ttname"><a href="classSinglyLinkedList.html#a44972073264ea905f93732b4b3b6acb9">SinglyLinkedList::insert</a></div><div class="ttdeci">bool insert(T value, int position)</div><div class="ttdoc">Adds a value to an index in the list.</div></div>
+<div class="ttc" id="aclassSinglyLinkedList_html_a4e246972efe73987cbbe5e78826b8d50"><div class="ttname"><a href="classSinglyLinkedList.html#a4e246972efe73987cbbe5e78826b8d50">SinglyLinkedList::display</a></div><div class="ttdeci">void display()</div><div class="ttdoc">A function that displays the list.</div></div>
+<div class="ttc" id="aclassSinglyLinkedList_html_a9e858453f33cae1fcd6764359b20bd27"><div class="ttname"><a href="classSinglyLinkedList.html#a9e858453f33cae1fcd6764359b20bd27">SinglyLinkedList::getLength</a></div><div class="ttdeci">int getLength()</div><div class="ttdoc">A function that returns the length of the list.</div></div>
+<div class="ttc" id="aclassSinglyLinkedList_html_abff424e0d5a39f7c0ef65513aa8f0d3e"><div class="ttname"><a href="classSinglyLinkedList.html#abff424e0d5a39f7c0ef65513aa8f0d3e">SinglyLinkedList::getHead</a></div><div class="ttdeci">SNode&lt; T &gt; * getHead()</div><div class="ttdoc">A function that returns the head of the list.</div></div>
+<div class="ttc" id="aclassSinglyLinkedList_html_ac0c697ada1d5f5977853e7e31364ef92"><div class="ttname"><a href="classSinglyLinkedList.html#ac0c697ada1d5f5977853e7e31364ef92">SinglyLinkedList::SinglyLinkedList</a></div><div class="ttdeci">SinglyLinkedList()</div><div class="ttdoc">Constructs an empty SinglyLinkedList object.</div></div>
+<div class="ttc" id="aclassSinglyLinkedList_html_ad2478ed4d28e8a18a6fb3d12d69b6436"><div class="ttname"><a href="classSinglyLinkedList.html#ad2478ed4d28e8a18a6fb3d12d69b6436">SinglyLinkedList::removeNode</a></div><div class="ttdeci">bool removeNode(SNode&lt; T &gt; *node)</div><div class="ttdoc">A function that removes a specific node.</div></div>
+<div class="ttc" id="aclassSinglyLinkedList_html_ad98cfdd0e92e2d6e0c5e19e8c5ca6be4"><div class="ttname"><a href="classSinglyLinkedList.html#ad98cfdd0e92e2d6e0c5e19e8c5ca6be4">SinglyLinkedList::removeTail</a></div><div class="ttdeci">bool removeTail()</div><div class="ttdoc">a function that removes the tail of the list.</div></div>
+<div class="ttc" id="aclassSinglyLinkedList_html_af3e104eceb0327f22fdfba8b6d72df69"><div class="ttname"><a href="classSinglyLinkedList.html#af3e104eceb0327f22fdfba8b6d72df69">SinglyLinkedList::append</a></div><div class="ttdeci">bool append(T value)</div><div class="ttdoc">Adds a value to the end of the list.</div></div>
 <div class="ttc" id="asingle__node_8h_html"><div class="ttname"><a href="single__node_8h.html">single_node.h</a></div><div class="ttdoc">Defines the Single Node (SNode) class.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

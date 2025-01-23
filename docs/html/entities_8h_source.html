@@ -34,6 +34,7 @@
   <td id="projectalign">
    <div id="projectname">University System
    </div>
+   <div id="projectbrief">A University System utilizing different data structures.</div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -113,89 +114,138 @@ $(function(){initNavTree('entities_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span><a class="code hl_class" href="classStudent.html">Student</a>;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span><a class="code hl_class" href="classCourse.html">Course</a>;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classCourse.html">   13</a></span><span class="keyword">class </span>Course {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keywordtype">int</span> id, credits, max_seats, seats;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keywordtype">string</span> name, instructor;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <a class="code hl_class" href="classStack.html">Stack&lt;Course&gt;</a> *prerequisites;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <a class="code hl_class" href="classQueue.html">Queue&lt;Student&gt;</a> *waitlist;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  Course(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">int</span> credits, <span class="keywordtype">string</span> name, <span class="keywordtype">string</span> instructor, <span class="keywordtype">int</span> max_seats,</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>         <span class="keywordtype">int</span> seats);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  Course();</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordtype">bool</span> isEligible(<a class="code hl_class" href="classStudent.html">Student</a> student);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordtype">bool</span> addToWaitlist(<a class="code hl_class" href="classStudent.html">Student</a> student);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordtype">void</span> displayDetails();</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordtype">void</span> updateSeats(<span class="keywordtype">int</span> seats);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordtype">bool</span> addPrequisite(Course course);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordtype">bool</span> operator&lt;(<span class="keyword">const</span> Course &amp;other) {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">return</span> this-&gt;<span class="keywordtype">id</span> &lt; other.id;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  }</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">bool</span> operator&gt;(<span class="keyword">const</span> Course &amp;other) {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">return</span> this-&gt;<span class="keywordtype">id</span> &gt; other.id;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> Course &amp;other) {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">return</span> this-&gt;<span class="keywordtype">id</span> == other.id;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> Course &amp;other) {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">return</span> this-&gt;<span class="keywordtype">id</span> != other.id;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  }</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">friend</span> ostream &amp;operator&lt;&lt;(std::ostream &amp;os, Course &amp;course);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classCourse.html">   17</a></span><span class="keyword">class </span><a class="code hl_function" href="classCourse.html#ab6c27d096f7f1c4595560f9f4ea39665">Course</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classCourse.html#a25fc48add606dc67349678c2699b875e">   19</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="classCourse.html#a25fc48add606dc67349678c2699b875e">id</a>;                       </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classCourse.html#ae6859731480634f2990b1f2503bf41f8">   20</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="classCourse.html#ae6859731480634f2990b1f2503bf41f8">credits</a>;                  </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classCourse.html#a0b7d5f106095fa8cabbc97d01afbb8a2">   21</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="classCourse.html#a0b7d5f106095fa8cabbc97d01afbb8a2">max_seats</a>;                </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classCourse.html#a8d09ffdbb59523b1fea5b2a9f453271f">   22</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="classCourse.html#a8d09ffdbb59523b1fea5b2a9f453271f">seats</a>;                    </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classCourse.html#acb352d670b8d61c75119ad86c68cb950">   23</a></span>  <span class="keywordtype">string</span> <a class="code hl_variable" href="classCourse.html#acb352d670b8d61c75119ad86c68cb950">name</a>;                  </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classCourse.html#a0c536251a06a3533b5eea539d0e88439">   24</a></span>  <span class="keywordtype">string</span> <a class="code hl_variable" href="classCourse.html#a0c536251a06a3533b5eea539d0e88439">instructor</a>;            </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classCourse.html#acad4ea86e4f3bde45c3301dd4b58ef8c">   25</a></span>  <a class="code hl_class" href="classStack.html">Stack&lt;Course&gt;</a> *<a class="code hl_variable" href="classCourse.html#acad4ea86e4f3bde45c3301dd4b58ef8c">prerequisites</a>; </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classCourse.html#ab212d86cb5c2f387aef3368aa0b9b1b3">   26</a></span>  <a class="code hl_class" href="classQueue.html">Queue&lt;Student&gt;</a> *<a class="code hl_variable" href="classCourse.html#ab212d86cb5c2f387aef3368aa0b9b1b3">waitlist</a>;     </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classCourse.html#ab6c27d096f7f1c4595560f9f4ea39665">   37</a></span>  <a class="code hl_function" href="classCourse.html#ab6c27d096f7f1c4595560f9f4ea39665">Course</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">int</span> <a class="code hl_variable" href="classCourse.html#ae6859731480634f2990b1f2503bf41f8">credits</a>, <span class="keywordtype">string</span> <a class="code hl_variable" href="classCourse.html#acb352d670b8d61c75119ad86c68cb950">name</a>, <span class="keywordtype">string</span> <a class="code hl_variable" href="classCourse.html#a0c536251a06a3533b5eea539d0e88439">instructor</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="classCourse.html#a0b7d5f106095fa8cabbc97d01afbb8a2">max_seats</a>,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>         <span class="keywordtype">int</span> <a class="code hl_variable" href="classCourse.html#a8d09ffdbb59523b1fea5b2a9f453271f">seats</a>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classCourse.html#a6b959ccf15d9ceed9e9c14a701561982">   43</a></span>  <a class="code hl_function" href="classCourse.html#a6b959ccf15d9ceed9e9c14a701561982">Course</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classCourse.html#ab9e2a2d0cd462eb031c7978adc4b1f89">   50</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classCourse.html#ab9e2a2d0cd462eb031c7978adc4b1f89">isEligible</a>(<a class="code hl_class" href="classStudent.html">Student</a> student);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classCourse.html#a36b25557e4852101c34f2f201ecc52a7">   58</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classCourse.html#a36b25557e4852101c34f2f201ecc52a7">addToWaitlist</a>(<a class="code hl_class" href="classStudent.html">Student</a> student);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classCourse.html#a253e5eda95ab603752ede2fbdd6b1b54">   65</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classCourse.html#a253e5eda95ab603752ede2fbdd6b1b54">addPrequisite</a>(<a class="code hl_function" href="classCourse.html#ab6c27d096f7f1c4595560f9f4ea39665">Course</a> course);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classCourse.html#aafc28a0c3d239fd5fcdafbbbc796080e">   70</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classCourse.html#aafc28a0c3d239fd5fcdafbbbc796080e">displayDetails</a>();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span></div>
+<div class="foldopen" id="foldopen00077" data-start="{" data-end="}">
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classCourse.html#a91805c385be5b1c0c286c475d522d7e4">   77</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classCourse.html#a91805c385be5b1c0c286c475d522d7e4">operator&lt;</a>(<span class="keyword">const</span> <a class="code hl_function" href="classCourse.html#ab6c27d096f7f1c4595560f9f4ea39665">Course</a> &amp;other) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">return</span> this-&gt;<span class="keywordtype">id</span> &lt; other.<a class="code hl_variable" href="classCourse.html#a25fc48add606dc67349678c2699b875e">id</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  }</div>
 </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="foldopen" id="foldopen00054" data-start="{" data-end="};">
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classStudent.html">   54</a></span><span class="keyword">class </span>Student {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordtype">string</span> name, email, password, address;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordtype">int</span> id, phone;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <a class="code hl_class" href="classDoublyLinkedList.html">DoublyLinkedList&lt;Course&gt;</a> *course_history;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  Student(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">string</span> name, <span class="keywordtype">string</span> email, <span class="keywordtype">string</span> password, <span class="keywordtype">string</span> address,</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>          <span class="keywordtype">int</span> phone);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  Student();</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordtype">bool</span> alreadyEnrolled(<a class="code hl_class" href="classCourse.html">Course</a> course);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keywordtype">bool</span> addCourse(<a class="code hl_class" href="classCourse.html">Course</a> *course);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keywordtype">bool</span> dropCourse(<a class="code hl_class" href="classCourse.html">Course</a> course);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordtype">void</span> viewCourses();</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keywordtype">void</span> displayDetails();</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> Student &amp;other) {</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">return</span> this-&gt;<span class="keywordtype">id</span> != other.id;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  }</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keyword">friend</span> ostream &amp;operator&lt;&lt;(std::ostream &amp;os, Student &amp;student);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>};</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span></div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classCourse.html#af6b057519685a0cc07a276af9b39c933">   86</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classCourse.html#af6b057519685a0cc07a276af9b39c933">operator&gt;</a>(<span class="keyword">const</span> <a class="code hl_function" href="classCourse.html#ab6c27d096f7f1c4595560f9f4ea39665">Course</a> &amp;other) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">return</span> this-&gt;<span class="keywordtype">id</span> &gt; other.<a class="code hl_variable" href="classCourse.html#a25fc48add606dc67349678c2699b875e">id</a>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  }</div>
 </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#include &quot;../templates/student.tpp&quot;</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#include &quot;../templates/course.tpp&quot;</span></div>
-<div class="ttc" id="aclassCourse_html"><div class="ttname"><a href="classCourse.html">Course</a></div><div class="ttdef"><b>Definition</b> entities.h:13</div></div>
-<div class="ttc" id="aclassDoublyLinkedList_html"><div class="ttname"><a href="classDoublyLinkedList.html">DoublyLinkedList</a></div><div class="ttdef"><b>Definition</b> doubly_linked_list.h:10</div></div>
-<div class="ttc" id="aclassQueue_html"><div class="ttname"><a href="classQueue.html">Queue</a></div><div class="ttdef"><b>Definition</b> queue.h:11</div></div>
-<div class="ttc" id="aclassStack_html"><div class="ttname"><a href="classStack.html">Stack</a></div><div class="ttdef"><b>Definition</b> stack.h:11</div></div>
-<div class="ttc" id="aclassStudent_html"><div class="ttname"><a href="classStudent.html">Student</a></div><div class="ttdef"><b>Definition</b> entities.h:54</div></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span></div>
+<div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classCourse.html#ab39a5c0c6643c1dc161775f119fbfebc">   95</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classCourse.html#ab39a5c0c6643c1dc161775f119fbfebc">operator==</a>(<span class="keyword">const</span> <a class="code hl_function" href="classCourse.html#ab6c27d096f7f1c4595560f9f4ea39665">Course</a> &amp;other) {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">return</span> this-&gt;<span class="keywordtype">id</span> == other.<a class="code hl_variable" href="classCourse.html#a25fc48add606dc67349678c2699b875e">id</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  }</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span></div>
+<div class="foldopen" id="foldopen00104" data-start="{" data-end="}">
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="classCourse.html#a1454f0edf89b02b3cbe9b7e839ac8002">  104</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classCourse.html#a1454f0edf89b02b3cbe9b7e839ac8002">operator!=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classCourse.html#ab6c27d096f7f1c4595560f9f4ea39665">Course</a> &amp;other) {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">return</span> this-&gt;<span class="keywordtype">id</span> != other.<a class="code hl_variable" href="classCourse.html#a25fc48add606dc67349678c2699b875e">id</a>;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  }</div>
+</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="classCourse.html#a7ea6acdf77a3173482ca343e2c514e8a">  114</a></span>  <span class="keyword">friend</span> ostream &amp;<a class="code hl_friend" href="classCourse.html#a7ea6acdf77a3173482ca343e2c514e8a">operator&lt;&lt;</a>(std::ostream &amp;os, <a class="code hl_function" href="classCourse.html#ab6c27d096f7f1c4595560f9f4ea39665">Course</a> &amp;course);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>};</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span></div>
+<div class="foldopen" id="foldopen00121" data-start="{" data-end="};">
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="classStudent.html">  121</a></span><span class="keyword">class </span><a class="code hl_function" href="classStudent.html#a726d8aeeb871c356065db8261f6b8bf1">Student</a> {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="classStudent.html#a671f6b115a158653a0f0bece34ea0667">  124</a></span>  <span class="keywordtype">string</span> <a class="code hl_variable" href="classStudent.html#a671f6b115a158653a0f0bece34ea0667">name</a>;     </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="classStudent.html#ae7074837eb63db830e900bb4de553838">  125</a></span>  <span class="keywordtype">string</span> <a class="code hl_variable" href="classStudent.html#ae7074837eb63db830e900bb4de553838">email</a>;    </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="classStudent.html#a39c8f11d29857684feb1749717846bdb">  126</a></span>  <span class="keywordtype">string</span> <a class="code hl_variable" href="classStudent.html#a39c8f11d29857684feb1749717846bdb">password</a>; </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="classStudent.html#a9e5d401b7ce72aa21a4fdcec3d0cfa28">  127</a></span>  <span class="keywordtype">string</span> <a class="code hl_variable" href="classStudent.html#a9e5d401b7ce72aa21a4fdcec3d0cfa28">address</a>;  </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="classStudent.html#a1351fb239711a78a8b115d75597b5df0">  128</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="classStudent.html#a1351fb239711a78a8b115d75597b5df0">id</a>;          </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="classStudent.html#ab00ef1891922021f507e996c3d2288a7">  129</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="classStudent.html#ab00ef1891922021f507e996c3d2288a7">phone</a>;       </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <a class="code hl_class" href="classDoublyLinkedList.html">DoublyLinkedList&lt;Course&gt;</a></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="classStudent.html#a1d067b7a11fa8e35653e6573adff40c4">  131</a></span>      *<a class="code hl_variable" href="classStudent.html#a1d067b7a11fa8e35653e6573adff40c4">course_history</a>; </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="classStudent.html#a726d8aeeb871c356065db8261f6b8bf1">  142</a></span>  <a class="code hl_function" href="classStudent.html#a726d8aeeb871c356065db8261f6b8bf1">Student</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">string</span> <a class="code hl_variable" href="classStudent.html#a671f6b115a158653a0f0bece34ea0667">name</a>, <span class="keywordtype">string</span> <a class="code hl_variable" href="classStudent.html#ae7074837eb63db830e900bb4de553838">email</a>, <span class="keywordtype">string</span> <a class="code hl_variable" href="classStudent.html#a39c8f11d29857684feb1749717846bdb">password</a>, <span class="keywordtype">string</span> <a class="code hl_variable" href="classStudent.html#a9e5d401b7ce72aa21a4fdcec3d0cfa28">address</a>,</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>          <span class="keywordtype">int</span> <a class="code hl_variable" href="classStudent.html#ab00ef1891922021f507e996c3d2288a7">phone</a>);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="classStudent.html#af9168cedbfa5565cf0b20c1a9d3f5c9d">  148</a></span>  <a class="code hl_function" href="classStudent.html#af9168cedbfa5565cf0b20c1a9d3f5c9d">Student</a>();</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="classStudent.html#afa1d9d4337578857a3f890dffc5843ff">  154</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classStudent.html#afa1d9d4337578857a3f890dffc5843ff">alreadyEnrolled</a>(<a class="code hl_class" href="classCourse.html">Course</a> course);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="classStudent.html#af7c6aaec4194169af2191e735cd375a8">  160</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classStudent.html#af7c6aaec4194169af2191e735cd375a8">addCourse</a>(<a class="code hl_class" href="classCourse.html">Course</a> *course);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="classStudent.html#aab8bb9998e9ab147bef3b8915266487e">  165</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classStudent.html#aab8bb9998e9ab147bef3b8915266487e">viewCourses</a>();</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="classStudent.html#a3e02fb416f57c0fe8e9fd2189813aafc">  170</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classStudent.html#a3e02fb416f57c0fe8e9fd2189813aafc">displayDetails</a>();</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span></div>
+<div class="foldopen" id="foldopen00177" data-start="{" data-end="}">
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="classStudent.html#a1fe33e59939e45cfe32974a5c14a33ef">  177</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classStudent.html#a1fe33e59939e45cfe32974a5c14a33ef">operator!=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classStudent.html#a726d8aeeb871c356065db8261f6b8bf1">Student</a> &amp;other) {</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="keywordflow">return</span> this-&gt;<span class="keywordtype">id</span> != other.<a class="code hl_variable" href="classStudent.html#a1351fb239711a78a8b115d75597b5df0">id</a>;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  }</div>
+</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="classStudent.html#aef1b3fd07ea0e2c1415fe63e566a73c4">  187</a></span>  <span class="keyword">friend</span> ostream &amp;<a class="code hl_friend" href="classStudent.html#aef1b3fd07ea0e2c1415fe63e566a73c4">operator&lt;&lt;</a>(std::ostream &amp;os, <a class="code hl_function" href="classStudent.html#a726d8aeeb871c356065db8261f6b8bf1">Student</a> &amp;student);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>};</div>
+</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="preprocessor">#include &quot;../templates/student.tpp&quot;</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="preprocessor">#include &quot;../templates/course.tpp&quot;</span></div>
+<div class="ttc" id="aclassCourse_html"><div class="ttname"><a href="classCourse.html">Course</a></div><div class="ttdoc">The Course class.</div><div class="ttdef"><b>Definition</b> entities.h:17</div></div>
+<div class="ttc" id="aclassCourse_html_a0b7d5f106095fa8cabbc97d01afbb8a2"><div class="ttname"><a href="classCourse.html#a0b7d5f106095fa8cabbc97d01afbb8a2">Course::max_seats</a></div><div class="ttdeci">int max_seats</div><div class="ttdoc">Max seats.</div><div class="ttdef"><b>Definition</b> entities.h:21</div></div>
+<div class="ttc" id="aclassCourse_html_a0c536251a06a3533b5eea539d0e88439"><div class="ttname"><a href="classCourse.html#a0c536251a06a3533b5eea539d0e88439">Course::instructor</a></div><div class="ttdeci">string instructor</div><div class="ttdoc">Instructor.</div><div class="ttdef"><b>Definition</b> entities.h:24</div></div>
+<div class="ttc" id="aclassCourse_html_a1454f0edf89b02b3cbe9b7e839ac8002"><div class="ttname"><a href="classCourse.html#a1454f0edf89b02b3cbe9b7e839ac8002">Course::operator!=</a></div><div class="ttdeci">bool operator!=(const Course &amp;other)</div><div class="ttdoc">Inequality operator.</div><div class="ttdef"><b>Definition</b> entities.h:104</div></div>
+<div class="ttc" id="aclassCourse_html_a253e5eda95ab603752ede2fbdd6b1b54"><div class="ttname"><a href="classCourse.html#a253e5eda95ab603752ede2fbdd6b1b54">Course::addPrequisite</a></div><div class="ttdeci">bool addPrequisite(Course course)</div><div class="ttdoc">A function that adds prerequisites to this course.</div></div>
+<div class="ttc" id="aclassCourse_html_a25fc48add606dc67349678c2699b875e"><div class="ttname"><a href="classCourse.html#a25fc48add606dc67349678c2699b875e">Course::id</a></div><div class="ttdeci">int id</div><div class="ttdoc">The Course&#39;s ID.</div><div class="ttdef"><b>Definition</b> entities.h:19</div></div>
+<div class="ttc" id="aclassCourse_html_a36b25557e4852101c34f2f201ecc52a7"><div class="ttname"><a href="classCourse.html#a36b25557e4852101c34f2f201ecc52a7">Course::addToWaitlist</a></div><div class="ttdeci">bool addToWaitlist(Student student)</div><div class="ttdoc">A function that adds students to this course&#39;s waitlist when no seats are available.</div></div>
+<div class="ttc" id="aclassCourse_html_a6b959ccf15d9ceed9e9c14a701561982"><div class="ttname"><a href="classCourse.html#a6b959ccf15d9ceed9e9c14a701561982">Course::Course</a></div><div class="ttdeci">Course()</div><div class="ttdoc">Constructs an empty Course object.</div></div>
+<div class="ttc" id="aclassCourse_html_a7ea6acdf77a3173482ca343e2c514e8a"><div class="ttname"><a href="classCourse.html#a7ea6acdf77a3173482ca343e2c514e8a">Course::operator&lt;&lt;</a></div><div class="ttdeci">friend ostream &amp; operator&lt;&lt;(std::ostream &amp;os, Course &amp;course)</div><div class="ttdoc">Stream insertion operator.</div></div>
+<div class="ttc" id="aclassCourse_html_a8d09ffdbb59523b1fea5b2a9f453271f"><div class="ttname"><a href="classCourse.html#a8d09ffdbb59523b1fea5b2a9f453271f">Course::seats</a></div><div class="ttdeci">int seats</div><div class="ttdoc">Taken seats.</div><div class="ttdef"><b>Definition</b> entities.h:22</div></div>
+<div class="ttc" id="aclassCourse_html_a91805c385be5b1c0c286c475d522d7e4"><div class="ttname"><a href="classCourse.html#a91805c385be5b1c0c286c475d522d7e4">Course::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const Course &amp;other)</div><div class="ttdoc">Less Than operator.</div><div class="ttdef"><b>Definition</b> entities.h:77</div></div>
+<div class="ttc" id="aclassCourse_html_aafc28a0c3d239fd5fcdafbbbc796080e"><div class="ttname"><a href="classCourse.html#aafc28a0c3d239fd5fcdafbbbc796080e">Course::displayDetails</a></div><div class="ttdeci">void displayDetails()</div><div class="ttdoc">A function that displays this course&#39;s details.</div></div>
+<div class="ttc" id="aclassCourse_html_ab212d86cb5c2f387aef3368aa0b9b1b3"><div class="ttname"><a href="classCourse.html#ab212d86cb5c2f387aef3368aa0b9b1b3">Course::waitlist</a></div><div class="ttdeci">Queue&lt; Student &gt; * waitlist</div><div class="ttdoc">A queue managing the Course&#39;s wait-list.</div><div class="ttdef"><b>Definition</b> entities.h:26</div></div>
+<div class="ttc" id="aclassCourse_html_ab39a5c0c6643c1dc161775f119fbfebc"><div class="ttname"><a href="classCourse.html#ab39a5c0c6643c1dc161775f119fbfebc">Course::operator==</a></div><div class="ttdeci">bool operator==(const Course &amp;other)</div><div class="ttdoc">Equality operator.</div><div class="ttdef"><b>Definition</b> entities.h:95</div></div>
+<div class="ttc" id="aclassCourse_html_ab6c27d096f7f1c4595560f9f4ea39665"><div class="ttname"><a href="classCourse.html#ab6c27d096f7f1c4595560f9f4ea39665">Course::Course</a></div><div class="ttdeci">Course(int id, int credits, string name, string instructor, int max_seats, int seats)</div><div class="ttdoc">Constructs a new Course object with given values.</div></div>
+<div class="ttc" id="aclassCourse_html_ab9e2a2d0cd462eb031c7978adc4b1f89"><div class="ttname"><a href="classCourse.html#ab9e2a2d0cd462eb031c7978adc4b1f89">Course::isEligible</a></div><div class="ttdeci">bool isEligible(Student student)</div><div class="ttdoc">Checks if a student is eligible to enroll in this course.</div></div>
+<div class="ttc" id="aclassCourse_html_acad4ea86e4f3bde45c3301dd4b58ef8c"><div class="ttname"><a href="classCourse.html#acad4ea86e4f3bde45c3301dd4b58ef8c">Course::prerequisites</a></div><div class="ttdeci">Stack&lt; Course &gt; * prerequisites</div><div class="ttdoc">A stack holding the Course&#39;s prerequisites.</div><div class="ttdef"><b>Definition</b> entities.h:25</div></div>
+<div class="ttc" id="aclassCourse_html_acb352d670b8d61c75119ad86c68cb950"><div class="ttname"><a href="classCourse.html#acb352d670b8d61c75119ad86c68cb950">Course::name</a></div><div class="ttdeci">string name</div><div class="ttdoc">The Course&#39;s name.</div><div class="ttdef"><b>Definition</b> entities.h:23</div></div>
+<div class="ttc" id="aclassCourse_html_ae6859731480634f2990b1f2503bf41f8"><div class="ttname"><a href="classCourse.html#ae6859731480634f2990b1f2503bf41f8">Course::credits</a></div><div class="ttdeci">int credits</div><div class="ttdoc">No. of credits.</div><div class="ttdef"><b>Definition</b> entities.h:20</div></div>
+<div class="ttc" id="aclassCourse_html_af6b057519685a0cc07a276af9b39c933"><div class="ttname"><a href="classCourse.html#af6b057519685a0cc07a276af9b39c933">Course::operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const Course &amp;other)</div><div class="ttdoc">Greater Than operator.</div><div class="ttdef"><b>Definition</b> entities.h:86</div></div>
+<div class="ttc" id="aclassDoublyLinkedList_html"><div class="ttname"><a href="classDoublyLinkedList.html">DoublyLinkedList</a></div><div class="ttdoc">The DoublyLinkedList class.</div><div class="ttdef"><b>Definition</b> doubly_linked_list.h:15</div></div>
+<div class="ttc" id="aclassQueue_html"><div class="ttname"><a href="classQueue.html">Queue</a></div><div class="ttdoc">The Queue class.</div><div class="ttdef"><b>Definition</b> queue.h:16</div></div>
+<div class="ttc" id="aclassStack_html"><div class="ttname"><a href="classStack.html">Stack</a></div><div class="ttdoc">The Stack class.</div><div class="ttdef"><b>Definition</b> stack.h:16</div></div>
+<div class="ttc" id="aclassStudent_html"><div class="ttname"><a href="classStudent.html">Student</a></div><div class="ttdoc">The Student class.</div><div class="ttdef"><b>Definition</b> entities.h:121</div></div>
+<div class="ttc" id="aclassStudent_html_a1351fb239711a78a8b115d75597b5df0"><div class="ttname"><a href="classStudent.html#a1351fb239711a78a8b115d75597b5df0">Student::id</a></div><div class="ttdeci">int id</div><div class="ttdoc">Student ID.</div><div class="ttdef"><b>Definition</b> entities.h:128</div></div>
+<div class="ttc" id="aclassStudent_html_a1d067b7a11fa8e35653e6573adff40c4"><div class="ttname"><a href="classStudent.html#a1d067b7a11fa8e35653e6573adff40c4">Student::course_history</a></div><div class="ttdeci">DoublyLinkedList&lt; Course &gt; * course_history</div><div class="ttdoc">The Student&#39;s enrollment history.</div><div class="ttdef"><b>Definition</b> entities.h:131</div></div>
+<div class="ttc" id="aclassStudent_html_a1fe33e59939e45cfe32974a5c14a33ef"><div class="ttname"><a href="classStudent.html#a1fe33e59939e45cfe32974a5c14a33ef">Student::operator!=</a></div><div class="ttdeci">bool operator!=(const Student &amp;other)</div><div class="ttdoc">Inequality Operator.</div><div class="ttdef"><b>Definition</b> entities.h:177</div></div>
+<div class="ttc" id="aclassStudent_html_a39c8f11d29857684feb1749717846bdb"><div class="ttname"><a href="classStudent.html#a39c8f11d29857684feb1749717846bdb">Student::password</a></div><div class="ttdeci">string password</div><div class="ttdoc">Student password.</div><div class="ttdef"><b>Definition</b> entities.h:126</div></div>
+<div class="ttc" id="aclassStudent_html_a3e02fb416f57c0fe8e9fd2189813aafc"><div class="ttname"><a href="classStudent.html#a3e02fb416f57c0fe8e9fd2189813aafc">Student::displayDetails</a></div><div class="ttdeci">void displayDetails()</div><div class="ttdoc">A function that displays this course&#39;s details.</div></div>
+<div class="ttc" id="aclassStudent_html_a671f6b115a158653a0f0bece34ea0667"><div class="ttname"><a href="classStudent.html#a671f6b115a158653a0f0bece34ea0667">Student::name</a></div><div class="ttdeci">string name</div><div class="ttdoc">Student name.</div><div class="ttdef"><b>Definition</b> entities.h:124</div></div>
+<div class="ttc" id="aclassStudent_html_a726d8aeeb871c356065db8261f6b8bf1"><div class="ttname"><a href="classStudent.html#a726d8aeeb871c356065db8261f6b8bf1">Student::Student</a></div><div class="ttdeci">Student(int id, string name, string email, string password, string address, int phone)</div><div class="ttdoc">Constructs a new Student object with given values.</div></div>
+<div class="ttc" id="aclassStudent_html_a9e5d401b7ce72aa21a4fdcec3d0cfa28"><div class="ttname"><a href="classStudent.html#a9e5d401b7ce72aa21a4fdcec3d0cfa28">Student::address</a></div><div class="ttdeci">string address</div><div class="ttdoc">Student address.</div><div class="ttdef"><b>Definition</b> entities.h:127</div></div>
+<div class="ttc" id="aclassStudent_html_aab8bb9998e9ab147bef3b8915266487e"><div class="ttname"><a href="classStudent.html#aab8bb9998e9ab147bef3b8915266487e">Student::viewCourses</a></div><div class="ttdeci">void viewCourses()</div><div class="ttdoc">A function that views course enrollment history.</div></div>
+<div class="ttc" id="aclassStudent_html_ab00ef1891922021f507e996c3d2288a7"><div class="ttname"><a href="classStudent.html#ab00ef1891922021f507e996c3d2288a7">Student::phone</a></div><div class="ttdeci">int phone</div><div class="ttdoc">Student phone number.</div><div class="ttdef"><b>Definition</b> entities.h:129</div></div>
+<div class="ttc" id="aclassStudent_html_ae7074837eb63db830e900bb4de553838"><div class="ttname"><a href="classStudent.html#ae7074837eb63db830e900bb4de553838">Student::email</a></div><div class="ttdeci">string email</div><div class="ttdoc">Student email.</div><div class="ttdef"><b>Definition</b> entities.h:125</div></div>
+<div class="ttc" id="aclassStudent_html_aef1b3fd07ea0e2c1415fe63e566a73c4"><div class="ttname"><a href="classStudent.html#aef1b3fd07ea0e2c1415fe63e566a73c4">Student::operator&lt;&lt;</a></div><div class="ttdeci">friend ostream &amp; operator&lt;&lt;(std::ostream &amp;os, Student &amp;student)</div><div class="ttdoc">Stream insertion operator.</div></div>
+<div class="ttc" id="aclassStudent_html_af7c6aaec4194169af2191e735cd375a8"><div class="ttname"><a href="classStudent.html#af7c6aaec4194169af2191e735cd375a8">Student::addCourse</a></div><div class="ttdeci">bool addCourse(Course *course)</div><div class="ttdoc">A function that adds a course to this student&#39;s enrollment history.</div></div>
+<div class="ttc" id="aclassStudent_html_af9168cedbfa5565cf0b20c1a9d3f5c9d"><div class="ttname"><a href="classStudent.html#af9168cedbfa5565cf0b20c1a9d3f5c9d">Student::Student</a></div><div class="ttdeci">Student()</div><div class="ttdoc">Constructs an empty Student object.</div></div>
+<div class="ttc" id="aclassStudent_html_afa1d9d4337578857a3f890dffc5843ff"><div class="ttname"><a href="classStudent.html#afa1d9d4337578857a3f890dffc5843ff">Student::alreadyEnrolled</a></div><div class="ttdeci">bool alreadyEnrolled(Course course)</div><div class="ttdoc">Checks if this student is already enrolled in a course.</div></div>
 <div class="ttc" id="astructures_8h_html"><div class="ttname"><a href="structures_8h.html">structures.h</a></div><div class="ttdoc">Collects all the implemented data structures in one file.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

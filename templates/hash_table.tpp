@@ -11,7 +11,7 @@ template <typename K, typename V> HashTable<K, V>::HashTable(int table_size) {
 
   /**
    * @brief Constructs an empty HashTable object given a size.
-   * @param table_size, the size intended for the table.
+   * @param table_size The size intended for the table.
    */
 
   this->table_size = table_size;
@@ -23,7 +23,8 @@ template <typename K, typename V> int HashTable<K, V>::hash(K key) {
 
   /**
    * @brief A hashing function that is based on the "FNV-1a" Algorithm.
-   * @param key, the key to hash
+   * @param key The key to hash
+   * @return The index in the hash table array.
    */
 
   string byte_string = to_string(key);
@@ -41,8 +42,9 @@ template <typename K, typename V> bool HashTable<K, V>::insert(K key, V value) {
 
   /**
    * @brief A function that inserts a value into the HashTable object.
-   * @param key, the key of the value.
-   * @param value, the value to insert.
+   * @param key the key of the value.
+   * @param value The value to insert.
+   * @return boolean.
    */
 
   table_pair<K, V> entry;
@@ -55,9 +57,11 @@ template <typename K, typename V> bool HashTable<K, V>::insert(K key, V value) {
 }
 
 template <typename K, typename V> V *HashTable<K, V>::get(K key) {
+
   /**
    * @brief A function that returns a pointer to the value using a key.
-   * @param key, the key of the value.
+   * @param key The key of the value.
+   * @return A pointer to the value.
    */
 
   int hash = this->hash(key);
@@ -87,7 +91,8 @@ template <typename K, typename V> bool HashTable<K, V>::remove(K key) {
 
   /**
    * @brief A function that removes a value from the HashTable object.
-   * @param key, the key of the value to remove.
+   * @param key The key of the value to remove.
+   * @return boolean.
    */
 
   int hash = this->hash(key);

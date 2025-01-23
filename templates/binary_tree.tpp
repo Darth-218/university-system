@@ -42,8 +42,8 @@ template <typename T> bool BinaryTree<T>::insert(T value) {
 
   /**
    * @brief A function that inserts a value in the correct node in the tree.
-   * @param value, the value to store.
-   * @return boolean for debugging purposes.
+   * @param value The value to store.
+   * @return boolean.
    */
 
   TNode<T> *current = this->root;
@@ -78,8 +78,8 @@ template <typename T> bool BinaryTree<T>::deleteNode(T value) {
 
   /**
    * @brief A function that removes a certain value from the tree.
-   * @param value, the value to delete.
-   * @return boolean for debugging purposes.
+   * @param value The value to delete.
+   * @return boolean.
    */
 
   if (isEmpty()) {
@@ -173,6 +173,7 @@ template <typename T> void BinaryTree<T>::displayNode(TNode<T> *root) {
 
   /**
    * @brief A function that traverses nodes in an in-order traversal.
+   * @param *root A pointer to the starting node.
    */
 
   if (root == NULL) {
@@ -188,7 +189,10 @@ template <typename T>
 std::ostream &operator<<(std::ostream &os, BinaryTree<T> &tree) {
 
   /**
-   * @brief An overload for the operator "<<".
+   * @brief Stream insertion operator.
+   * @param os The input stream.
+   * @param tree The object to insert in the stream.
+   * @return os
    */
 
   tree.displayTree();

@@ -1,71 +1,254 @@
 \doxysection{Course Class Reference}
 \hypertarget{classCourse}{}\label{classCourse}\index{Course@{Course}}
+
+
+The \doxylink{classCourse}{Course} class.  
+
+
+
+
+{\ttfamily \#include $<$entities.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classCourse_ab6c27d096f7f1c4595560f9f4ea39665}\label{classCourse_ab6c27d096f7f1c4595560f9f4ea39665} 
-{\bfseries Course} (int id, int credits, string name, string instructor, int max\+\_\+seats, int seats)
-\item 
-\Hypertarget{classCourse_ab9e2a2d0cd462eb031c7978adc4b1f89}\label{classCourse_ab9e2a2d0cd462eb031c7978adc4b1f89} 
-bool {\bfseries is\+Eligible} (\mbox{\hyperlink{classStudent}{Student}} student)
-\item 
-\Hypertarget{classCourse_a36b25557e4852101c34f2f201ecc52a7}\label{classCourse_a36b25557e4852101c34f2f201ecc52a7} 
-bool {\bfseries add\+To\+Waitlist} (\mbox{\hyperlink{classStudent}{Student}} student)
-\item 
+\mbox{\hyperlink{classCourse_ab6c27d096f7f1c4595560f9f4ea39665}{Course}} (int \mbox{\hyperlink{classCourse_a25fc48add606dc67349678c2699b875e}{id}}, int \mbox{\hyperlink{classCourse_ae6859731480634f2990b1f2503bf41f8}{credits}}, string \mbox{\hyperlink{classCourse_acb352d670b8d61c75119ad86c68cb950}{name}}, string \mbox{\hyperlink{classCourse_a0c536251a06a3533b5eea539d0e88439}{instructor}}, int \mbox{\hyperlink{classCourse_a0b7d5f106095fa8cabbc97d01afbb8a2}{max\+\_\+seats}}, int \mbox{\hyperlink{classCourse_a8d09ffdbb59523b1fea5b2a9f453271f}{seats}})
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{classCourse}{Course} object with given values. \end{DoxyCompactList}\item 
+\Hypertarget{classCourse_a6b959ccf15d9ceed9e9c14a701561982}\label{classCourse_a6b959ccf15d9ceed9e9c14a701561982} 
+{\bfseries Course} ()
+\begin{DoxyCompactList}\small\item\em Constructs an empty \doxylink{classCourse}{Course} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCourse_ab9e2a2d0cd462eb031c7978adc4b1f89}{is\+Eligible}} (\mbox{\hyperlink{classStudent}{Student}} student)
+\begin{DoxyCompactList}\small\item\em Checks if a student is eligible to enroll in this course. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCourse_a36b25557e4852101c34f2f201ecc52a7}{add\+To\+Waitlist}} (\mbox{\hyperlink{classStudent}{Student}} student)
+\begin{DoxyCompactList}\small\item\em A function that adds students to this course\textquotesingle{}s waitlist when no seats are available. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCourse_a253e5eda95ab603752ede2fbdd6b1b54}{add\+Prequisite}} (\mbox{\hyperlink{classCourse}{Course}} course)
+\begin{DoxyCompactList}\small\item\em A function that adds prerequisites to this course. \end{DoxyCompactList}\item 
 \Hypertarget{classCourse_aafc28a0c3d239fd5fcdafbbbc796080e}\label{classCourse_aafc28a0c3d239fd5fcdafbbbc796080e} 
 void {\bfseries display\+Details} ()
-\item 
-\Hypertarget{classCourse_a11278e36f726e67e5f6d53422a246369}\label{classCourse_a11278e36f726e67e5f6d53422a246369} 
-void {\bfseries update\+Seats} (int seats)
-\item 
-\Hypertarget{classCourse_a253e5eda95ab603752ede2fbdd6b1b54}\label{classCourse_a253e5eda95ab603752ede2fbdd6b1b54} 
-bool {\bfseries add\+Prequisite} (\mbox{\hyperlink{classCourse}{Course}} course)
-\item 
-\Hypertarget{classCourse_a91805c385be5b1c0c286c475d522d7e4}\label{classCourse_a91805c385be5b1c0c286c475d522d7e4} 
-bool {\bfseries operator$<$} (const \mbox{\hyperlink{classCourse}{Course}} \&other)
-\item 
-\Hypertarget{classCourse_af6b057519685a0cc07a276af9b39c933}\label{classCourse_af6b057519685a0cc07a276af9b39c933} 
-bool {\bfseries operator$>$} (const \mbox{\hyperlink{classCourse}{Course}} \&other)
-\item 
-\Hypertarget{classCourse_ab39a5c0c6643c1dc161775f119fbfebc}\label{classCourse_ab39a5c0c6643c1dc161775f119fbfebc} 
-bool {\bfseries operator==} (const \mbox{\hyperlink{classCourse}{Course}} \&other)
-\item 
-\Hypertarget{classCourse_a1454f0edf89b02b3cbe9b7e839ac8002}\label{classCourse_a1454f0edf89b02b3cbe9b7e839ac8002} 
-bool {\bfseries operator!=} (const \mbox{\hyperlink{classCourse}{Course}} \&other)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A function that displays this course\textquotesingle{}s details. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCourse_a91805c385be5b1c0c286c475d522d7e4}{operator$<$}} (const \mbox{\hyperlink{classCourse}{Course}} \&other)
+\begin{DoxyCompactList}\small\item\em Less Than operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCourse_af6b057519685a0cc07a276af9b39c933}{operator$>$}} (const \mbox{\hyperlink{classCourse}{Course}} \&other)
+\begin{DoxyCompactList}\small\item\em Greater Than operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCourse_ab39a5c0c6643c1dc161775f119fbfebc}{operator==}} (const \mbox{\hyperlink{classCourse}{Course}} \&other)
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCourse_a1454f0edf89b02b3cbe9b7e839ac8002}{operator!=}} (const \mbox{\hyperlink{classCourse}{Course}} \&other)
+\begin{DoxyCompactList}\small\item\em Inequality operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{classCourse_a25fc48add606dc67349678c2699b875e}\label{classCourse_a25fc48add606dc67349678c2699b875e} 
 int {\bfseries id}
-\item 
+\begin{DoxyCompactList}\small\item\em The \doxylink{classCourse}{Course}\textquotesingle{}s ID. \end{DoxyCompactList}\item 
 \Hypertarget{classCourse_ae6859731480634f2990b1f2503bf41f8}\label{classCourse_ae6859731480634f2990b1f2503bf41f8} 
 int {\bfseries credits}
-\item 
+\begin{DoxyCompactList}\small\item\em No. of credits. \end{DoxyCompactList}\item 
 \Hypertarget{classCourse_a0b7d5f106095fa8cabbc97d01afbb8a2}\label{classCourse_a0b7d5f106095fa8cabbc97d01afbb8a2} 
 int {\bfseries max\+\_\+seats}
-\item 
+\begin{DoxyCompactList}\small\item\em Max seats. \end{DoxyCompactList}\item 
 \Hypertarget{classCourse_a8d09ffdbb59523b1fea5b2a9f453271f}\label{classCourse_a8d09ffdbb59523b1fea5b2a9f453271f} 
 int {\bfseries seats}
-\item 
+\begin{DoxyCompactList}\small\item\em Taken seats. \end{DoxyCompactList}\item 
 \Hypertarget{classCourse_acb352d670b8d61c75119ad86c68cb950}\label{classCourse_acb352d670b8d61c75119ad86c68cb950} 
 string {\bfseries name}
-\item 
+\begin{DoxyCompactList}\small\item\em The \doxylink{classCourse}{Course}\textquotesingle{}s name. \end{DoxyCompactList}\item 
 \Hypertarget{classCourse_a0c536251a06a3533b5eea539d0e88439}\label{classCourse_a0c536251a06a3533b5eea539d0e88439} 
 string {\bfseries instructor}
-\item 
+\begin{DoxyCompactList}\small\item\em Instructor. \end{DoxyCompactList}\item 
 \Hypertarget{classCourse_acad4ea86e4f3bde45c3301dd4b58ef8c}\label{classCourse_acad4ea86e4f3bde45c3301dd4b58ef8c} 
 \mbox{\hyperlink{classStack}{Stack}}$<$ \mbox{\hyperlink{classCourse}{Course}} $>$ \texorpdfstring{$\ast$}{*} {\bfseries prerequisites}
-\item 
+\begin{DoxyCompactList}\small\item\em A stack holding the \doxylink{classCourse}{Course}\textquotesingle{}s prerequisites. \end{DoxyCompactList}\item 
 \Hypertarget{classCourse_ab212d86cb5c2f387aef3368aa0b9b1b3}\label{classCourse_ab212d86cb5c2f387aef3368aa0b9b1b3} 
 \mbox{\hyperlink{classQueue}{Queue}}$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ \texorpdfstring{$\ast$}{*} {\bfseries waitlist}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A queue managing the \doxylink{classCourse}{Course}\textquotesingle{}s wait-\/list. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classCourse_a7ea6acdf77a3173482ca343e2c514e8a}\label{classCourse_a7ea6acdf77a3173482ca343e2c514e8a} 
-ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, \mbox{\hyperlink{classCourse}{Course}} \&course)
-\end{DoxyCompactItemize}
+ostream \& \mbox{\hyperlink{classCourse_a7ea6acdf77a3173482ca343e2c514e8a}{operator$<$$<$}} (std\+::ostream \&os, \mbox{\hyperlink{classCourse}{Course}} \&course)
+\begin{DoxyCompactList}\small\item\em Stream insertion operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classCourse}{Course} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCourse_ab6c27d096f7f1c4595560f9f4ea39665}\index{Course@{Course}!Course@{Course}}
+\index{Course@{Course}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{Course()}{Course()}}
+{\footnotesize\ttfamily \label{classCourse_ab6c27d096f7f1c4595560f9f4ea39665} 
+Course\+::\+Course (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{int}]{credits}{, }\item[{string}]{name}{, }\item[{string}]{instructor}{, }\item[{int}]{max\+\_\+seats}{, }\item[{int}]{seats}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{classCourse}{Course} object with given values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the course\textquotesingle{}s ID. \\
+\hline
+{\em credits} & the credits taken from this course. \\
+\hline
+{\em name} & this course\textquotesingle{}s name. \\
+\hline
+{\em instructor} & this course instructor\textquotesingle{}s name. \\
+\hline
+{\em max\+\_\+seats} & this course\textquotesingle{}s max seats. \\
+\hline
+{\em seats} & this course\textquotesingle{}s taken seats. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCourse_a253e5eda95ab603752ede2fbdd6b1b54}\index{Course@{Course}!addPrequisite@{addPrequisite}}
+\index{addPrequisite@{addPrequisite}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{addPrequisite()}{addPrequisite()}}
+{\footnotesize\ttfamily \label{classCourse_a253e5eda95ab603752ede2fbdd6b1b54} 
+bool Course\+::add\+Prequisite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCourse}{Course}}}]{course}{}\end{DoxyParamCaption})}
+
+
+
+A function that adds prerequisites to this course. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & The prerequisite course. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classCourse_a36b25557e4852101c34f2f201ecc52a7}\index{Course@{Course}!addToWaitlist@{addToWaitlist}}
+\index{addToWaitlist@{addToWaitlist}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{addToWaitlist()}{addToWaitlist()}}
+{\footnotesize\ttfamily \label{classCourse_a36b25557e4852101c34f2f201ecc52a7} 
+bool Course\+::add\+To\+Waitlist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStudent}{Student}}}]{student}{}\end{DoxyParamCaption})}
+
+
+
+A function that adds students to this course\textquotesingle{}s waitlist when no seats are available. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & The student enrolling in this course. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classCourse_ab9e2a2d0cd462eb031c7978adc4b1f89}\index{Course@{Course}!isEligible@{isEligible}}
+\index{isEligible@{isEligible}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{isEligible()}{isEligible()}}
+{\footnotesize\ttfamily \label{classCourse_ab9e2a2d0cd462eb031c7978adc4b1f89} 
+bool Course\+::is\+Eligible (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStudent}{Student}}}]{student}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a student is eligible to enroll in this course. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & The student to enroll. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classCourse_a1454f0edf89b02b3cbe9b7e839ac8002}\index{Course@{Course}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{classCourse_a1454f0edf89b02b3cbe9b7e839ac8002} 
+bool Course\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCourse}{Course}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inequality operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The objects to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classCourse_a91805c385be5b1c0c286c475d522d7e4}\index{Course@{Course}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily \label{classCourse_a91805c385be5b1c0c286c475d522d7e4} 
+bool Course\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCourse}{Course}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Less Than operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The object to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classCourse_ab39a5c0c6643c1dc161775f119fbfebc}\index{Course@{Course}!operator==@{operator==}}
+\index{operator==@{operator==}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{classCourse_ab39a5c0c6643c1dc161775f119fbfebc} 
+bool Course\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCourse}{Course}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Equality operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The object to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+\Hypertarget{classCourse_af6b057519685a0cc07a276af9b39c933}\index{Course@{Course}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily \label{classCourse_af6b057519685a0cc07a276af9b39c933} 
+bool Course\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCourse}{Course}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Greater Than operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The object to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classCourse_a7ea6acdf77a3173482ca343e2c514e8a}\index{Course@{Course}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{classCourse_a7ea6acdf77a3173482ca343e2c514e8a} 
+ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{\mbox{\hyperlink{classCourse}{Course}} \&}]{course}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Stream insertion operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The input stream. \\
+\hline
+{\em course} & The object to insert in the stream. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+os 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

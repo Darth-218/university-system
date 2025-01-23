@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['remove_0',['remove',['../main_8cpp.html#a1657e0af82c21b0340f2206e497e45bf',1,'main.cpp']]],
-  ['requirements_1',['Project Requirements',['../md_00-project.html#autotoc_md4',1,'']]],
-  ['runcommand_2',['runCommand',['../main_8cpp.html#ad640430bbf9f4820ce1ac37253b071ca',1,'main.cpp']]]
+  ['operator_21_3d_0',['operator!=',['../classCourse.html#a1454f0edf89b02b3cbe9b7e839ac8002',1,'Course::operator!=()'],['../classStudent.html#a1fe33e59939e45cfe32974a5c14a33ef',1,'Student::operator!=()']]],
+  ['operator_3c_1',['operator&lt;',['../classCourse.html#a91805c385be5b1c0c286c475d522d7e4',1,'Course']]],
+  ['operator_3c_3c_2',['operator&lt;&lt;',['../classCourse.html#a7ea6acdf77a3173482ca343e2c514e8a',1,'Course::operator&lt;&lt;()'],['../classStudent.html#aef1b3fd07ea0e2c1415fe63e566a73c4',1,'Student::operator&lt;&lt;()']]],
+  ['operator_3d_3d_3',['operator==',['../classCourse.html#ab39a5c0c6643c1dc161775f119fbfebc',1,'Course']]],
+  ['operator_3e_4',['operator&gt;',['../classCourse.html#af6b057519685a0cc07a276af9b39c933',1,'Course']]]
 ];
