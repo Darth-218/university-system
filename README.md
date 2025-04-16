@@ -135,16 +135,16 @@ HashTable --* SinglyLinkedList
 # Modules
 ## Singly Linked List
 ### To-Do
-- [ ] `isEmpty()` to check if the list is empty.
-- [ ] Inserting
-	- [ ] `push()` to insert at the start.
-	- [ ] `append()` to insert at the end.
-	- [ ] `insert(T value, int position)` to insert at a specific position.
-- [ ] Deleting
-	- [ ] `removeHead()` to remove the list's head.
-	- [ ] `removeTail()` to remove the list's tail.
-	- [ ] `deleteNode(T value)` to remove a specific value.
-- [ ] `display()` to display the values in the list.
+- [x] `isEmpty()` to check if the list is empty.
+- [x] Inserting
+	- [x] `push()` to insert at the start.
+	- [x] `append()` to insert at the end.
+	- [x] `insert(T value, int position)` to insert at a specific position.
+- [x] Deleting
+	- [x] `removeHead()` to remove the list's head.
+	- [x] `removeTail()` to remove the list's tail.
+	- [x] `deleteNode(T value)` to remove a specific value.
+- [x] `display()` to display the values in the list.
 
 The Singly Linked will be used to store students and should:
 1. Add students with their ID, Name, Email, Phone Number, Address, and Password.
@@ -152,10 +152,10 @@ The Singly Linked will be used to store students and should:
 3. Display student details.
 ## Stack
 ### To-Do
-- [ ] `isEmpty()` to check if the stack is empty.
-- [ ] `push()` to add elements to the top of the stack.
-- [ ] `pop()` to remove the top element in the stack.
-- [ ] `peek()` to return the top element in the stack.
+- [x] `isEmpty()` to check if the stack is empty.
+- [x] `push()` to add elements to the top of the stack.
+- [x] `pop()` to remove the top element in the stack.
+- [x] `peek()` to return the top element in the stack.
 
 The Stack will be used to store course prerequisites and should:
 1. Check if a student is able to register a course by checking if their prerequisites stack is empty.
@@ -164,11 +164,11 @@ The Stack is implemented using the Singly Linked List.
 ## Doubly Linked List
 ### To-Do
 - [x] `isEmpty()` to check if the list is empty.
-- [ ] Inserting
+- [x] Inserting
 	- [x] `push()` to insert at the start.
 	- [x] `append()` to insert at the end.
 	- [x] `insert(T value, int position)` to insert at a specific position.
-- [ ] Deleting
+- [x] Deleting
 	- [x] `removeHead()` to remove the list's head.
 	- [x] `removeTail()` to remove the list's tail.
 	- [x] `removeNode()` to remove a specific node
@@ -201,9 +201,9 @@ The Binary Tree will be used to store courses and should:
 2. Drop courses.
 ## Hash Table
 ### To-Do
-- [/] `hash(K key)` to compute the pair index.
+- [x] `hash(K key)` to compute the pair index.
 - [x] `insert(K key, V value)` to insert a pair to the table.
 - [x] `get(K key)` to retrieve the value at a key index.
-- [/] `remove(K key)` to remove the key-value pair.
+- [x] `remove(K key)` to remove the key-value pair.
 
 The Hash Table will be used for efficient lookup.
